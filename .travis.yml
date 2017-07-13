@@ -14,7 +14,7 @@ before_install:
 
   # Update conda and create test environment
   - conda config --set always_yes yes --set changeps1 no
-  - conda env create -q -f .\environment.yml -n test-environment
+  - conda env create -q -f environment.yml -n test-environment
   - source activate test-environment
 install: true
 before_script:
