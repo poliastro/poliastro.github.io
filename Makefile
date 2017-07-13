@@ -25,7 +25,7 @@ CLOUDFILES_CONTAINER=my_cloudfiles_container
 
 DROPBOX_DIR=~/Dropbox/Public/
 
-GITHUB_PAGES_REMOTE=https://${GH_TOKEN}@github.com/anhiga/anhiga.github.io.git
+GITHUB_PAGES_REMOTE=https://github.com/anhiga/anhiga.github.io.git
 GITHUB_PAGES_BRANCH=master
 
 GIT_COMMIT_HASH = $(shell git rev-parse HEAD)
@@ -42,29 +42,29 @@ endif
 
 
 help:
-	@echo 'Makefile for a pelican Web site                                           '
-	@echo '                                                                          '
-	@echo 'Usage:                                                                    '
-	@echo '   make html                           (re)generate the web site          '
-	@echo '   make clean                          remove the generated files         '
-	@echo '   make regenerate                     regenerate files upon modification '
-	@echo '   make publish                        generate using production settings '
-	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000'
-	@echo '   make serve-global [SERVER=0.0.0.0]  serve (as root) to $(SERVER):80    '
-	@echo '   make devserver [PORT=8000]          start/restart develop_server.sh    '
-	@echo '   make stopserver                     stop local server                  '
-	@echo '   make ssh_upload                     upload the web site via SSH        '
-	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
-	@echo '   make dropbox_upload                 upload the web site via Dropbox    '
-	@echo '   make ftp_upload                     upload the web site via FTP        '
-	@echo '   make s3_upload                      upload the web site via S3         '
-	@echo '   make cf_upload                      upload the web site via Cloud Files'
-	@echo '   make publish-to-github              upload the web site via gh-pages   '
-	@echo '   make publish-to-github-force        force the upload via gh-pages      '
-	@echo '                                                                          '
-	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
-	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
-	@echo '                                                                          '
+	@echo 'Makefile for a pelican Web site                                                '
+	@echo '                                                                               '
+	@echo 'Usage:                                                                         '
+	@echo '   make html                                (re)generate the web site          '
+	@echo '   make clean                               remove the generated files         '
+	@echo '   make regenerate                          regenerate files upon modification '
+	@echo '   make publish                             generate using production settings '
+	@echo '   make serve [PORT=8000]                   serve site at http://localhost:8000'
+	@echo '   make serve-global [SERVER=0.0.0.0]       serve (as root) to (SERVER):80     '
+	@echo '   make devserver [PORT=8000]               start/restart develop_server.sh    '
+	@echo '   make stopserver                          stop local server                  '
+	@echo '   make ssh_upload                          upload the web site via SSH        '
+	@echo '   make rsync_upload                        upload the web site via rsync+ssh  '
+	@echo '   make dropbox_upload                      upload the web site via Dropbox    '
+	@echo '   make ftp_upload                          upload the web site via FTP        '
+	@echo '   make s3_upload                           upload the web site via S3         '
+	@echo '   make cf_upload                           upload the web site via Cloud Files'
+	@echo '   make publish-to-github [GH_TOK]        upload the web site via gh-pages   '
+	@echo '   make publish-to-github-force [GH_TOK]  force the upload via gh-pages      '
+	@echo '                                                                               '
+	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html        '
+	@echo 'Set the RELATIVE variable to 1 to enable relative urls                         '
+	@echo '                                                                               '
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -124,10 +124,16 @@ cf_upload: publish
 
 publish-to-github: publish
 	ghp-import -n -m "publish-to-github from $(GIT_COMMIT_HASH)" -b blog-build $(OUTPUTDIR)
+ifdef GH_TOK
+	GITHUB_PAGES_REMOTE=https://${GH_TOK}@github.com/anhiga/anhiga.github.io.git
+endif
 	git push $(GITHUB_PAGES_REMOTE) blog-build:$(GITHUB_PAGES_BRANCH)
 
 publish-to-github-force: publish
 	ghp-import -n -m "publish-to-github-force from $(GIT_COMMIT_HASH)" -b blog-build $(OUTPUTDIR)
+ifdef GH_TOK
+	GITHUB_PAGES_REMOTE=https://${GH_TOK}@github.com/anhiga/anhiga.github.io.git
+endif
 	git push -f $(GITHUB_PAGES_REMOTE) blog-build:$(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
