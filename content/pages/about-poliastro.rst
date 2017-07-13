@@ -97,6 +97,6 @@ my heart and to people that never ceased to inspire me. *Grazie mille!*
 Docs
 ----
 
-The latest version of documentation can be found in `ReadTheDocs`_astropy
+The latest version of documentation can be found in `ReadTheDocs`_
 
 .. _ReadTheDocs: http://poliastro.readthedocs.io/en/latest/
