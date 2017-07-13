@@ -21,4 +21,4 @@ before_script:
   - git config --global user.email "antoniohidalgo.inves@gmail.com"
   - git config --global user.name "Antonio Hidalgo"
 script:
-  - make publish-to-github-force $(GH_TOKEN)
+  - make publish-to-github-force
