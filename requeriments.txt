@@ -1,0 +1,14 @@
+jupyter
+notebook
+docutils
+markdown
+sqlite
+unidecode
+blinker
+pytz
+werkzeug
+itsdangerous
+nodejs
+pelican
+ghp-import
+isso

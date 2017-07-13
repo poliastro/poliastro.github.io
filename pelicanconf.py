@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-AUTHOR = 'Pybonacci'
-SITENAME = 'Pybonacci'
-SITESUBTITLE = u'Blog sobre Python científico en español'
+AUTHOR = 'Poliastro'
+SITENAME = 'Poliastro'
+SITESUBTITLE = u'Blog sobre Poliastro'
 SITEURL = ''
 PATH = 'content'
 TIMEZONE = 'Europe/Madrid'
@@ -59,9 +59,9 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 # THEME SETTINGS
 THEME = './theme/'
 
-ABOUT_PAGE = '/pages/acerca-de-pybonacci.html'
-TWITTER_USERNAME = 'Pybonacci'
-GITHUB_USERNAME = 'Pybonacci'
+ABOUT_PAGE = '/pages/about-poliastro.html'
+#TWITTER_USERNAME = 'Poliastro'
+GITHUB_USERNAME = 'Poliastro'
 SHOW_ARCHIVES = True
 SHOW_FEED = False  # Need to address large feeds
 
@@ -73,5 +73,5 @@ STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
 
 # Footer info
 
-LICENSE_URL = "https://github.com/Juanlu001/pybonacci.github.io-source/blob/master/LICENSE"
+LICENSE_URL = "https://github.com/poliastro/poliastro.github.io-source/blob/master/LICENSE"
 LICENSE = "MIT"

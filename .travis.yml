@@ -1,0 +1,16 @@
+language: python
+python:
+- '3.6'
+branches:
+  only:
+  - master
+env:
+  global:
+  - secure: QFr6igrc/sRAPTWvOcozrCbuOp6Alv1SP3S2FNJJKIKdrKk5kXaBbcdH0MoA8sbREUI3lAnpbWdfSwlBeM50RvFareP82CqlpKxj/4cLOdKX+Hrxw0G85GnE49UCuDXECrbxdkpIJghJlpneU4c/dIc47NUo+EDR3NtYnjfHIHZNfN9FsvpTOkNLeYEnXv8+n+iDSN+yrlftJmeyS2FRIvkNMkHBrR+fhgARVW3Mi7ohHMhznet60AXlHehm1CiTfdUVhZvVsScSTF9u6K4Mw+VBoU+aEl1WaSZsNrOTjVU8NQYDeAUt44JlLPyFIVq1D670dMJolTrBVMP6PK+idccNJbavu48feQki3iwJQ34dVIJcGPfwfzGt1b80K/jA2Pyeoc/XWr4pi7J2yZPFlSluwtckbH2YZe/T7IQG9FRaoAwgcVA4amgkLOYd/ngFMZfNQppSTwFFmIqdX+mfcO7XsQCx7FZQJz8XuB6+i8W5BU0+1ua45omVNAukk9rTytjfIN3A18broZ3pOfSFH/ZcWs3FCwQi3bUPCtOEn16nycsakuTyuChwPuQGVhpA/6N85f6Hr+WueYoGrIJoNjb2QG6KUoneRdckTW8f8dyheZhcVAD7dvZ2DrJ6Q+GSHRa9AA24W0VDtW21H3h+d7Y2/YkGWdLj1ng62B8Qctk=
+install:
+  - pip install -r requeriments.txt
+before_script:
+  - git config --global user.email "antoniohidalgo.inves@gmail.com"
+  - git config --global user.name "Antonio Hidalgo"
+script:
+  - make publish-to-github-force
