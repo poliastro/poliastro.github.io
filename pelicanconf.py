@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-AUTHOR = 'Poliastro'
-SITENAME = 'Poliastro'
-SITESUBTITLE = u'Blog sobre Poliastro'
+AUTHOR = 'poliastro developer team'
+SITENAME = 'poliastro'
+SITESUBTITLE = u'poliastro website'
 SITEURL = ''
 PATH = 'content'
 TIMEZONE = 'Europe/Madrid'
@@ -60,8 +60,8 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 THEME = './theme/'
 
 ABOUT_PAGE = '/pages/about-poliastro.html'
-#TWITTER_USERNAME = 'Poliastro'
-GITHUB_USERNAME = 'Poliastro'
+#TWITTER_USERNAME = 'poliastro'
+GITHUB_USERNAME = 'poliastro'
 SHOW_ARCHIVES = True
 SHOW_FEED = False  # Need to address large feeds
 
@@ -74,4 +74,4 @@ STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
 # Footer info
 
 LICENSE_URL = "https://github.com/poliastro/poliastro.github.io-source/blob/master/LICENSE"
-LICENSE = "MIT"
+LICENSE = "CC-BY for content and MIT for code"
