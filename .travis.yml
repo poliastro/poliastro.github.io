@@ -18,7 +18,7 @@ before_install:
   - source activate test-environment
 install: true
 before_script:
-  - git config --global user.email "antoniohidalgo.inves@gmail.com"
-  - git config --global user.name "Antonio Hidalgo"
+  - git config --global user.email "poliastro@poliastro.com"
+  - git config --global user.name "Poliastro"
 script:
   - make publish-to-github-force
