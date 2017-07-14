@@ -17,8 +17,5 @@ before_install:
   - conda env create -q -f environment.yml -n test-environment
   - source activate test-environment
 install: true
-before_script:
-  - git config --global user.email "poliastro@poliastro.com"
-  - git config --global user.name "Poliastro"
 script:
   - make publish-to-github-force
