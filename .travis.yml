@@ -6,16 +6,14 @@ branches:
   - master
 env:
   global:
-  - secure: "OR+c6jAJUkQy+e57+QzrZHwR4d9LD4RFWvcYJSktPqMrkBtVT3WOd8ZgBZrZcCL/dd5rqlul/7Z8Y+sIQb8sEXLbyjM94e/io6Ut67uMQ//LbCJqR9/C/U6wg8ccid5ue8n7e+ULyBEeo3MpQXSLY/qHqMLVsVJJggrOJVnGoXWsLU4na6wokyxMsuFbR257ooEACFncp3UC4y2FLakh9txixVXZAGPLJ7sWMJgwJokWhnwXq67yvuotGIwha9PqjCf56MzE+bXfP9jIvIgmWyjutE4lCMgStuU0MYl1FTX7M3mLVRiumjF00jkvfQDp8Hin/a1gtBC7rMTTIDZirSn/2kPXnoqMXzvk0xDxrfuuFpQCUq5CrF8cn1v0EeX9rXHK+DcF2ZlOxTlj09tukOFC7lQpGWK8YE8aGUL54YKJJruVxWV9JR4KGa1GMFQ/rYIobq6uvJI4EZPxFCFY4Vd5y1zRqOwSxidNMMqyM+oUXr3C6ETonkH4UEduDSAYxdOa3+Q6FlGvsUjniMt+R347gpU4t03xd7cDdmQi7McOWilBOxdyB9nSsmezO7/ECsQ/mds2Ax74i30XkgWupW9UAekdohfc2R6me2ZTcPAO52QXxCT4jkM3UxYiDhbuFz7QnscemR2tOSjPzkw5hdCUpkgqWclZ9q1j/n7f4IQ="
+    secure: GS6vkAEakziECfg7MqUQxhagQ60S7AQ6A5wVAkjFdAfS6uigEiLQjNqhiDpQHpQI14bR0ZKki1xDqRz+SVxBkeD0fuPi+pnlp4H1aiDyQFVh2lmvCV2c52PdwsK4z/s2CL5lUWXdhsenDk6h3rvo38g0bUXrgJgBMqHWAFjZKF0RrkVlXOPa1ArDdBDDCNq6SScCeH2FWyY/8QHqoa/usZtEd0vjZHfx6iJaDPf9jJItHQB7ubxDV2ki0XykZ+AA0JaWCAphADqk9x4+E0eBA0L5fYmsj+lb0dQ8QBQO4McPEw0ZS4DQGkYaKacNkazw/UxrrX0sDMToI4ein1AkeIrg+eqoH7UF/0yQJahrXl0t6b/18QgtguZEEt49FhJiOhRTiS0wlfVkl8oZwz5K9TDGIzMHFoU2TlOUbLZavJb2UKYBUalfXBze2yL+iwdvlUMqDO4PGJ61KjgQj2PW0BaOpCa9Yt9O5KTJJAHZe9FeA8IGB3Jjfg7k7mnoUSVcgTcT0hOA7lrIBDt0GsMOY+gLB1MK54HPbsKJKm6wpZx+lnctP8HT+vqvuGd9JmReArkY2B3IOHocbU/XFqY4qmVtMP8FsxUvGMAFFGjJQX/kwYZdZYdCYgQBlua87wM/gV3aSUnzSaLfmKoBfl6bPhYO/z1n8MfhoJCyWljV5pk=
 before_install:
-  - wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-  - bash miniconda.sh -b -p $HOME/miniconda
-  - export PATH="$HOME/miniconda/bin:$PATH"
-
-  # Update conda and create test environment
-  - conda config --set always_yes yes --set changeps1 no
-  - conda env create -q -f environment.yml -n test-environment
-  - source activate test-environment
+- wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+- bash miniconda.sh -b -p $HOME/miniconda
+- export PATH="$HOME/miniconda/bin:$PATH"
+- conda config --set always_yes yes --set changeps1 no
+- conda env create -q -f environment.yml -n test-environment
+- source activate test-environment
 install: true
 script:
-  - make publish-to-github-force
+- make publish-to-github-force
