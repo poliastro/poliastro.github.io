@@ -1,7 +1,7 @@
 About poliastro
 ===============
 
-:title: About Poliastro
+:title: About poliastro
 :slug: about-poliastro
 :template: about
 
