@@ -3,6 +3,22 @@
 {% block headerimg %}{% if article.headerimg %}{{ article.headerimg }}{% else %}{{ DEFAULT_HEADER_BG }}{% endif %}{% endblock %}
 
 {% block content %}
+
+{% if article.translations %}
+    <ul class="active" style="padding-left: 10px;float: left;color: #777">
+        Also available in:
+    </ul>
+    {% for lang_url in article.translations %}
+        <ul class="active" style="padding-left: 20px;float:left;">
+        <a href={% if not lang_url.in_default_lang %}"{{ SITEURL }}/{{ lang_url.slug }}-{{ lang_url.lang }}"
+            {% elif article %}"{{ SITEURL }}/{{ lang_url.url }}"
+            {% endif %} title="{{ lang_url.lang }}">{{ lang_url.lang }}</a>
+        </ul>
+    {% endfor %}
+    <!-- separator -->
+    <li style="list-style-type:none; background-color: white; padding: 1px;">&nbsp</li>
+{% endif %}
+
 <div class="container post">
     <article>
         <header>
