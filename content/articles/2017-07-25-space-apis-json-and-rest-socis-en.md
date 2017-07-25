@@ -72,7 +72,7 @@ In order to clarify all of this data sequence, I made a table:
 |        Accessible NEAs (NHATS)        |         No        |     Yes     |     Yes (JSON)    |                             |
 |                 Scout                 |         No        |     Yes     |     Yes (JSON)    |                             |
 |                 Sentry                |         No        |     Yes     |     Yes (JSON)    |                             |
-[existent Python interface]: (https://github.com/mommermi/callhorizons)
+[existent Python interface]: https://github.com/mommermi/callhorizons
 
 
 

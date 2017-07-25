@@ -73,7 +73,7 @@ Para clarificar toda esta la retahíla de datos, hice una tabla:
 |        Accessible NEAs (NHATS)        |          No          |   Sí  |     Sí (JSON)     |                                 |
 |                 Scout                 |          No          |   Sí  |     Sí (JSON)     |                                 |
 |                 Sentry                |          No          |   Sí  |     Sí (JSON)     |                                 |
-[ya existe una interfaz Python]: (https://github.com/mommermi/callhorizons)
+[ya existe una interfaz Python]: https://github.com/mommermi/callhorizons
 
 Teniendo todos estos requisitos en mente, la mejor opción parecía ser `NeoWs`. Aunque no proporciona información sobre NECs (cometas), éstos solo representan un 0.7% del total de los NEOs, por tanto podían ser descartados (sólo de momento :P). Otro problema relacionado con `NeoWs` es el hecho de que solo permite buscar por número SPK-ID (no confundir con número IAU), el cual es desconocido para la mayoría de la gente, por tanto, antes de hacer ninguna petición a la API, se necesita encontrar el número SPK-ID.
 
