@@ -2,7 +2,7 @@ Title: Pelican, Github Pages and auto-deployment (SOCIS 2017)
 Date: 2017-07-15 14:00
 Category: SOCIS
 Tags: SOCIS, ESA, poliastro
-slug: 2017-07-15-socis
+slug: 2017-07-15-pelican-github-pages-and-auto-deployment-socis
 lang: en
 Author: Antonio Hidalgo Galindo
 
