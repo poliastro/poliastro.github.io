@@ -28,7 +28,7 @@ And you can also select output fields, and choose between HTML and CSV output fo
 * [Horizons](https://ssd.jpl.nasa.gov/?horizons): provides access to highly accurate ephemerides for solar system objects, not only small-body. Can be accessed using telnet, email and web-interface.
 
 ## NEOWS
-Among NASA OPEN APIs, it is [NeoWs](https://api.nasa.gov/api.html#neows-feed). It can be used to get lists of Near Earth Objects (within a date range, for today...), and to retrieve orbital elements and close aproaches data given a SPK-ID (integer code that [JPL](https://www.jpl.nasa.gov/) uses to identify objects). Despite his name, only works with NEAs (Near Earth Asteroids), and therefore there is no information about comets.
+Among NASA OPEN APIs, it is [NeoWs](https://api.nasa.gov/neo/?api_key=DEMO_KEY). It can be used to get lists of Near Earth Objects (within a date range, for today...), and to retrieve orbital elements and close aproaches data given a SPK-ID (integer code that [JPL](https://www.jpl.nasa.gov/) uses to identify objects). Despite his name, only works with NEAs (Near Earth Asteroids), and therefore there is no information about comets.
 
 ## JPL SSD/CNEOS API SERVICE
 As stated on his web, [JPL SSD/CNEOS API SERVICE](https://ssd-api.jpl.nasa.gov/)

@@ -29,7 +29,7 @@ También permite seleccionar los datos de salida, y elegir entre HTML y CSV.
 * [Horizons](https://ssd.jpl.nasa.gov/?horizons): proporciona acceso a efemérides de alta precisión para objetos del sistema solar, no solo cuerpos menores. Se puede acceder mediante telnet, email y una interfaz web.
 
 ## NEOWS
-Entre las APIs de la NASA, está [NeoWs](https://api.nasa.gov/api.html#neows-feed). Se puede utilizar para listar NEOs y obtener sus elementos orbitales y próximas aproximaciones (valga la redundancia) a la Tierra, dado un SPK-ID (número que el [JPL](https://www.jpl.nasa.gov/) usa para identificar objetos). A pesar de su nombre, sólo funciona con NEAs (Near Earth Asteroids), y por tanto no proporciona información sobre cometas.
+Entre las APIs de la NASA, está [NeoWs]https://api.nasa.gov/neo/?api_key=DEMO_KEY). Se puede utilizar para listar NEOs y obtener sus elementos orbitales y próximas aproximaciones (valga la redundancia) a la Tierra, dado un SPK-ID (número que el [JPL](https://www.jpl.nasa.gov/) usa para identificar objetos). A pesar de su nombre, sólo funciona con NEAs (Near Earth Asteroids), y por tanto no proporciona información sobre cometas.
 
 ## JPL SSD/CNEOS API SERVICE
 Como dice su web, el [JPL SSD/CNEOS API SERVICE](https://ssd-api.jpl.nasa.gov/)
