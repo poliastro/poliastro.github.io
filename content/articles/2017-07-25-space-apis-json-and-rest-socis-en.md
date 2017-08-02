@@ -8,7 +8,7 @@ Author: Antonio Hidalgo Galindo
 
 After setting up the blog, it was time to start with the first week of my [timeline](https://github.com/poliastro/poliastro/wiki/SOCIS-2017-Antonio-Hidalgo#timeline). The task for this week was to research the available NASA Open APIs and other NEOs databases that could better fit for this project.
 
-I had already studied some APIs, and taked a look at their capabilities, but further research was needed. As my [proposal](https://github.com/poliastro/poliastro/wiki/SOCIS-2017-Antonio-Hidalgo#proposal), was made of 3 different pages, I analyzed each one separately.
+I had already studied some APIs, and taked a look at their capabilities, but further research was needed. As my [proposal](https://github.com/poliastro/poliastro/wiki/SOCIS-2017-Antonio-Hidalgo#proposal) was made of 3 different pages, I analyzed each one separately.
 
 ## CNEOS page
 In the [CNEOS page](https://cneos.jpl.nasa.gov/orbits/) there is a list of tools, but it can be shorten to four different APIs/Databases:

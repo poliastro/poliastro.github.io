@@ -8,12 +8,12 @@ Author: Antonio Hidalgo Galindo
 
 Después de montar el blog, era el momento de empezar con la primera semana de mi [timeline](https://github.com/poliastro/poliastro/wiki/SOCIS-2017-Antonio-Hidalgo#timeline). La tarea de esta semana era investigar las APIs de la NASA disponibles y otras bases de datos de NEOs que pudiesen ser útiles para este proyecto.
 
-Ya había estudiado algumas APIs y echado un vistazo a sus posibilidades, pero hacía falta una investigación mas profunda. Como mi [propuesta](https://github.com/poliastro/poliastro/wiki/SOCIS-2017-Antonio-Hidalgo#proposal), se componía de 3 páginas diferentes, decidí analizar cada una por separado.
+Ya había estudiado algunas APIs y echado un vistazo a sus posibilidades, pero hacía falta una investigación más profunda. Como mi [propuesta](https://github.com/poliastro/poliastro/wiki/SOCIS-2017-Antonio-Hidalgo#proposal) se componía de 3 páginas diferentes, decidí analizar cada una por separado.
 
 ## CNEOS
 En la página del [CNEOS](https://cneos.jpl.nasa.gov/orbits/) hay una lista de distintas herramientas, pero puede ser acortada a las siguientes APIs:
 
-* [JPL Small-Body Database Browser](https://ssd.jpl.nasa.gov/sbdb.cgi): permite buscar cualquier cuerpo menor (como los NEOs) mediante su número IAU, nombre o designación, y también soporta los carácteres comodín `*` y/o `?`. Los datos disponibles incluyen, citando a la propia página:
+* [JPL Small-Body Database Browser](https://ssd.jpl.nasa.gov/sbdb.cgi): permite buscar cualquier cuerpo menor (como los NEOs) mediante su número IAU, nombre o designación, y también soporta los caracteres comodín `*` y/o `?`. Los datos disponibles incluyen, citando a la propia página:
 > * elementos orbitales
 > * diagramas orbitales
 > * parámetros físicos
@@ -48,7 +48,7 @@ Las APIs más relevantes son:
 ## Eligiendo las APIs
 Una vez estudiadas todas las posibilidades, era momento de elegir las APIs que parecían más adecuadas para nuestro propósito.
 
-Ya que el nucleo de `poliastro` son los objetos [Orbit](https://poliastro.readthedocs.io/en/latest/api.html#poliastro.twobody.orbit.Orbit), nuestro objetivo principal es crear automáticamente las órbitas de los NEOs, usando los datos obtenidos de APIs de internet. Para conseguir esto, se necesitan o bien los elementos orbitales o bien los vectores de posición y velocidad, así que el primer requisito que tenían que cumplir las APIs.
+Ya que el núcleo de `poliastro` son los objetos [Orbit](https://poliastro.readthedocs.io/en/latest/api.html#poliastro.twobody.orbit.Orbit), nuestro objetivo principal es crear automáticamente las órbitas de los NEOs, usando los datos obtenidos de APIs de internet. Para conseguir esto, se necesitan o bien los elementos orbitales o bien los vectores de posición y velocidad, así que el primer requisito que tenían que cumplir las APIs, era proporcionar alguno de estos datos.
 
 Por tanto, varias APIs podían ser descartadas por no proporcionar la información necesaria: `Accesible NEAs`, `Scout`, `Sentry` y `Close-Approach Data`.
 
@@ -75,6 +75,6 @@ Para clarificar toda esta la retahíla de datos, hice una tabla:
 |                 Sentry                |          No          |   Sí  |     Sí (JSON)     |                                 |
 [ya existe una interfaz Python]: https://github.com/mommermi/callhorizons
 
-Teniendo todos estos requisitos en mente, la mejor opción parecía ser `NeoWs`. Aunque no proporciona información sobre NECs (cometas), éstos solo representan un 0.7% del total de los NEOs, por tanto podían ser descartados (sólo de momento :P). Otro problema relacionado con `NeoWs` es el hecho de que solo permite buscar por número SPK-ID (no confundir con número IAU), el cual es desconocido para la mayoría de la gente, por tanto, antes de hacer ninguna petición a la API, se necesita encontrar el número SPK-ID.
+Teniendo todos estos requisitos en mente, la mejor opción parecía ser `NeoWs`. Aunque no proporciona información sobre NECs (cometas), éstos solo representan un 0.7% del total de los NEOs, por tanto podían ser descartados (sólo de momento :P). Otro problema relacionado con `NeoWs` es el hecho de que sólo permite buscar por número SPK-ID (no confundir con número IAU), el cuál es desconocido para la mayoría de la gente, por tanto, antes de hacer ninguna petición a la API, se necesita encontrar el número SPK-ID.
 
 Y eso ha sido todo esta semana. La próxima, empezaremos con la programación propiamente dicha, añadiendo una función `orbit_from_spk_id` que haga una petición a la API `NeoWs` ¡Nos vemos!

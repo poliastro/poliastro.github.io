@@ -22,7 +22,7 @@ Ya que `poliastro` es un proyecto basado en Python, decidimos usar [Pelican](htt
 Tuve que cambiar todas las páginas y cadenas relacionadas con el proyecto anterior por los correspondientes de `poliastro`.
 Además de eso, también queríamos automatizar el proceso de despliegue del blog en Github Pages, una tarea algo más complicada, y decidimos usar Travis CI, una herramienta de Integración Continua muy usada en el entorno de Github.
 
-Tras unas cuantas búsquedas en Google, aparecieron varios resultados. Vladimir Starkov había investigado en [este artículo](https://iamstarkov.com/deploy-gh-pages-from-travis/) sobre lo mismo que yo intentaba conseguir. La manera más fácil de autenticarnos en Github era usando un Github Token, pero tenía que estar cifrado de forma que nadie pudiese entrar en mi cuenta usandolo.
+Tras unas cuantas búsquedas en Google, aparecieron varios resultados. Vladimir Starkov había investigado en [este artículo](https://iamstarkov.com/deploy-gh-pages-from-travis/) sobre lo mismo que yo intentaba conseguir. La manera más fácil de autenticarnos en Github era usando un Github Token, pero tenía que estar cifrado de forma que nadie pudiese entrar en mi cuenta usándolo.
 
 Después de investigar un poco, descubrí que Travis puede encriptar variables usando una clave publica RSA asociada a cada repositorio (se puede comprobar usando la API de Travis: ```https://api.travis-ci.org/repos/$(owner_name)/$(repo_name)/key```).
 Ya que tengo permisos para editar `poliastro.github.io-source` y `poliastro.github.io repos`, decidí usar un Github Token de mi cuenta y cifrarlo con la clave pública asociada al repositorio `poliastro.github.io-source` en Travis CI:

@@ -6,7 +6,7 @@ slug: 2017-07-31-neows-spk-id-and-parsing-socis
 lang: es
 Author: Antonio Hidalgo Galindo
 
-En la anterior entrada, estadiamos diferentes APIs relacionadas con NEOs, y finalmente elegimos [NeoWs](https://api.nasa.gov/neo/?api_key=DEMO_KEY) para empezar a trabajar.
+En la anterior entrada, estudiamos diferentes APIs relacionadas con NEOs, y finalmente elegimos [NeoWs](https://api.nasa.gov/neo/?api_key=DEMO_KEY) para empezar a trabajar.
 
 Esta semana, nuestro objetivo era empezar con la propia programación, añadiendo una función de la forma `orbit_from_spk_id` al nuevo módulo `poliastro.neos`.
 
@@ -114,7 +114,7 @@ Como ya he dicho, la única manera de encontrar el SPK-ID de un cuerpo es usar l
 
 Escribimos una función `name_from_spk_id()` que básicamente hace una petición GET a la página con una cadena (nombre) como parámetro. Tras eso, pueden pasar tres cosas:
 
-* Si hay un objeto con ese nombre, se parsea y se devuelve el SPK-ID..
+* Si hay un objeto con ese nombre, se parsea y se devuelve el SPK-ID.
 
 * Si hay varios objetos con ese nombre, se produce una excepción con la lista de objetos, y se devuelve `None` en la función.
 
