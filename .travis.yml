@@ -6,7 +6,7 @@ branches:
   - sources
 env:
   global:
-  - secure: VntD6sM2RYPyfMQUYNqzxrTLTwUS0aGMjYJGitP06CBPR7lINDJOdaKeVhTsw8OA+/dFc1p2zzT+1p71ME1FDqSPDNvmjS0HoO2Sjxj3T/TayjjA/8D9ntEdFp2/5mhPACzSA6D9CBdxZMiFdzA9e/L8p6q41n8jk58lWyqDCkQ0ZTrOoU807mBSLXP2OmanhmUqQ2gSSBJ7qLiI4Hbb/ck9r5GZ6iU5KV+HVguxT18O72XxPRfYEDT6qBXxqXk1uceh/yUB3vMy/FOjW5OCXoDhaBLsrfWwG1eZbAsA/57JWF7Jm0BHS5mYSRXBwq6M+xZSKcVzvI8nG9/b4IHdCoHKPTxXKecmBjuRR8g84vWElS6oIfbZNwcXRjnkPNkS/oWNSOJUK5FfO1Dp4cP8gwApZZxQuMGA4/wt9uBdHKqJp2q5SVmwg3XCvrkUfD11bFfwu7yfvDRs57dXh95yKypS6QSAejDw/cKEPGA3pzkGbP3cgqtAt4JWQIKIDqman2JjF+fyBMyk0Wiw72kmoICNIeY/qmaXMthf3sdE6q//NQYuPpMSdUX2yK4+i55cQ94IEhoAcZQ6CkxuuT0SQaCrjHdbR56a/hbySXyaQu7w9VIrWnTpm/UlQRMwODNqH0/aHqYvfz3ibd6YPWx99Ryh906ZC5sqjqFKSGPSmMQ=
+  - secure: R8WjKz2VxMlEl9UA6A495swzX+iF5wcFBKEkuU8RZczxTtiaQcQOah7QylnWGL9IHeqrYjWE6PO66BSzfPlMDPZZc+K7nUvBND8RC2Zlu5vw2ChNjm6ZIPIPDixCyZNT86C5DrbfWvIUA1pP9HK81QMVMMxxvGyiF1BrAy/ZRc8=
 before_install:
 - wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 - bash miniconda.sh -b -p $HOME/miniconda
