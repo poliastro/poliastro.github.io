@@ -1,4 +1,3 @@
-
 Title: Join poliastro thanks to Google Summer of Code!
 Date: 2018-02-22 12:00 CEST
 Tags: GSOC, Google, poliastro, students
@@ -82,5 +81,3 @@ Before you leave, let me add a very important **impostor syndrome disclaimer** (
 If you have read this far, I hope to have you on board very soon :)
 
 _Per Python ad astra!_
-
-
