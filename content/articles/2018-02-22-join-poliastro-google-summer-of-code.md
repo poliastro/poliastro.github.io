@@ -24,8 +24,8 @@ The process of GSOC before the coding starts goes more or less like this:
 1. Mentoring organizations apply ✔️
 2. they get accepted (yay!) ✔️
 3. students start getting familiar with the project of their choice ⬅
-4. they send a proposal, and
-5. they get accepted (hopefully!)
+4. they send a proposal (March 12 - 27, 2018), and
+5. they get accepted (hopefully! on April 23, 2018)
 
 How did we get to this point? Keep on reading!
 
