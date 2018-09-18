@@ -1,6 +1,6 @@
-# Source for http://poliastro.github.io
+# Source for https://poliastro.github.io
 
-This repository contains the source for http://poliastro.github.io/.
+This repository contains the source for https://poliastro.github.io/.
 
 _Based on the wonderful job by Jake Vanderplas https://github.com/jakevdp/jakevdp.github.io-source (MIT License)_
 
