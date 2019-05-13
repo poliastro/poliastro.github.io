@@ -1,7 +1,7 @@
 Title: GSOC-19 starts! 
 Date: 2019-05-10 11:00
 Category: GSOC
-Tags: GSOC, GSOC19, poliastro, jorgepiloto
+Tags: GSOC, GSOC19, poliastro
 slug: 2019-05-10-poliastro-gsoc-jorge
 lang: en
 Author: Jorge Martínez Garrido
