@@ -7,7 +7,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://poliastro.github.io'
+SITEURL = 'https://blog.poliastro.space'
 RELATIVE_URLS = False
 
 SHOW_FEED = True
