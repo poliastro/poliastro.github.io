@@ -13,8 +13,8 @@ LOCALE = 'en_US.UTF-8'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+AUTHOR_FEED_ATOM = 'feeds/%s.atom.xml'
+AUTHOR_FEED_RSS = 'feeds/%s.rss.xml'
 
 # Set the article URL
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
