@@ -1,6 +1,6 @@
 Title: GSoC'18: improving propagators, adding natural and artificial perturbations at Poliastro
 Date: 2018-08-05 14:00
-Category: GSoC
+Category: GSOC
 Tags: GSoC, poliastro
 slug: 2018-08-05-google-summer-of-code-2018
 lang: en
