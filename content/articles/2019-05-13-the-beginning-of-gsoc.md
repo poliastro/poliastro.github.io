@@ -1,9 +1,10 @@
 Title: The beginning of GSoC 
 Date: 2019-05-13 20:30
-Category: GSCO19
-Tags: GSOC19, poliastro
+Category: GSCOC
+Tags: GSOC, GSOC19, poliastro
 slug: 2019-05-10-poliastro-gsoc-eleftheria
 lang: en
+Author: Eleftheria Chatziargyriou
 
 Hello everyone, I'm Eleftheria and this summer I'll be working with poliastro 
 under Open Astronomy as part of GSoC 2019. I'm hoping this blog will prove to 
@@ -32,7 +33,7 @@ Cesium to the rescue
 ====================
 
 One of the project ideas was to create an application who could extract orbitary data with
-the help of poliastro and visualize it with Cesium. While I've heared of Cesium before,
+the help of poliastro and visualize it with Cesium. While I've heard of Cesium before,
 as it is arguably one of the most well-known javascript libraries (and is also open source!), 
 I didn't know just how extensive its functionality is.
 
@@ -48,16 +49,14 @@ Summer is coming
 
 So what is there to be done during the summer? Well, fortunately far more that I initially 
 expected. I currently have a working, albeit basic version of the project which allows the users 
-to define earth-based sattelites and visualize their trajectories, but when it comes to additional
+to define Earth-based sattelites and visualize their trajectories, but when it comes to additional
 features, sky's the limit. 
 
 Some of the features I plan to tackle first are:
 
 * Add communication satellites and ground stations and visualize their line of sight.
-
 * Add a groundtrack plotter capabilities (hopefully following Jorge's work) that will also work
 with Cesium's 2D view
-
 * Implement planetary orbits 
 
 I'm really excited to start working on the project and hope for an exciting and productive summer!
