@@ -2,7 +2,7 @@ Title: Let the coding begin
 Date: 2019-05-29 23:30
 Category: GSCOC
 Tags: GSOC, GSOC19, poliastro
-slug: 2019-05-29-poliastro-gsoc-eleftheria
+slug: 2019-05-29-let-the-coding-begin
 lang: en
 Author: Eleftheria Chatziargyriou
 
