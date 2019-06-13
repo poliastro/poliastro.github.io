@@ -11,18 +11,18 @@ Author: Jorge Martínez Garrido
 Three weeks have passed since the coding phase began and new features have been
 added to the software:
 
-* Lambert is now a Maneuver instance.
-* A trail keyword in StaticOrbitPlotter for showing orbits' trails.
+* Lambert is now a `Maneuver` instance.
+* A trail keyword in `StaticOrbitPlotter` for showing orbits' trails.
 
 ### Lambert just needs now two orbits!
 
-Although the raw algorithms are kept under the module poliastro.iod, it is 
+Although the raw algorithms are kept under the module `poliastro.iod`, it is 
 possible now to simplify the process of solving this famous astrodynamics 
-problem by making use of the poliastro.maneuver module.
+problem by making use of the `poliastro.maneuver` module.
 
 Imagine that we want to solve the classical problem ongoing from Earth to Mars
 for a trip of 600 days duration. Let us compare  before and after
-Maneuver.lambert implementations:
+`Maneuver.lambert` implementations:
 
 With 0.12 version:
 
@@ -46,7 +46,7 @@ ss_trans = Orbit.from_vectors(Sun, ss_earth.r, dv_a)
 ss_target = Orbit.from_vectors(Sun, ss_mars.r, dv_b)
 ```
 
-Notice that we work with a raw Lambert's algorithm. Therefore, we 
+Notice that we work with a *raw Lambert's algorithm*. Therefore, we 
 needed to pass the gravitational parameter, initial position,
 final one and finally the time of flight. After that the transfer
 and target orbits are created.
@@ -73,7 +73,7 @@ man_lambert = Maneuver.lambert(ss_earth, ss_mars)
 ss_trans, ss_target = ss_earth.apply_maneuver(man_lambert, intermediate=True)
 ```
 
-Although we have the same number of imports, the fact that we have a Maneuver
+Although we have the same number of imports, the fact that we have a `Maneuver`
 instance, as a result, is very powerful. It not only contains all the different
 impulses but also can be applied to the departure orbit. This means that we do
 not care anymore about working with vectors and times but with Orbit instances,
@@ -88,7 +88,7 @@ two-dimensions plot sometimes can lead to confusion, things get even worst.
 For that, and with a lot of Juanlu's help, we finally implemented a trail option
 that fades any orbit trajectory, giving the user the feeling that that object
 was moving along the drawn path when the plot was made. It works with the 
-StaticOrbitPlotter class just by passing the argument trail=True:
+`StaticOrbitPlotter` class just by passing the argument trail=True:
 
 ```python
 import matplotlib.pyplot as plt
@@ -113,7 +113,7 @@ related with astroquery, since the JPL database was updated.
 In particular, some tiny precission errors appeared but they were solved easily
 after deleting the astropy's caché file. However, something that needs a further
 inspection is the last failing test related to the new
-*Geocentric Solar Ecliptic*. A deep inspection on Astropy's changelog is needed
+`GeocentricSolarEcliptic`. A deep inspection on Astropy's changelog is needed
 on solving this.
 
 ## For the next weeks
