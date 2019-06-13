@@ -1,8 +1,8 @@
-Title: First GSOC weeks and poliastro's new features 
+Title: Lambert maneuvers and trails in plots
 Date: 2019-06-13 09:00
 Category: GSOC
 Tags: GSOC, GSOC19, poliastro
-slug: 2019-06-13-first-gsoc-weeks
+slug: 2019-06-13-Lambert-maneuvers-and-trails-in-plots
 lang: en
 Author: Jorge Martínez Garrido
 
