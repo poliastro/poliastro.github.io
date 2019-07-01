@@ -1,8 +1,8 @@
-Title: End of first GSoC phase 
+Title: Converting to CZML and next steps 
 Date: 2019-06-30 11:30
 Category: GSCOC
 Tags: GSOC, GSOC19, poliastro
-slug: 2019-06-30-end-of-first-gsoc-phase
+slug: 2019-06-30-converting-to-czml-and-next-steps
 lang: en
 Author: Eleftheria Chatziargyriou
 
