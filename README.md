@@ -13,13 +13,8 @@ $ git clone https://github.com/poliastro/poliastro.github.io-source.git
 $ git submodule update --init --recursive
 ```
 
-Install the required packages:
-
-```
-$ conda env create [ -f environment.yml ]
-$ source activate poliastro36
-(poliastro36) $ npm install -g less
-```
+Install the required packages using `pip install -r requirements.txt`
+(you will also need some node.js tools)
 
 To generate the main CSS:
 
