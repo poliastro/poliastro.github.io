@@ -2,7 +2,7 @@ Title: CZML Extractor: An overview
 Date: 2019-08-19 15:00
 Category: GSCOC
 Tags: GSOC, GSOC19, poliastro
-slug: 2019-08-19-czml-extractor:-an-overview.md
+slug: 2019-08-19-czml-extractor-an-overview.md
 lang: en
 Author: Eleftheria Chatziargyriou
 
@@ -22,8 +22,10 @@ The Cesium Application
 -----------------------
 Since we need more parameters to accurately represent the data, we also need a
 specific application to parse said parameters. For this reason, I worked on a 
-Cesium application that allows you to easily visualize the data. In actuality, 
-there are two separate applications: one that runs remotely and one you can
+Cesium application that allows you to easily visualize the data. At this moment, 
+there are two separate applications: 
+[one](https://github.com/poliastro/cesium-app/tree/master/application) that runs remotely 
+and [one](https://github.com/poliastro/cesium-app/tree/master/Sandcastle) you can
 copy-paste directly into Cesium [Sandcastle](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/).
 I have added the instructions on how to run it in the [repo](https://github.com/poliastro/cesium-app),
 where you can also find a few examples to get you started.
@@ -33,7 +35,7 @@ CZML3
 As I've mentioned in previous posts, the CZML packets were internally represented
 by nested dictionaries. This complicated the code and made it generally uglier for 
 many reasons (need for a "default" packet, need to specify the path of every parameter
-that was being added etc...). Fortunately, my mentor juanlu came up with a great 
+that was being added etc...). Fortunately, my mentor Juanlu came up with a great 
 [library](https://github.com/poliastro/czml3) that made the process exponentially easier and
 allowed us to get rid of many unecessary parts of the older code. Over time, I added most of 
 the basic Cesium properties that were needed for the extractor (though I hope to eventually
@@ -67,11 +69,15 @@ added functionality to ensure it is as bug-free as possible.
 Special thanks
 --------------
 I'd like to thank everyone in the Open Atronomy community. I'd also like to give a special
-thanks to my mentor, juanlu, who helped make the whole GSoC experience even greater than I initially
-expected; He helped me get the proper background, gave helpful feedback and was very supportive
+thanks to my mentor, Juanlu, who helped make the whole GSoC experience even greater than I initially
+expected: he helped me get the proper background, gave helpful feedback and was very supportive
 and an all-around amazing person!
 
 What's next
 -----------
 I had a wonderful time and I'm certainly planning to go back and polish the project as well as add
 any extra functionalities. Who knows, maybe there are many more contributions yet to come 😉
+
+If you're interested in this project, or poliastro in general, you can attend the 
+[Open Source CubeSat Workshop](https://indico.oscw.space/event/3/) where we'll be running a 
+[workshop](https://indico.oscw.space/event/3/contributions/78/). Hope to see you there!
