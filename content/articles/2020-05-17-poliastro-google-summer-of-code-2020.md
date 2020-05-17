@@ -39,7 +39,7 @@ __So what can I say, I was over the moon when I received the news!!!__
 
 Although GSoC stands for Summer, here in the South Hemisphere, we don't feel the same. It's really cold and with no Starks around.
 
-![cold](https://i.gifer.com/bnx.gif)
+![cold](https://media.giphy.com/media/tLrqmVoFJV4mQ/giphy.gif)
 
 But feeling really excited to start the GWoC.  To brief you into this matter, this ~~Winter~~, I mean this Summer, one of our core tasks is to be launching the  __Space mission analysis and design module at Poliastro__. 
 At Poliastro, we feel that it's necessary to provide the most efficient way to accomplish the space mission’s objectives while optimizing the time required and minimizing the cost and risk associated.
