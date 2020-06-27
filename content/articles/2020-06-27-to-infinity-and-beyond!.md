@@ -24,36 +24,28 @@ By now, I hope to have your attention as well as Spock's. So we created *EarthSa
 ![Surprise](https://media.giphy.com/media/LPNNFDYNTgP3q1jcAK/giphy.gif)
 
  Still, you might want to check out EarthSatellite propagation considering J2's perturbation and the atmospheric drag. Sounds superb, right? In order to use it you might want to try:
+
  ```python
-    from poliastro.earth.atmosphere import COESA76
-    from poliastro.bodies import Earth
-    from poliastro.earth import EarthSatellite
-    from astropy import units as u
-    from poliastro.twobody.orbit import Orbit
-    from poliastro.earth.enums import EarthGravity
-    from poliastro.spacecraft import Spacecraft
+from poliastro.earth.atmosphere import COESA76
+from poliastro.bodies import Earth
+from poliastro.earth import EarthSatellite
+from astropy import units as u
+from poliastro.twobody.orbit import Orbit
+from poliastro.earth.enums import EarthGravity
+from poliastro.spacecraft import Spacecraft
 
 
-    tof = 1.0 * u.min 
-    ss0 = Orbit.from_classical( Earth, 1000 * u.km, 0.75 * u.one,  63.4 * u.deg, 0 *u.deg, 270 * u.deg, 80 * u.deg)
-    C_D = 2.2 * u.one  # dimentionless drag coefficient
-    A = ((np.pi / 4.0) * (u.m ** 2)).to(u.km ** 2)
-    m = 100 * u.kg 
-    spacecraft = Spacecraft(A, C_D, m) #we create the spacecraft
-    earth_satellite = EarthSatellite(ss0, spacecraft)
-    orbit_with_atmosphere_and_J2 = earth_satellite.propagate(tof=tof, gravity=EarthGravity.J2, atmosphere=COESA76())
+tof = 1.0 * u.min 
+ss0 = Orbit.from_classical( Earth, 1000 * u.km, 0.75 * u.one,  63.4 * u.deg, 0 *u.deg, 270 * u.deg, 80 * u.deg)
+C_D = 2.2 * u.one  # dimentionless drag coefficient
+A = ((np.pi / 4.0) * (u.m ** 2)).to(u.km ** 2)
+m = 100 * u.kg 
+spacecraft = Spacecraft(A, C_D, m) #we create the spacecraft
+earth_satellite = EarthSatellite(ss0, spacecraft)
+orbit_with_atmosphere_and_J2 = earth_satellite.propagate(tof=tof, gravity=EarthGravity.J2, atmosphere=COESA76())
  ```
 
-Nevertheless, this API is subject to changes, so before diving in, verify the documentation:)
+Nevertheless, this API is subject to changes, so before diving in, verify the documentation :)
+
 See you in the next post, and stay safe :)
 ![Infinity](https://media.giphy.com/media/wPXW2MLFCTNF6/giphy.gif)
- 
- 
- 
-
-  
-  
-  
-  
-  
-  
