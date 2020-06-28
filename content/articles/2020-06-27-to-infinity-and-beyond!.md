@@ -25,7 +25,7 @@ By now, I hope to have your attention as well as Spock's. So we created *EarthSa
 
  Still, you might want to check out EarthSatellite propagation considering J2's perturbation and the atmospheric drag. Sounds superb, right? In order to use it you might want to try:
 
- ```python
+```python
 from poliastro.earth.atmosphere import COESA76
 from poliastro.bodies import Earth
 from poliastro.earth import EarthSatellite
@@ -43,9 +43,10 @@ m = 100 * u.kg
 spacecraft = Spacecraft(A, C_D, m) #we create the spacecraft
 earth_satellite = EarthSatellite(ss0, spacecraft)
 orbit_with_atmosphere_and_J2 = earth_satellite.propagate(tof=tof, gravity=EarthGravity.J2, atmosphere=COESA76())
- ```
+```
 
 Nevertheless, this API is subject to changes, so before diving in, verify the documentation :)
 
 See you in the next post, and stay safe :)
+
 ![Infinity](https://media.giphy.com/media/wPXW2MLFCTNF6/giphy.gif)
