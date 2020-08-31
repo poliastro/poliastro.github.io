@@ -8,7 +8,7 @@ env:
   global:
   - secure: R8WjKz2VxMlEl9UA6A495swzX+iF5wcFBKEkuU8RZczxTtiaQcQOah7QylnWGL9IHeqrYjWE6PO66BSzfPlMDPZZc+K7nUvBND8RC2Zlu5vw2ChNjm6ZIPIPDixCyZNT86C5DrbfWvIUA1pP9HK81QMVMMxxvGyiF1BrAy/ZRc8=
 before_install:
-- pip install pelican markdown ipython notebook ghp-import
+- pip install "pelican<4.5" markdown ipython notebook ghp-import
 install: true
 script:
 - make publish-to-github-force
