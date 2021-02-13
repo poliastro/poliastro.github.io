@@ -31,7 +31,9 @@ ipython-genutils==0.2.0
     #   nbformat
     #   traitlets
 ipython==7.19.0
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   pelican-liquid-tags
 jedi==0.18.0
     # via ipython
 jinja2==2.11.2
@@ -58,7 +60,9 @@ mistune==0.8.4
 nbclient==0.5.1
     # via nbconvert
 nbconvert==6.0.7
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   pelican-liquid-tags
 nbformat==5.1.2
     # via
     #   nbclient
@@ -71,8 +75,12 @@ pandocfilters==1.4.3
     # via nbconvert
 parso==0.8.1
     # via jedi
-pelican==4.2.0
+pelican-liquid-tags==1.0.0
     # via -r requirements.in
+pelican==4.5.4
+    # via
+    #   -r requirements.in
+    #   pelican-liquid-tags
 pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
@@ -107,7 +115,6 @@ six==1.15.0
     #   bleach
     #   feedgenerator
     #   jsonschema
-    #   pelican
     #   python-dateutil
 testpath==0.4.4
     # via nbconvert

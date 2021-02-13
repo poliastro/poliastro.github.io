@@ -36,19 +36,7 @@ PLUGIN_PATHS = ['./plugins', './plugins/pelican-plugins']
 PLUGINS = [
     'summary',       # auto-summarizing articles
     'feed_summary',  # use summaries for RSS, not full articles
-    'ipynb.liquid',  # for embedding notebooks
-    'liquid_tags.img',  # embedding images
-    'liquid_tags.video',  # embedding videos
-    'liquid_tags.include_code',  # including code blocks
-    'liquid_tags.literal',
-    #'headerid',  # https://github.com/getpelican/pelican-plugins/tree/master/headerid
-    #'gravatar',  # https://github.com/getpelican/pelican-plugins/tree/master/gravatar
-    #'footer_insert',  # https://github.com/getpelican/pelican-plugins/tree/master/footer_insert
-    #'autopages',  # https://github.com/getpelican/pelican-plugins/tree/master/autopages
-    #'simple_footnotes', # https://github.com/getpelican/pelican-plugins/tree/master/simple_footnotes
-    #'show_source',  # https://github.com/getpelican/pelican-plugins/tree/master/show_source
-    #'series',  # https://github.com/getpelican/pelican-plugins/tree/master/series
-    #'representative_image',  # https://github.com/getpelican/pelican-plugins/tree/master/representative_image
+    'pelican.plugins.liquid_tags',
 ]
 IGNORE_FILES = ['.ipynb_checkpoints']
 
@@ -60,7 +48,7 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 THEME = './theme/'
 
 ABOUT_PAGE = '/pages/about-poliastro.html'
-#TWITTER_USERNAME = 'poliastro'
+TWITTER_USERNAME = 'poliastro_py'
 GITHUB_USERNAME = 'poliastro'
 SHOW_ARCHIVES = True
 SHOW_FEED = False  # Need to address large feeds
@@ -74,5 +62,5 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 # Footer info
 
-LICENSE_URL = "https://github.com/poliastro/poliastro.github.io-source/blob/master/LICENSE"
+LICENSE_URL = "https://github.com/poliastro/poliastro.github.io/blob/sources/LICENSE"
 LICENSE = "CC-BY for content and MIT for code"
