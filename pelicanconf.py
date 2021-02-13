@@ -48,7 +48,7 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 THEME = './theme/'
 
 ABOUT_PAGE = '/pages/about-poliastro.html'
-#TWITTER_USERNAME = 'poliastro'
+TWITTER_USERNAME = 'poliastro_py'
 GITHUB_USERNAME = 'poliastro'
 SHOW_ARCHIVES = True
 SHOW_FEED = False  # Need to address large feeds
@@ -62,5 +62,5 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 # Footer info
 
-LICENSE_URL = "https://github.com/poliastro/poliastro.github.io-source/blob/master/LICENSE"
+LICENSE_URL = "https://github.com/poliastro/poliastro.github.io/blob/sources/LICENSE"
 LICENSE = "CC-BY for content and MIT for code"
