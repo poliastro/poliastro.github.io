@@ -37,14 +37,6 @@ PLUGINS = [
     'summary',       # auto-summarizing articles
     'feed_summary',  # use summaries for RSS, not full articles
     'pelican.plugins.liquid_tags',
-    #'headerid',  # https://github.com/getpelican/pelican-plugins/tree/master/headerid
-    #'gravatar',  # https://github.com/getpelican/pelican-plugins/tree/master/gravatar
-    #'footer_insert',  # https://github.com/getpelican/pelican-plugins/tree/master/footer_insert
-    #'autopages',  # https://github.com/getpelican/pelican-plugins/tree/master/autopages
-    #'simple_footnotes', # https://github.com/getpelican/pelican-plugins/tree/master/simple_footnotes
-    #'show_source',  # https://github.com/getpelican/pelican-plugins/tree/master/show_source
-    #'series',  # https://github.com/getpelican/pelican-plugins/tree/master/series
-    #'representative_image',  # https://github.com/getpelican/pelican-plugins/tree/master/representative_image
 ]
 IGNORE_FILES = ['.ipynb_checkpoints']
 
