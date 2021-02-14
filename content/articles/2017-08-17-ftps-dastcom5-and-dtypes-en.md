@@ -28,7 +28,7 @@ Well, after a week, I can now assure that this database has been a great discove
 As README says, DASTCOM5 is the name of a JPL-maintained database of asteroids and comets (I think `D` stands for Database, `AST` for asteroid, `COM` for comets, and `5` is the current version, but I'm not sure haha).
 After downloading and unzipping the file that JPL provides, you can see the following folder structure:
 
-![DASTCOM5 folder structure]({filename}/images/dastcom5_folder.png "DASTCOM5 folder structure")
+![DASTCOM5 folder structure]({static}/images/dastcom5_folder.png "DASTCOM5 folder structure")
 
 Fortunately, `dastcom5.zip` provided a doc folder.
 
@@ -65,7 +65,7 @@ Apparently, DASTCOM5 provided all of the necessary files for building a module `
 
 Therefore, the first task was to read a comet or asteroid binary record, and the chosen tool was [numpy.fromfile()](https://docs.scipy.org/doc/numpy/reference/generated/numpy.fromfile.html), which, as stated on its docs, needs a known data-type. Fortunately, the extensive DASTCOM5 README had a section named `DASTCOM5 BYTE MAP` which was really useful.
 
-![DASTCOM5 byte map]({filename}/images/dastcom5_map.png "DASTCOM5 byte map")
+![DASTCOM5 byte map]({static}/images/dastcom5_map.png "DASTCOM5 byte map")
 
 Knowing the number of bytes and type of each variable, the only difficulty was writing it for each of the 142 variables manually.
 
@@ -90,7 +90,7 @@ After dealing with records, it was time to start with the lookup function. As st
 
 The file format was sort of CSV, but really ugly to parse, given that alternative designations, alternative SPK-IDs, etc. were all mixed without any order.
 
-![DASTCOM5 index file]({filename}/images/dastcom5_index.png "DASTCOM5 index file")
+![DASTCOM5 index file]({static}/images/dastcom5_index.png "DASTCOM5 index file")
 
 Therefore, as the file was plain text, we decided to read line by line the index, comparing with a string passed as argument. Code is on [Github](https://github.com/poliastro/poliastro) and anyone is welcome to improve the lookup function as well as any other part of the code :)
 
@@ -141,7 +141,7 @@ Out[8]:
  <matplotlib.lines.Line2D at 0x1e0c0e3a8d0>]
 ```
 
-![Eros orbit comparison]({filename}/images/eros_comparison.png "Eros orbit comparison")
+![Eros orbit comparison]({static}/images/eros_comparison.png "Eros orbit comparison")
 
 
 That was all for this week (two weeks actually, sorry for that). Now poliastro has two ways of dealing with NEOs, each one with its advantages and disadvantages, and you can try any of them.

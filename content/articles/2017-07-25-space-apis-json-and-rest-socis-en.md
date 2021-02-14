@@ -22,7 +22,7 @@ In the [CNEOS page](https://cneos.jpl.nasa.gov/orbits/) there is a list of tools
 > Newly discovered objects and their orbits are added on a daily basis.
 
 * [JPL Small-Body Database Search Engine](https://ssd.jpl.nasa.gov/sbdb_query.cgi): can be used to generate custom tables of orbital and/or physical parameters for all asteroids and comets or a specified sub-set. There is a huge amount of search contraints, for example:
-![Figure 1]({filename}/images/sbdb_constraints.jpg "Figure 1")
+![Figure 1]({static}/images/sbdb_constraints.jpg "Figure 1")
 And you can also select output fields, and choose between HTML and CSV output format.
 
 * [Horizons](https://ssd.jpl.nasa.gov/?horizons): provides access to highly accurate ephemerides for solar system objects, not only small-body. Can be accessed using telnet, email and web-interface.

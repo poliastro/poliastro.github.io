@@ -74,7 +74,7 @@ custom explanatory image was designed and finally merge in the following pull
 request.
 
 <center>
-![]({static}/images/multi_lambert.png)
+!({static}/images/multi_lambert.png)
 </center>
 
 <center>

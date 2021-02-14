@@ -17,7 +17,7 @@ En la anterior entrada de esta "serie", ya dijimos que esta API proporciona vari
 
 Además, también proporciona una documentación web, que es un buen sitio para empezar, como se puede ver:
 
-![NeoWs Documentation]({filename}/images/neows_lookup.png "NeoWs Documentation")
+![NeoWs Documentation]({static}/images/neows_lookup.png "NeoWs Documentation")
 
 Al usar el servicio de búsqueda (y cualquier otra API de la NASA), necesitas una `API key`, pero nosotro usamos `DEMO_KEY`, que únicamente límita las peticiones a 40 por hora. Con esto en mente, lo único que necesitas es hacer una petición con un SPK-ID (explicaremos este número después) y, si todo va bien, la API responderá con datos en formato JSON, que contienen la siguiente información:
 
@@ -96,7 +96,7 @@ op.plot(apophis_orbit, label='Apophis')
 
 que produce:
 
-![Apophis Orbit]({filename}/images/apophis.png "Apophis Orbit")
+![Apophis Orbit]({static}/images/apophis.png "Apophis Orbit")
 
 La función hacía su trabajo, pero aún había algunos problemas.
 
@@ -110,7 +110,7 @@ Tener que usar internet para encontrar cada SPK-ID sería bastante aburrido, as�
 
 Como ya he dicho, la única manera de encontrar el SPK-ID de un cuerpo es usar la base de datos del JPL, pero desgraciadamente no proporciona datos en formato máquina (la interfaz web tampoco es demsiado moderna, como se puede ver) así que necesitabamos un parser HTML.
 
-![SBDB interface]({filename}/images/sbdb_interface.png "SBDB interface")
+![SBDB interface]({static}/images/sbdb_interface.png "SBDB interface")
 
 Escribimos una función `name_from_spk_id()` que básicamente hace una petición GET a la página con una cadena (nombre) como parámetro. Tras eso, pueden pasar tres cosas:
 
