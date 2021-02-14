@@ -42,10 +42,6 @@
     </head>
 
     <body>
-        <header style="background-color:#b5e0ec;color:#777;text-align:center">
-            You are seeing poliastro blog. If you want to see documentation, the latest version can be found in
-            <a href="http://docs.poliastro.space/en/latest" title="Documentation">docs.poliastro.space</a>.
-        </header>
         <header class="navbar navbar-default bs-docs-nav">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -58,11 +54,40 @@
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
 		    <ul class="nav navbar-nav navbar-right">
-                        {% if ABOUT_PAGE %}
-                            <li><a href="{{ ABOUT_PAGE }}" title="About">About</a></li>
+
+                        <!--- DOCS PAGE -->
+                        {% if DOCS_PAGE %}
+                            <li><a href="{{ DOCS_PAGE }}" title="Documentation">Documentation</a></li>                                    
                         {% endif %}
+
+                        <!--- COMMUNITY PAGE -->
+                        {% if COMMUNITY_PAGE %}
+                            <li><a href="{{ COMMUNITY_PAGE }}" title="Community">Community</a></li>                                    
+                        {% endif %}
+
+                        <!--- TUTORIALS PAGE -->
+                        {% if TUTORIALS_PAGE %}
+                            <li><a href="{{ TUTORIALS_PAGE }}" title="Tutorials">Tutorials</a></li>                                    
+                        {% endif %}
+
+                        <!--- BLOG PAGE -->
+                        {% if BLOG_PAGE %}
+			<li><a href="{{ SITEURL }}/{{ BLOG_PAGE }}" title="Blog">Blog</a></li>                                    
+                        {% endif %}
+
+                        <!--- GITHUB PAGE -->
+                        {% if GITHUB_PAGE %}
+                            <li><a href="{{ GITHUB_PAGE }}" title="Github">Github</a></li>                                    
+                        {% endif %}
+
+                        <!--- ABOUT PAGE -->
+                        {% if ABOUT_PAGE %}
+			<li><a href="{{ SITEURL}}/{{ ABOUT_PAGE }}" title="About">About</a></li>
+                        {% endif %}
+
+                        <!--- SHOW ARCHIVES -->
                         {% if SHOW_ARCHIVES %}
-                            <li><a href="/archives.html" title="Archive">Archive</a></li>
+			<li><a href="{{ SITEURL }}/{{ ARCHIVES_PAGE }}" title="Archive">Archive</a></li>
                         {% endif %}
                         {% if SHOW_FEED %}
 			<li><a class="nodec icon-rss" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" title="poliastro.github.io RSS feed" rel="me"></a></li>

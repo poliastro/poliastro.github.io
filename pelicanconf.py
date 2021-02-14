@@ -17,8 +17,9 @@ AUTHOR_FEED_ATOM = 'feeds/%s.atom.xml'
 AUTHOR_FEED_RSS = 'feeds/%s.rss.xml'
 
 # Set the article URL
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+INDEX_SAVE_AS = "blog/index.html"
 
 DEFAULT_PAGINATION = 10
 
@@ -47,7 +48,14 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 # THEME SETTINGS
 THEME = './theme/'
 
-ABOUT_PAGE = '/pages/about-poliastro.html'
+# HEAD MENU PAGES
+DOCS_PAGE = 'https://docs.poliastro.space/en/latest/'
+COMMUNITY_PAGE = 'http://chat.poliastro.space/'
+TUTORIALS_PAGE = 'https://beta.mybinder.org/v2/gh/poliastro/poliastro/master?filepath=index.ipynb'
+BLOG_PAGE = 'blog/index.html'
+GITHUB_PAGE = 'https://github.com/poliastro/poliastro'
+ARCHIVES_PAGE = 'archives.html'
+ABOUT_PAGE = 'pages/about-poliastro.html'
 TWITTER_USERNAME = 'poliastro_py'
 GITHUB_USERNAME = 'poliastro'
 SHOW_ARCHIVES = True
