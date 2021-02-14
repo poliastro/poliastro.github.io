@@ -14,7 +14,7 @@ But first, let me introduce myself, my name is María Eugenia, though everybody 
 
 # First things first, SPACE? How did we get here? 
 
-All began with the big bang, no wait, that's a story for another time. All began in 2019, when **JuanLu** reached out to the *The Fellowship of*  ~~the ring~~  *Python Científico* community to informed us that **Poliastro** would be part of **GSoC 2019**. 
+All began with the big bang, no wait, that's a story for another time. All began in 2019, when **JuanLu** reached out to the *The Fellowship of*  <del>the ring</del>  *Python Científico* community to informed us that **Poliastro** would be part of **GSoC 2019**. 
 To be honest with you, I had just a slight idea of astrodynamics, so I took a big leap of faith and asked JuanLu where I could make myself useful. 
 
 ![Yoda's way](https://media1.tenor.com/images/f708e56b6ab99de21228c95203c7af8e/tenor.gif?itemid=13942585)
@@ -41,7 +41,7 @@ Although GSoC stands for Summer, here in the South Hemisphere, we don't feel the
 
 ![cold](https://media.giphy.com/media/tLrqmVoFJV4mQ/giphy.gif)
 
-But feeling really excited to start the GWoC.  To brief you into this matter, this ~~Winter~~, I mean this Summer, one of our core tasks is to be launching the  __Space mission analysis and design module at Poliastro__. 
+But feeling really excited to start the GWoC.  To brief you into this matter, this <del>Winter</del>, I mean this Summer, one of our core tasks is to be launching the  __Space mission analysis and design module at Poliastro__. 
 At Poliastro, we feel that it's necessary to provide the most efficient way to accomplish the space mission’s objectives while optimizing the time required and minimizing the cost and risk associated.
 
 Really looking forward to starting this new journey with Poliastro :) 
