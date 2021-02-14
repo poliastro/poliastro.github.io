@@ -1,7 +1,7 @@
 Welcome to poliastro
 ====================
 
-:title: Welcome to Poliastro
+:title: Welcome to poliastro
 :slug: home
 :template: page
 :index: 0
