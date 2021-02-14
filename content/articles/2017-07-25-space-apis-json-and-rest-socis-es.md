@@ -22,7 +22,7 @@ En la página del [CNEOS](https://cneos.jpl.nasa.gov/orbits/) hay una lista de d
 > Los nuevos objetos descubiertos y sus órbitas son añadidos de forma diaria.
 
 * [JPL Small-Body Database Search Engine](https://ssd.jpl.nasa.gov/sbdb_query.cgi): permite generar tablas personalizadas con datos orbitales y parámetros físicos de un subconjunto de todos los asteroides y cometas. Permite una gran cantidad de restricciones de búsqueda, por ejemplo:
-![Figure 1]({filename}/images/sbdb_constraints.jpg "Figure 1")
+![Figure 1]({static}/images/sbdb_constraints.jpg "Figure 1")
 
 También permite seleccionar los datos de salida, y elegir entre HTML y CSV.
 

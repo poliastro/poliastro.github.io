@@ -47,7 +47,7 @@ publish-to-github-force: publish
 
 So, whenever Travis CI executes a build in [poliastro.github.io-source](https://travis-ci.org/poliastro/poliastro.github.io-source), the variable gets automatically decrypted using the repository private key (except for builds caused by a Pull Request, as stated [here](https://docs.travis-ci.com/user/encryption-keys/), fact that turned to be a big headache for us :P), and the token is used to push to `poliastro.github.io` repo.
 
-![Travis log with decrypted GH_TOKEN]({filename}/images/travis_decryption_log.jpg "Travis log with decrypted GH_TOKEN")
+![Travis log with decrypted GH_TOKEN]({static}/images/travis_decryption_log.jpg "Travis log with decrypted GH_TOKEN")
 
 That was my work in the last week. If you would like to check the code, is available on [Github](https://github.com/poliastro/poliastro.github.io-source).
 

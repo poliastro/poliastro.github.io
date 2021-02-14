@@ -17,7 +17,7 @@ As stated in the prevoius article of this "series", this API provides several di
 
 It also counts with web documentation, which was a really good start point, as you can see:
 
-![NeoWs Documentation]({filename}/images/neows_lookup.png "NeoWs Documentation")
+![NeoWs Documentation]({static}/images/neows_lookup.png "NeoWs Documentation")
 
 When using the lookup service (and any NASA API) you need an `API key`, but we used `DEMO_KEY`, which only limits your queries to 40 per hour. Having that in mind, all you need to do is a query with a body SPK-ID (we will explain this number later), and, if all goes well, the API will answer your query with a JSON response, containing the following data:
 
@@ -97,7 +97,7 @@ op.plot(apophis_orbit, label='Apophis')
 
 which produces:
 
-![Apophis Orbit]({filename}/images/apophis.png "Apophis Orbit")
+![Apophis Orbit]({static}/images/apophis.png "Apophis Orbit")
 
 The function was coded and it worked, but there were still some problems.
 
@@ -111,7 +111,7 @@ Having to use internet in order to find every SPK-ID would be really boring, so 
 
 As I said, the only way that we had to find SPK-IDs was using JPL Small-bodies Database, but it doesn't provide machine-readable data (web interface isn't really modern either, as you can see), so a HTML parser was needed.
 
-![SBDB interface]({filename}/images/sbdb_interface.png "SBDB interface")
+![SBDB interface]({static}/images/sbdb_interface.png "SBDB interface")
 
 We wrote an `name_from_spk_id()` function that basically makes a GET request to SBDB with a string. After that, there are three options:
 
