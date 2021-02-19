@@ -52,9 +52,11 @@ jobs:
   deploy:
     # Runner Type(s)
     runs-on: ubuntu-latest
+    # Dependents on Build 
+    needs: build
     strategy:
       matrix:
-        python-version: [ 3.7, 3.8, 3.9]
+        python-version: [3.9]
 
     steps:
       - name: Displaying Python Versions
@@ -62,23 +64,6 @@ jobs:
 
     # # Uncomment for deployment
     # steps:
-    # # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    # - uses: actions/checkout@v2
-    # # Set up Python Environment based on the version
-    # - name: Set up Python ${{ matrix.python-version }}
-    #   uses: actions/setup-python@v2
-    #   with:
-    #     python-version: ${{ matrix.python-version }}
-    # # Installations for all the dependencies 
-    # - name: Install dependencies
-    #   run: |
-    #       python -m pip install --upgrade pip
-    #       pip install -r requirements.in
-    # # Add the support plugins required & builds the webpages in HTML format
-    # - name: Build the webpages
-    #   run: |
-    #       git submodule update --init --recursive
-    #       make html
     # - name: Deployment to Github Pages 
     #   run: |
     #       make publish-to-github
