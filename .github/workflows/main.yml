@@ -45,4 +45,5 @@ jobs:
       
       - name: Build the webpages
         run: |
+            git submodule update --init --recursive
             make html
