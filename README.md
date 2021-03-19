@@ -4,6 +4,7 @@ This repository contains the source for https://poliastro.github.io/.
 
 _Based on the wonderful job by Jake Vanderplas https://github.com/jakevdp/jakevdp.github.io-source (MIT License)_
 
+[![Poliastro Website CI](https://github.com/DhruvSondhi/poliastro.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/DhruvSondhi/poliastro.github.io/actions/workflows/main.yml)
 ## Building the Blog
 
 Clone the repository & make sure submodules are included
