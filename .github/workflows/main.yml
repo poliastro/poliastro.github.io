@@ -57,11 +57,6 @@ jobs:
         python-version: [3.9]
 
     steps:
-      - name: Displaying Python Versions
-        run: python -c "import sys; print(sys.version)"
-
-    # # Uncomment for deployment
-    # steps:
-    # - name: Deployment to Github Pages 
-    #   run: |
-    #       make publish-to-github
+      - name: Deployment to GitHub Pages
+        run: make publish-to-github
+        
