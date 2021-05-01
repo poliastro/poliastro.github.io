@@ -3,4 +3,9 @@ ipython
 markdown
 nbconvert
 pelican>=4.5
+pelican-jupyter
 pelican-liquid-tags
+
+# Not fully migrated yet,
+# see https://github.com/getpelican/pelican-plugins/issues/1304
+https://github.com/mirekdlugosz/pelican-plugins-summary/archive/refs/heads/migrate.zip

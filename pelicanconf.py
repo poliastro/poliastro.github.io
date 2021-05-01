@@ -33,10 +33,8 @@ SUMMARY_MAX_LENGTH = 140
 #PLUGINS = ['ipynb.markup']
 
 MARKUP = ['md']
-PLUGIN_PATHS = ['./plugins', './plugins/pelican-plugins']
 PLUGINS = [
     'summary',       # auto-summarizing articles
-    'feed_summary',  # use summaries for RSS, not full articles
     'pelican.plugins.liquid_tags',
 ]
 IGNORE_FILES = ['.ipynb_checkpoints']
