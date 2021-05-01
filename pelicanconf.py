@@ -33,7 +33,6 @@ SUMMARY_MAX_LENGTH = 140
 #PLUGINS = ['ipynb.markup']
 
 MARKUP = ['md']
-PLUGIN_PATHS = ['./plugins', './plugins/pelican-plugins']
 PLUGINS = [
     'summary',       # auto-summarizing articles
     'pelican.plugins.liquid_tags',
