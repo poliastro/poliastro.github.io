@@ -77,7 +77,7 @@ parso==0.8.1
     # via jedi
 pelican-liquid-tags==1.0.0
     # via -r requirements.in
-pelican==4.5.4
+pelican==4.6.0
     # via
     #   -r requirements.in
     #   pelican-liquid-tags
