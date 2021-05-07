@@ -43,7 +43,6 @@ jobs:
       # Add the support plugins required & builds the webpages in HTML format
       - name: Build the webpages
         run: |
-            git submodule update --init --recursive
             make html
 
   # Builds the WebPages locally with Publish settings before Deployment
@@ -71,7 +70,6 @@ jobs:
       # Add the support plugins required & builds the webpages in HTML format
       - name: Build the webpages
         run: |
-            git submodule update --init --recursive
             make publish
 
   # Deployment to GH Pages
@@ -87,4 +85,3 @@ jobs:
     steps:
       - name: Deployment to GitHub Pages
         run: make publish-to-github
-        
