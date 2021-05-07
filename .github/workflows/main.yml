@@ -83,5 +83,12 @@ jobs:
         python-version: [3.9]
 
     steps:
-      - name: Deployment to GitHub Pages
-        run: make publish-to-github
+      # - name: Deployment to GitHub Pages
+      #   run: make publish-to-github
+      - name: GitHub Pages Pelican Build Action
+        uses: nelsonjchen/gh-pages-pelican-action@0.1.10
+        with:
+          GH_PAGES_BRANCH: sources
+          GH_PAGES_CNAME: www.poliastro.space
+          PELICAN_THEME_FOLDER: theme
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
