@@ -75,6 +75,11 @@
                             <li><a class="icon-github" href="{{ CODE_PAGE }}" title="Code">Source Code</a></li>
                         {% endif %}
 
+                        <!--- TWITTER LINK -->
+                        {% if TWITTER_USERNAME %}
+                            <li><a class="icon-twitter" href="http://twitter.com/{{ TWITTER_USERNAME }}" title="Twitter">Twitter</a></li>
+                        {% endif %}
+
                         <!--- BLOG PAGE -->
                         {% if BLOG_PAGE %}
 			<li><a href="{{ SITEURL }}/{{ BLOG_PAGE }}" title="Blog">Blog</a></li>                                    
