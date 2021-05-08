@@ -36,4 +36,4 @@ jobs:
       - name: Deployment to Github Pages
         if: success() && github.ref == 'refs/heads/sources'
         run: |
-            make publish-to-github
+            make publish-to-github-force
