@@ -49,7 +49,7 @@ THEME = './theme/'
 # HEAD MENU PAGES
 DOCS_PAGE = 'https://docs.poliastro.space/en/latest/'
 COMMUNITY_PAGE = 'http://chat.poliastro.space/'
-TUTORIALS_PAGE = 'https://beta.mybinder.org/v2/gh/poliastro/poliastro/master?filepath=index.ipynb'
+TUTORIALS_PAGE = 'https://beta.mybinder.org/v2/gh/poliastro/poliastro/main?filepath=index.ipynb'
 BLOG_PAGE = 'blog/index.html'
 CODE_PAGE = 'https://github.com/poliastro/poliastro'
 ARCHIVES_PAGE = 'archives.html'
