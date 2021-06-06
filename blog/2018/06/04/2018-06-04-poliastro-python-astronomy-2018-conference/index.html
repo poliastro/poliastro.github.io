@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="poliastro developer team">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>poliastro at the Python in Astronomy 2018 conference | poliastro</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="alternate" type="application/atom+xml" title="poliastro blog atom feed" href="https://www.poliastro.space/feeds/all.atom.xml" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/theme/css/fontello.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+        <style>body {
+  margin: 0;
+  padding: 0;
+  font: 15px 'Source Sans Pro', sans-serif;
+  line-height: 1.6em;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #007ee5;
+  text-decoration: none;
+}
+a:hover {
+  color: #007ee5;
+  text-decoration: none;
+}
+header.main-header {
+  background: none repeat scroll 0% 0% #205F29;
+  margin-bottom: 0px;
+}
+header.main-header a {
+  color: #fff;
+}
+header.main-header .container {
+  max-width: 1000px;
+}
+header.main-header .container nav a:hover {
+  background-color: #5C881C;
+}
+header.navbar-default {
+  border-bottom: none;
+  background-color: #EFEFEF;
+}
+article {
+  margin: 0;
+}
+article header.about {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+article header {
+  padding-bottom: 20px;
+}
+article header h1 {
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #000;
+}
+article header time {
+  color: #9E9E9E;
+  float: right;
+}
+article header time.left {
+  color: #9E9E9E;
+  float: left;
+}
+article div.social-links ul {
+  padding: 0px;
+}
+article div.social-links li {
+  display: inline;
+  font-size: 20px;
+}
+article div.social-links li a {
+  color: #000;
+  padding: 10px;
+}
+article div.social-links li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+article p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+article p.note {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 0.533em 0.733em;
+}
+article p.update {
+  background-color: #FEEFB3;
+  border: 1px solid #e6e68a;
+  padding: 0.533em 0.733em;
+}
+article p.alert {
+  background-color: #ffe2e2;
+  border: 1px solid #ffb2b2;
+  padding: 0.533em 0.733em;
+}
+article ul,
+article ol {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+article li {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article blockquote {
+  border-left: 2px solid #c7c7cc;
+  color: #666;
+  margin: 30px 0;
+  padding: 0 0 0 25px;
+}
+article img {
+  max-width: 100%;
+}
+article code {
+  color: #333;
+  background-color: #EEE;
+  border-radius: 0;
+  font-size: 13px;
+}
+article .meta {
+  margin-top: 35px;
+}
+article .meta a:hover {
+  text-decoration: none;
+}
+article .meta div {
+  display: block;
+}
+article .meta address:before,
+article .meta time:before,
+article .meta a.tag:before {
+  font-family: 'fontello';
+  margin-right: 6px;
+}
+article .meta address.author {
+  float: left;
+}
+article .meta address:before {
+  content: '\e819';
+}
+article .meta time:before {
+  content: '\f133';
+}
+article .meta div.tags {
+  clear: both;
+}
+article .meta a.tag {
+  margin: 0 10px 10px 0;
+  padding: 1px 12px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.05);
+}
+article .meta a.tag:before {
+  content: '\e821';
+}
+article .meta a.tag:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+article .meta a.read_more,
+article .meta a.comments_btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 20px;
+  color: #007aa3;
+  background: #FFF;
+  border: 1px solid #007aa3;
+}
+article .meta a.read_more:hover,
+article .meta a.comments_btn:hover {
+  color: #FFF;
+  background: #007aa3;
+}
+article .meta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.index {
+  max-width: 700px;
+}
+.index article header h2 {
+  font-size: 36px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.index article header h2 a {
+  color: #333;
+}
+.index article header h2 a:hover {
+  color: #007ee5;
+  text-decoration: none;
+}
+.index .separator {
+  padding: 40px 0 0 0;
+  margin: 0 0 40px 0;
+  height: 10px;
+  border-bottom: solid 1px #CCC;
+}
+.index .pagination {
+  display: block;
+  margin-bottom: 100px;
+}
+.index .pagination .left {
+  text-align: right;
+}
+.index .pagination .right {
+  text-align: left;
+}
+.index .pagination a {
+  display: inline-block;
+  border: 2px solid #5C881C;
+  margin: 0 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: #5C881C;
+}
+.index .pagination a:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.post {
+  max-width: 700px;
+}
+.post h1 {
+  font-size: 42px;
+}
+.post h2:before {
+  content: "# ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h3:before {
+  content: "## ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h4:before {
+  content: "### ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post p {
+  font-size: 18px;
+}
+.list {
+  max-width: 700px;
+}
+.list ul.double-list {
+  margin: 0 auto 60px;
+  padding: 0;
+  list-style-type: none;
+}
+.list ul.double-list li {
+  padding: 5px 0;
+}
+.list ul.double-list li h2 {
+  font-size: 1em;
+  display: inline;
+  font-weight: normal;
+}
+.list ul.double-list li span {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  padding-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+.full-width-content {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		extensions: ["tex2jax.js"],
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			processEscapes: true
+		},
+		"HTML-CSS": { fonts: ["TeX"] }
+	});
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">
+	</script>
+
+    </head>
+
+    <body>
+        <header class="navbar navbar-default bs-docs-nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span> 
+		  </button>
+                  <a class="navbar-brand" href="/" title="Home" class="title">poliastro</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
+		    <ul class="nav navbar-nav navbar-right">
+
+                        <!--- DOCS PAGE -->
+                            <li><a class="icon-link" href="https://docs.poliastro.space/en/latest/" title="Documentation">Documentation</a></li>
+
+                        <!--- COMMUNITY PAGE -->
+                            <li><a class="icon-link" href="http://chat.poliastro.space/" title="Community">Community</a></li>
+
+                        <!--- TUTORIALS PAGE -->
+                            <li><a class="icon-link" href="https://beta.mybinder.org/v2/gh/poliastro/poliastro/main?filepath=index.ipynb" title="Tutorials">Tutorials</a></li>
+
+                        <!--- GITHUB PAGE -->
+                            <li><a class="icon-github" href="https://github.com/poliastro/poliastro" title="Code">Source Code</a></li>
+
+                        <!--- TWITTER LINK -->
+                            <li><a class="icon-twitter" href="http://twitter.com/poliastro_py" title="Twitter">Twitter</a></li>
+
+                        <!--- BLOG PAGE -->
+			<li><a href="https://www.poliastro.space/blog/index.html" title="Blog">Blog</a></li>                                    
+
+                        <!--- SHOW ARCHIVES -->
+			<li><a href="https://www.poliastro.space/archives.html" title="Archive">Archive</a></li>
+			<li><a class="nodec icon-rss" href="https://www.poliastro.space/feeds/all.atom.xml" title="poliastro RSS feed" rel="me"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+
+
+<div class="container post">
+    <article>
+        <header>
+            <h1>poliastro at the Python in Astronomy 2018 conference</h1>
+            <div class="meta">
+                <time datetime="article.date.isoformat()" pubdate>Mon 04 June 2018</time>
+                <address class="vcard author">By
+                    <a class="url fn" href="https://www.poliastro.space/author/juan-luis-cano-rodriguez.html">Juan Luis Cano Rodríguez</a>
+                </address>
+            </div>
+        </header>
+
+        <div class="article_content">
+            <p>A month ago I had the privilege to attend the <strong>Python in Astronomy 2018 conference</strong>, which gave me an unique perspective of the status of Python in the astronomical sciences and an opportunity to present poliastro to a very technical audience. I was planning to post a writeup somewhere, and as the Zen of Python says...</p>
+<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;import this&quot;</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">Now</span>
+<span class="n">Now</span> <span class="ow">is</span> <span class="n">better</span> <span class="n">than</span> <span class="n">never</span><span class="o">.</span>
+</code></pre></div>
+
+<p>So, let's do it! 🚀</p>
+<h1>What was Python in Astronomy?</h1>
+<p><strong>Python in Astronomy</strong> (from now on, <strong>PyAstro18</strong>) is best explained in <a href="http://openastronomy.org/pyastro/2018/">its website</a>:</p>
+<blockquote>
+<p>This conference aims to bring a wide variety of people who use, develop or teach people about Python packages in the context of all forms of Astronomy. The conference will include presentations, tutorials, unconference sessions, and sprints. As well as enhancing the community around astronomical uses of Python, the conference aims to improve collaboration and interoperability between Python packages, and share knowledge on Python packages and techniques. It will also provide training and educational materials for users and developers of Python astronomy packages.</p>
+</blockquote>
+<p><img alt="PyAstro 2018 introduction" src="/images/pyastro-intro.jpg"></p>
+<p>This year it was celebrated at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Center for Computational Astrophysics</a>, a research center committed to developing the research tools needed for modern astronomy as part the Flatiron Institute, in New York.</p>
+<p>I had heard about the conference perhaps last year, but this was the first edition I actually applied to attend, and I was selected! Not only did the organization pay for transportation and accommodation of <em>all</em> the attendees (including yours truly), but also they did a wonderful job gathering a <strong>diverse audience</strong>, which made me extremely happy!</p>
+<p>PyAstro is not an ordinary conference, and many types of sessions happened:</p>
+<ul>
+<li><strong>Keynotes</strong>: Classical talks addressed to all the attendees, about an important topic and given by a relevant member of the community.</li>
+<li><strong>Unconferences/Tutorials</strong>: Sessions proposed by the attendees during the event itself. There were moments during the week when we were asked to suggest topics on a whiteboard, do a "pitch" about them (i.e. explain why we wanted to discuss about those topics) and then vote. The ones that were more interactive, or encouraged the attendees to code something, were called tutorials. There were also people taking notes of the discussions and they were all summarized at the end of each day.</li>
+<li><strong>Lightning talks</strong>: 5 minutes talks about <em>any</em> topic that can be a great opportunity for first time speakers or people that want to show something in an humorous way.</li>
+<li><strong>Hack projects</strong>: One day was entirely devoted to <em>hacking</em>! This meant that people could do sprint on a particular software package, explore new libraries, discuss complicated things in person, or just advance with their personal projects. In the same way as unconferences, the conclusions were summarized and presented the following day.</li>
+</ul>
+<p>The best thing is that <em>you can read</em> most of the content we generated during the conference <a href="https://docs.google.com/document/d/1DLgH9D-Wm-zgeRdPecE1_VtKnugkYyHAc5imwAptktk/edit?usp=sharing">in this index and the linked documents!</a> This includes the summaries of the unconference sessions, the lightning talks list, the participants directory, pictures and more. Great, isn't it?</p>
+<p><img alt="Unconference sessions" src="/images/pyastro-unconference.jpg"></p>
+<h1>poliastro + PyAstro18 = 🚀</h1>
+<p>I wanted to make the most of PyAstro18 and participate as much as I could, so before arriving to New York I already had a rough idea of my main goals for the event, which were:</p>
+<ol>
+<li>Spread the word about poliastro and reach out to potential users,</li>
+<li>Make a decision about the API of ecliptic reference frames in Astropy, which affects poliastro (see <a href="https://github.com/astropy/astropy/pull/6508">this lengthy issue</a>),</li>
+<li>Share my concerns about high level, performant code in Python, in particular the performance of <code>astropy.units</code> (which in some parts of poliastro is a bottleneck, see <a href="https://github.com/poliastro/poliastro/commit/ed931adb">this commit</a>), and</li>
+<li>Get to know the Astropy developers (and the rest of the community) in person and have fun!</li>
+</ol>
+<p>With this in mind, apart from my scheduled talk about poliastro (<a href="https://github.com/poliastro/pyastro18-talk/">repo</a>), I gave a lightning talk titled "That messy conversation about reference frames" inspired in <a href="https://github.com/astropy/astropy/pull/6508">this lengthy issue in astropy.coordinates that is not over yet</a> (<a href="https://github.com/Juanlu001/messy-frames-talk">repo</a>) and I co-chaired an unconference session about Parallelization, Cython, Measuring Python Performance and Identifying bottlenecks.</p>
+<h2>Personal summary</h2>
+<p>Luckily, <strong>poliastro</strong> attracted some attention and I got many interesting question from the attendees. The golden moment of the week was when <a href="https://github.com/abigailStev">Abbie Stevens</a> wrote "Where are you sitting? Someone has a question about orbital mechanics!" 💗 Also, <a href="https://twitter.com/coachxcpayne">Charlie Payne</a> announced that <a href="https://twitter.com/coachxcpayne/status/997322543852814336">he had used poliastro with high school students to examine the Europa Clipper mission</a> 💖</p>
+<p>For my <strong>hack day project</strong>, I decided to work on the performance of <code>astropy.units</code>, doing some profiling with common use cases to identify hot spots and hopefully try to address some of them. I must give a special Thank You here to <a href="https://github.com/eteq">Erik Tollerud</a>, which was super kind and supportive all the time and always happy to give guidance even though he was doing a dozen things at the same time. I also worked a lot with <a href="https://github.com/manodeep/">Manodeep Sinha</a>, our optimization expert and "general pedant about coding", who gave lots of useful and interesting suggestions to optimize the code. The conclusions can be read in <a href="https://github.com/astropy/astropy/issues/7438">this issue</a> and can be sumarized to "why the heck is <code>isinstance</code> so slow?".</p>
+<p>Regarding the decision on the <strong>ecliptic frames</strong>, at one point I sat with <a href="https://github.com/adrn">Adrian Price-Whelan</a> and Erik and figured out that 12 or 24 ecliptic frames would be too many (unsurprisingly), and that we would have to find a compromise using factory methods and trying to make common frames visibly documented. A straightforward solution that works for us is already in place in poliastro, but I hope I have enough time to work on this <a href="https://github.com/astropy/astropy/wiki/Release-Calendar">before Astropy 3.1 feature freeze</a> and reach consensus with the rest of the Astropy core developers (since not all of them were at PyAstro18).</p>
+<p>And finally, I think I managed to <strong>meet lots of new people</strong> and had some fun :) I found myself excited to find other Spanish-speaking people (special mention to <a href="https://github.com/carlgogo">Carlos Alberto Gómez González</a>, with whom I had a couple of funny anecdotes) and in general I was glad to meet people I usually interact with on GitHub, in person.</p>
+<p><img alt="I, Juanlu" src="/images/pyastro-juanlu.jpg"></p>
+<h2>Some final thoughts</h2>
+<ul>
+<li>There was a great atmosphere during the event: everybody was participating, the venue was just awesome, there were people from many different countries... <strong>10/10</strong> for the organization, they did a great job. </li>
+<li>I was already aware of the huge <strong>infrastructure</strong> that the Astropy community has been developing throughout the years, but watching how easy it is to create a Python package using their templates was amazing (<a href="https://github.com/astropy/package-template">check out their cookiecutter template</a>, which was finished during the event!). I think it's very important that non-programmers have easy ways to sort out documentation, continuous integration, testing... This applies not only for scientists, but also for engineers whose day to day job involves coding.</li>
+<li>I discovered thanks to Adrian that the field of <strong>galactic dynamics</strong> shares some common problem with astrodynamics/orbital mechanics (check out his package <a href="http://gala.adrian.pw/en/latest/">gala</a>). Also, <a href="https://github.com/migueldvb">Miguel de Val-Borro</a> shared that he is about to start working on a Python package for small bodies research called <a href="https://github.com/mommermi/sbpy">sbpy</a> that will need orbital element handling and easy access to HORIZONS data. There are more collaboration opportunities than I expected, and I only wish I had more time to advance on common interfaces. </li>
+<li>I think <em>I was among the few non-astronomers, and also among the few people working in a private company</em>. It was a weird feeling at the beginning, and gave me a different perspective about what the incentives for using open source are, what are the common problems in academia... I've been wondered how to bring the open source philosophy closer to the engineering world for years now, and this event was so important for me in that respect.</li>
+<li>After this event I really want to collaborate more and more with the community. I already have a plan to reduce the number of commitments in other areas and work more closely with the scientific community.</li>
+</ul>
+<p><img alt="Group picture at PyAstro18" src="/images/pyastro-group.jpg"></p>
+<p><strong>Looking forward to see you all at PyAstro19!</strong></p>
+<p><em>Per Python ad astra!</em></p>
+        </div>
+
+        <div class="meta">
+            <div class="tags">
+                    <a href="https://www.poliastro.space/tag/pyastro18.html" class="tag">pyastro18</a>
+                    <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+                    <a href="https://www.poliastro.space/tag/conferences.html" class="tag">conferences</a>
+            </div>
+        </div>
+    </article>
+
+  <!-- <script data-isso="//localhost:1234"
+        data-isso-lang="en"
+        src="//localhost:1234/js/embed.min.js"></script>
+<section id="isso-thread">
+<h3>Comments</h3>
+</section>
+ -->
+
+</div>
+
+<style type="text/css">
+{
+    max-width: 700px;
+}
+
+.text_cell .prompt {
+    display: none;
+}
+
+div.cell {
+    padding: 0;
+}
+
+div.text_cell_render {
+    padding: 0;
+}
+
+div.prompt {
+    font-size: 13px;
+}
+
+div.input_prompt {
+    padding: .7em 0.2em;
+}
+
+div.output_prompt {
+    padding: .4em .2em;
+}
+
+div.input_area {
+    margin: .2em 0.4em;
+    max-width: 580px;
+}
+
+table.dataframe {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+table.dataframe th, td {
+    padding: 4px;
+    text-align: left;
+}
+
+pre code {
+    background-color: inherit;
+}</style>
+
+        </div>
+<!--
+    <footer>
+      <p>
+        © 2012-2017 poliastro developer team, license <a href="https://github.com/poliastro/poliastro.github.io/blob/sources/LICENSE"> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a>.
+      </p>
+    </footer>
+-->
+    </body>
+</html>

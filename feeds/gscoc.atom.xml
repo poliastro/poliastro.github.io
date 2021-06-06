@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>poliastro - GSCOC</title><link href="https://www.poliastro.space/" rel="alternate"></link><link href="https://www.poliastro.space/feeds/gscoc.atom.xml" rel="self"></link><id>https://www.poliastro.space/</id><updated>2019-08-19T15:00:00+02:00</updated><subtitle>poliastro website</subtitle><entry><title>CZML Extractor: An overview</title><link href="https://www.poliastro.space/blog/2019/08/19/2019-08-19-czml-extractor-an-overview.md/" rel="alternate"></link><published>2019-08-19T15:00:00+02:00</published><updated>2019-08-19T15:00:00+02:00</updated><author><name>Eleftheria Chatziargyriou</name></author><id>tag:www.poliastro.space,2019-08-19:/blog/2019/08/19/2019-08-19-czml-extractor-an-overview.md/</id><summary type="html">&lt;p&gt;As the proverb says "all good things must come to an end". Unfortunately, it's time
+to bid adieu to the summer and have a look on what has been accomplished so far.&lt;/p&gt;
+&lt;h2&gt;The CZML Extractor&lt;/h2&gt;
+&lt;p&gt;This was undoubtedly the main and most time-consuming part of the project. The extractor
+allows users to easily convert orbital data to CZML. You can find an overview of the
+extractor's usage in the &lt;a href="https://docs.poliastro.space/en/stable/user_guide.html"&gt;User Guide&lt;/a&gt;
+or take a look in the more in-depth 
+&lt;a href="https://github.com/Sedictious/poliastro/blob/2c4355e50207470b18f31d8405ddc1f2c53c574b/docs/source/examples/CZML%20Tutorial.ipynb"&gt;Jupyter notebook tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;The Cesium Application&lt;/h2&gt;
+&lt;p&gt;Since we need more parameters to accurately represent the data, we also need a
+specific application to parse said parameters. For this reason, I worked on a 
+Cesium application that allows you to easily visualize the data. At this moment, 
+there are two separate applications: 
+&lt;a href="https://github.com/poliastro/cesium-app/tree/master/application"&gt;one&lt;/a&gt; that runs remotely 
+and &lt;a href="https://github.com/poliastro/cesium-app/tree/master/Sandcastle"&gt;one&lt;/a&gt; you can
+copy-paste directly …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As the proverb says "all good things must come to an end". Unfortunately, it's time
+to bid adieu to the summer and have a look on what has been accomplished so far.&lt;/p&gt;
+&lt;h2&gt;The CZML Extractor&lt;/h2&gt;
+&lt;p&gt;This was undoubtedly the main and most time-consuming part of the project. The extractor
+allows users to easily convert orbital data to CZML. You can find an overview of the
+extractor's usage in the &lt;a href="https://docs.poliastro.space/en/stable/user_guide.html"&gt;User Guide&lt;/a&gt;
+or take a look in the more in-depth 
+&lt;a href="https://github.com/Sedictious/poliastro/blob/2c4355e50207470b18f31d8405ddc1f2c53c574b/docs/source/examples/CZML%20Tutorial.ipynb"&gt;Jupyter notebook tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;The Cesium Application&lt;/h2&gt;
+&lt;p&gt;Since we need more parameters to accurately represent the data, we also need a
+specific application to parse said parameters. For this reason, I worked on a 
+Cesium application that allows you to easily visualize the data. At this moment, 
+there are two separate applications: 
+&lt;a href="https://github.com/poliastro/cesium-app/tree/master/application"&gt;one&lt;/a&gt; that runs remotely 
+and &lt;a href="https://github.com/poliastro/cesium-app/tree/master/Sandcastle"&gt;one&lt;/a&gt; you can
+copy-paste directly into Cesium &lt;a href="https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/"&gt;Sandcastle&lt;/a&gt;.
+I have added the instructions on how to run it in the &lt;a href="https://github.com/poliastro/cesium-app"&gt;repo&lt;/a&gt;,
+where you can also find a few examples to get you started.&lt;/p&gt;
+&lt;h2&gt;CZML3&lt;/h2&gt;
+&lt;p&gt;As I've mentioned in previous posts, the CZML packets were internally represented
+by nested dictionaries. This complicated the code and made it generally uglier for 
+many reasons (need for a "default" packet, need to specify the path of every parameter
+that was being added etc...). Fortunately, my mentor Juanlu came up with a great 
+&lt;a href="https://github.com/poliastro/czml3"&gt;library&lt;/a&gt; that made the process exponentially easier and
+allowed us to get rid of many unecessary parts of the older code. Over time, I added most of 
+the basic Cesium properties that were needed for the extractor (though I hope to eventually
+go back to it and turn it into a fully fledged library!)&lt;/p&gt;
+&lt;h2&gt;Git log&lt;/h2&gt;
+&lt;p&gt;Those are my PRs which were merged into poliastro's core (excluding the commits made to czml3 or the app)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/601"&gt;#601 Adds basic CZML Extractor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/634"&gt;#603 Added some tests for CZML Extractor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/661"&gt;#661 Create custom CZML packets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/674"&gt;#674 Add ground stations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/711"&gt;#711 Use czml3 for the czml extractor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/717"&gt;#717 Additional orbit properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/720"&gt;#720 Add SpheroidLocation class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/721"&gt;#721 Add 2D Scene support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/730"&gt;#730 Add updated IAU values for body radii&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/735"&gt;#735 Update rotational elements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/737"&gt;#737 SpheroidLocation accepts poliastro bodies instead of spheroid parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/739"&gt;#739 Add ground track plotting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/743"&gt;#743 Allow groundtrack lead/trail time&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/746"&gt;#746 Add angular speed and rotational period&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/753"&gt;#753 Add initial CZML notebook tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/755"&gt;#755 Add additional parameters for groundtracks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is still a pending PR that will add pass tracking (finally). I'm currently trying to test the 
+added functionality to ensure it is as bug-free as possible.&lt;/p&gt;
+&lt;h2&gt;Special thanks&lt;/h2&gt;
+&lt;p&gt;I'd like to thank everyone in the Open Atronomy community. I'd also like to give a special
+thanks to my mentor, Juanlu, who helped make the whole GSoC experience even greater than I initially
+expected: he helped me get the proper background, gave helpful feedback and was very supportive
+and an all-around amazing person!&lt;/p&gt;
+&lt;h2&gt;What's next&lt;/h2&gt;
+&lt;p&gt;I had a wonderful time and I'm certainly planning to go back and polish the project as well as add
+any extra functionalities. Who knows, maybe there are many more contributions yet to come 😉&lt;/p&gt;
+&lt;p&gt;If you're interested in this project, or poliastro in general, you can attend the 
+&lt;a href="https://indico.oscw.space/event/3/"&gt;Open Source CubeSat Workshop&lt;/a&gt; where we'll be running a 
+&lt;a href="https://indico.oscw.space/event/3/contributions/78/"&gt;workshop&lt;/a&gt;. Hope to see you there!&lt;/p&gt;</content><category term="GSCOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>Ground track plotting and Ellipsoids</title><link href="https://www.poliastro.space/blog/2019/08/01/2019-08-01-ground-track-plotting-and-ellipsoids.md/" rel="alternate"></link><published>2019-08-01T15:00:00+02:00</published><updated>2019-08-01T15:00:00+02:00</updated><author><name>Eleftheria Chatziargyriou</name></author><id>tag:www.poliastro.space,2019-08-01:/blog/2019/08/01/2019-08-01-ground-track-plotting-and-ellipsoids.md/</id><summary type="html">&lt;p&gt;The second evaluation period has come to the end and with the end of the
+program drawing ever closer, I'm happy to announce that most work on 
+the additional deliverables has been complete!&lt;/p&gt;
+&lt;h2&gt;CZML3&lt;/h2&gt;
+&lt;p&gt;I've added polylines and points (along with myriad of other dependent 
+properties/types). These also marked the release of 
+&lt;a href="https://pypi.org/project/czml3/#description"&gt;v0.1.3&lt;/a&gt;!&lt;/p&gt;
+&lt;h2&gt;Ground Track Plotting&lt;/h2&gt;
+&lt;p&gt;Having added the necessary CZML properties, I finally managed to add
+the ground track plotter. It allows to draw both a static path and
+an animated one. The coolest feature is that it automatically calculates
+the path's orthographic projection, allowing you to see the satellite in
+2D mode. I was also toying with the idea of allowing the users to export
+gif images directly from the application, which would mean no longer relying
+on external screen capturing software to create and …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The second evaluation period has come to the end and with the end of the
+program drawing ever closer, I'm happy to announce that most work on 
+the additional deliverables has been complete!&lt;/p&gt;
+&lt;h2&gt;CZML3&lt;/h2&gt;
+&lt;p&gt;I've added polylines and points (along with myriad of other dependent 
+properties/types). These also marked the release of 
+&lt;a href="https://pypi.org/project/czml3/#description"&gt;v0.1.3&lt;/a&gt;!&lt;/p&gt;
+&lt;h2&gt;Ground Track Plotting&lt;/h2&gt;
+&lt;p&gt;Having added the necessary CZML properties, I finally managed to add
+the ground track plotter. It allows to draw both a static path and
+an animated one. The coolest feature is that it automatically calculates
+the path's orthographic projection, allowing you to see the satellite in
+2D mode. I was also toying with the idea of allowing the users to export
+gif images directly from the application, which would mean no longer relying
+on external screen capturing software to create and share projects.&lt;/p&gt;
+&lt;h2&gt;Speroid Location&lt;/h2&gt;
+&lt;p&gt;I refactored the class and got it merged which makes it technically possible
+to determine an orbit's pass given the spheroid location. I'm ashamed to admit,
+the pass predictor is the only area I haven't make any tangible progress in in 
+the last  couple of weeks, so that definetely remains one of my main goals.&lt;/p&gt;
+&lt;h2&gt;Ellipsoids, ellipsoids, ellipsoids...&lt;/h2&gt;
+&lt;p&gt;The bug that has bugging me the most has been finally resolved! The cesium 
+application now correctly renders any arbitrary ellipsoid. My last task is 
+to create the rotation matrix given the attractor's average rotational velocity,
+converting the system into ICRF.&lt;/p&gt;
+&lt;h2&gt;What's Next?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Start working on some Jupyter notebook tutorials&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hopefully be down with the closed-form pass peredictor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use ICRF frames in the app&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="GSCOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>Moving forward with the Cesium application</title><link href="https://www.poliastro.space/blog/2019/07/15/2019-07-15-moving-forward-with-the-cesium-application/" rel="alternate"></link><published>2019-07-15T17:50:00+02:00</published><updated>2019-07-15T17:50:00+02:00</updated><author><name>Eleftheria Chatziargyriou</name></author><id>tag:www.poliastro.space,2019-07-15:/blog/2019/07/15/2019-07-15-moving-forward-with-the-cesium-application/</id><summary type="html">&lt;p&gt;I feel like in the last couple of weeks I got to work a little in several aspects
+of the project. While this didn't allow me to focus on a single feature, it allowed
+me to make progress in various different areas.&lt;/p&gt;
+&lt;h2&gt;Bug resolving and 2D mode&lt;/h2&gt;
+&lt;p&gt;First and foremost, I got rid of a particularly frustrating bug in the application.
+Certain javascript events (such as the one that allows the inertial view), where tied 
+to a single &lt;code&gt;Viewer&lt;/code&gt; and thus wouldn't trigger when the &lt;code&gt;Viewer&lt;/code&gt; was destroyed 
+(which is the case when, for example, loading the data from the file). I also made a 
+few minor changes in the code and introduced the option to set the Viewer mode to 2D.
+This isn't any useful as of now, but it will be with the new feature I'm planning to …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I feel like in the last couple of weeks I got to work a little in several aspects
+of the project. While this didn't allow me to focus on a single feature, it allowed
+me to make progress in various different areas.&lt;/p&gt;
+&lt;h2&gt;Bug resolving and 2D mode&lt;/h2&gt;
+&lt;p&gt;First and foremost, I got rid of a particularly frustrating bug in the application.
+Certain javascript events (such as the one that allows the inertial view), where tied 
+to a single &lt;code&gt;Viewer&lt;/code&gt; and thus wouldn't trigger when the &lt;code&gt;Viewer&lt;/code&gt; was destroyed 
+(which is the case when, for example, loading the data from the file). I also made a 
+few minor changes in the code and introduced the option to set the Viewer mode to 2D.
+This isn't any useful as of now, but it will be with the new feature I'm planning to 
+introduce, which brings me to...&lt;/p&gt;
+&lt;h2&gt;Groundtrack plotting&lt;/h2&gt;
+&lt;p&gt;Cesium allows users to define animated polyline paths, allowing us to visualize an orbit's 
+groundtrack. What is even more exciting, is that Cesium automatically projects the path when
+on 2D scene mode, allowing us to see the orbit's groundtrack even on orthographic projection.&lt;/p&gt;
+&lt;p&gt;I have most of the work laid out and I'm planning to open a pull request next week. Cesium
+has a problem when dealing with particularly long paths and in that case the path needs to be 
+broken down and dynamically loaded.&lt;/p&gt;
+&lt;h2&gt;Satellite pass predictor&lt;/h2&gt;
+&lt;p&gt;I made an initial commit for the pass predictor based on Escobal's paper and I also started
+working on a helper class to work on the Ellipsoidal coordinate system (altough technically,
+the class is restricted to spheroids, since they are easier to work with and planetary bodies
+can be accurately approximated by them). It offers methods for converting coordinates from the 
+ellipsoidal to the Cartesian system and vice versa and determining whether a point is visible to
+the &lt;code&gt;SpheroidLocation&lt;/code&gt;. Additionally, it is also equiped with a few other helpful math functions
+(e.g. determining the plane tangential to the point on the spheroid).&lt;/p&gt;
+&lt;h2&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;In the next couple of weeks, I'm planning to finally finish the pass predictor and at least complete
+the first commit of the groundtrack plotter.&lt;/p&gt;</content><category term="GSCOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>Converting to CZML and next steps</title><link href="https://www.poliastro.space/blog/2019/06/30/2019-06-30-converting-to-czml-and-next-steps/" rel="alternate"></link><published>2019-06-30T11:30:00+02:00</published><updated>2019-06-30T11:30:00+02:00</updated><author><name>Eleftheria Chatziargyriou</name></author><id>tag:www.poliastro.space,2019-06-30:/blog/2019/06/30/2019-06-30-converting-to-czml-and-next-steps/</id><summary type="html">&lt;p&gt;So the first phase of GSoC is over and with it, it's time to reflect what
+has been achieved in the last couple of months.&lt;/p&gt;
+&lt;h1&gt;CZML3&lt;/h1&gt;
+&lt;p&gt;As I mentioned in the 
+&lt;a href="https://blog.poliastro.space/2019/06/13/2019-06-13-communication-satellites-and-refactoring/"&gt;last blogpost&lt;/a&gt;
+this is a very useful &lt;a href="https://github.com/poliastro/czml3"&gt;library&lt;/a&gt; created by juanlu. After a
+few patches, the library now supports most CZML properties and - as far as I can tell - this is 
+the only currently mantained Python library for creating CZML packets.&lt;/p&gt;
+&lt;h1&gt;CZML Extractor&lt;/h1&gt;
+&lt;p&gt;This is the first feature I've started to work on and while it is still far from complete,
+I'm happy to say that it is now usable. &lt;/p&gt;
+&lt;p&gt;At first, the czml document was represented by a nested dictionary and then converted to 
+valid JSON format. This worked ok and I did write a function which made manipulating the
+dictionary a tad more intuitive, but it was …&lt;/p&gt;</summary><content type="html">&lt;p&gt;So the first phase of GSoC is over and with it, it's time to reflect what
+has been achieved in the last couple of months.&lt;/p&gt;
+&lt;h1&gt;CZML3&lt;/h1&gt;
+&lt;p&gt;As I mentioned in the 
+&lt;a href="https://blog.poliastro.space/2019/06/13/2019-06-13-communication-satellites-and-refactoring/"&gt;last blogpost&lt;/a&gt;
+this is a very useful &lt;a href="https://github.com/poliastro/czml3"&gt;library&lt;/a&gt; created by juanlu. After a
+few patches, the library now supports most CZML properties and - as far as I can tell - this is 
+the only currently mantained Python library for creating CZML packets.&lt;/p&gt;
+&lt;h1&gt;CZML Extractor&lt;/h1&gt;
+&lt;p&gt;This is the first feature I've started to work on and while it is still far from complete,
+I'm happy to say that it is now usable. &lt;/p&gt;
+&lt;p&gt;At first, the czml document was represented by a nested dictionary and then converted to 
+valid JSON format. This worked ok and I did write a function which made manipulating the
+dictionary a tad more intuitive, but it was overall a very ad hoc solution and made the
+code hard to follow. What I attempted to do was to completely refactor the extractor
+to rely on czml3 (you can find the related PR &lt;a href="https://github.com/poliastro/poliastro/pull/711"&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Merging the PR and getting everything &lt;em&gt;just&lt;/em&gt; right gave me far more trouble than I would've expected
+and there are still a few more things that need to be adressed. Part of the problem was that czml3
+doesn't support Python 3.5 (since it doesn't have any way to implement ordered dictionaries without 
+relying on external libaries or creating your own data structure), so a simple Import Error could 
+cause the whole thing to fail. On the flipside, I learned the importance of exhaustive testing and
+paying attention to versioning.&lt;/p&gt;
+&lt;h1&gt;Cesium application&lt;/h1&gt;
+&lt;p&gt;Of course, the custom data isn't really useful in and of itself so I also created an 
+&lt;a href="https://github.com/poliastro/cesium-app"&gt;application&lt;/a&gt; (which you can run both locally and on
+&lt;a href="https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/"&gt;Sandcastle&lt;/a&gt;) to visualize the data. &lt;/p&gt;
+&lt;h1&gt;What's next?&lt;/h1&gt;
+&lt;p&gt;As I mentioned before, one of the features I was meaning to add was the determination of a satellite's pass.
+The difficulty lies in solving the problem efficiently and most of the solutions I've thought of or read were either
+too slow or too inaccurate and often making earth-specific assumptions which wouldn't help with the general case.&lt;/p&gt;
+&lt;p&gt;However, my mentor recently pointed my to a very interesting &lt;a href="https://arc.aiaa.org/doi/abs/10.2514/3.2057"&gt;paper&lt;/a&gt; which
+I'm currently going through and trying to thing of the next step.&lt;/p&gt;
+&lt;p&gt;GSoC has been a great experience so far and I'm looking forward to the next coding phase!&lt;/p&gt;</content><category term="GSCOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>Communication satellites and refactoring</title><link href="https://www.poliastro.space/blog/2019/06/13/2019-06-13-communication-satellites-and-refactoring/" rel="alternate"></link><published>2019-06-13T21:00:00+02:00</published><updated>2019-06-13T21:00:00+02:00</updated><author><name>Eleftheria Chatziargyriou</name></author><id>tag:www.poliastro.space,2019-06-13:/blog/2019/06/13/2019-06-13-communication-satellites-and-refactoring/</id><summary type="html">&lt;p&gt;Those couple of weeks were spent mainly on setting future milestones
+and improving the quality of the code. In a way, Tom Cargill's famous
+aphorism came to my mind:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The first 90 percent of the code accounts for the first 90 percent 
+of the development time. The remaining 10 percent of the code accounts
+for the other 90 percent of the development time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Writing stuff that "just works" is relatively easy. But when programming,
+you always have to keep track of myriad variables including but not limited
+to: maintanability, integration and readability. &lt;/p&gt;
+&lt;h1&gt;CZML3&lt;/h1&gt;
+&lt;p&gt;My mentor, Juanlu, wrote a fully-fledged &lt;a href="https://github.com/poliastro/czml3"&gt;library&lt;/a&gt;
+for composing czml packets. While it's still in the early stages of development,
+I  would urge anyone interested to check it out. I'm currently trying to refactor
+the czml core, so it utilizes the library instead of the current approach …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Those couple of weeks were spent mainly on setting future milestones
+and improving the quality of the code. In a way, Tom Cargill's famous
+aphorism came to my mind:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The first 90 percent of the code accounts for the first 90 percent 
+of the development time. The remaining 10 percent of the code accounts
+for the other 90 percent of the development time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Writing stuff that "just works" is relatively easy. But when programming,
+you always have to keep track of myriad variables including but not limited
+to: maintanability, integration and readability. &lt;/p&gt;
+&lt;h1&gt;CZML3&lt;/h1&gt;
+&lt;p&gt;My mentor, Juanlu, wrote a fully-fledged &lt;a href="https://github.com/poliastro/czml3"&gt;library&lt;/a&gt;
+for composing czml packets. While it's still in the early stages of development,
+I  would urge anyone interested to check it out. I'm currently trying to refactor
+the czml core, so it utilizes the library instead of the current approach (packets
+are represented as a nested dictionary which is then converted to JSON).&lt;/p&gt;
+&lt;h1&gt;Changes to the javascript application&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added camera controls for easier navigation (only rotation left to be added)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a file browser, so that any czml data file can be added directly from the
+browser. This was one of my top priorities since before that, the only way to import
+the files was by copy-pasting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wrote a README explaining how to run the application. Once I'm done with the basic 
+refactoring, I'll also start adding documentation  and tutorials about writing czml 
+packets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Communication satellites&lt;/h1&gt;
+&lt;p&gt;As mentioned in the last blogpost, I started working on visualizing ground stations
+and communication satellites. This opened up a whole new can of worms. For example,
+early in the process, we decided that it would be better for groundstation's coordinates
+to be expressed on the ellipsoidal coordinate system. However, this seemed to result in
+accuracy errors where a given point would be slightly off the ellipsoid, which would in
+turn give inaccurate results on the visibility predictor. Some of the code is merged and 
+at least a PR containing the basic implementation is pending, but I'll get back to it
+after refactoring the core.&lt;/p&gt;</content><category term="GSCOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>Let the coding begin</title><link href="https://www.poliastro.space/blog/2019/05/29/2019-05-29-let-the-coding-begin/" rel="alternate"></link><published>2019-05-29T23:30:00+02:00</published><updated>2019-05-29T23:30:00+02:00</updated><author><name>Eleftheria Chatziargyriou</name></author><id>tag:www.poliastro.space,2019-05-29:/blog/2019/05/29/2019-05-29-let-the-coding-begin/</id><summary type="html">&lt;h1&gt;Let the coding begin&lt;/h1&gt;
+&lt;p&gt;So the bonding period is over, which means that the coding phase has officially begun.
+I've already worked on some of the key features I'd like to add since my examination
+period is around the corner. Hopefully, this won't slow me down and I'll keep up with 
+the workload.&lt;/p&gt;
+&lt;h1&gt;The work so far&lt;/h1&gt;
+&lt;p&gt;I've worked on the main part of the project, which was to connect poliastro to the
+visualization capabilities offered by the Cesium API. There is already the possibility
+of adding orbits and defining custom attractors, along with various visual customizations.
+As exciting as this is, there are still way more things that could be added to give life to the
+project, rendering it more useful and interesting.&lt;/p&gt;
+&lt;h1&gt;Communications satellites&lt;/h1&gt;
+&lt;p&gt;In the past days, I became increasingly interested in adding communication satellites
+and visualizing …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Let the coding begin&lt;/h1&gt;
+&lt;p&gt;So the bonding period is over, which means that the coding phase has officially begun.
+I've already worked on some of the key features I'd like to add since my examination
+period is around the corner. Hopefully, this won't slow me down and I'll keep up with 
+the workload.&lt;/p&gt;
+&lt;h1&gt;The work so far&lt;/h1&gt;
+&lt;p&gt;I've worked on the main part of the project, which was to connect poliastro to the
+visualization capabilities offered by the Cesium API. There is already the possibility
+of adding orbits and defining custom attractors, along with various visual customizations.
+As exciting as this is, there are still way more things that could be added to give life to the
+project, rendering it more useful and interesting.&lt;/p&gt;
+&lt;h1&gt;Communications satellites&lt;/h1&gt;
+&lt;p&gt;In the past days, I became increasingly interested in adding communication satellites
+and visualizing their line of sight. I added a bit of extra code to define ground
+stations anywhere on the surface of the attractor.&lt;/p&gt;
+&lt;p&gt;With the attractor defined, we need to calculate the time the satellite is visible
+to the ground station. My initial approach was pretty straight-forward:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Take N sample points of the trajectory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Emit a ray from said point to the ground station.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the ray intersects the ellipsoid at any point other than the ground station discard
+it, otherwise conclude that the satellite is visible to the station at the given
+time stamp.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Despite working fine, this approach posed two main problems: The calculated pass is
+dependent on the number of sample points and the algorithm itself isn't really efficient.&lt;/p&gt;
+&lt;p&gt;What I thought next was to define the plane that is tangential to the ellipse at the coordinates
+of the ground station. After that, we could easily find the point where the plane and the trajectory
+(granted it has constant eccentricity) intersect. Now we'd have the exact point where the satellite
+became visible, but we still needed the respective timestamp. This was the point I became stuck and
+had to ask my mentor for ideas on how to move on. Unfortunately, the answer is that there is no single
+closed formula that can be used to easily calculate the starting and ending epochs. The problem needs
+to be reformulated mathematically and solved by known iterative approximation methods.&lt;/p&gt;
+&lt;h1&gt;What's next&lt;/h1&gt;
+&lt;p&gt;By the end of the first phase, I'm planning to have a more-or-less working pass predictor integrated
+into poliastro. I'd also like to work some more on documentation, by adding a few tutorials to make
+the project more accessible to regular users.&lt;/p&gt;</content><category term="GSCOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>The beginning of GSoC</title><link href="https://www.poliastro.space/blog/2019/05/13/2019-05-10-poliastro-gsoc-eleftheria/" rel="alternate"></link><published>2019-05-13T20:30:00+02:00</published><updated>2019-05-13T20:30:00+02:00</updated><author><name>Eleftheria Chatziargyriou</name></author><id>tag:www.poliastro.space,2019-05-13:/blog/2019/05/13/2019-05-10-poliastro-gsoc-eleftheria/</id><summary type="html">&lt;p&gt;Hello everyone, I'm Eleftheria and this summer I'll be working with poliastro 
+under Open Astronomy as part of GSoC 2019. I'm hoping this blog will prove to 
+be interesting to those who are interested in poliastro or simply a source of 
+inspiration to those looking for a way to get their feet wet with open source.&lt;/p&gt;
+&lt;h1&gt;The beginning of a journey&lt;/h1&gt;
+&lt;p&gt;After forking poliastro, I immediately dived in and tried to make sense of the
+codebase. Fortunately, poliastro is extensively 
+&lt;a href="https://docs.poliastro.space/en/stable/"&gt;documented&lt;/a&gt; so the learning curve wasn't
+as steep as I expected. After getting familiar with the project structure, I started
+browsing the open issues to find ways to make myself useful. What caught my attention
+was the ongoing process of adding visualization features to poliastro, which would 
+make the library more accessible to professionals and beginners alike.&lt;/p&gt;
+&lt;p&gt;It should be …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone, I'm Eleftheria and this summer I'll be working with poliastro 
+under Open Astronomy as part of GSoC 2019. I'm hoping this blog will prove to 
+be interesting to those who are interested in poliastro or simply a source of 
+inspiration to those looking for a way to get their feet wet with open source.&lt;/p&gt;
+&lt;h1&gt;The beginning of a journey&lt;/h1&gt;
+&lt;p&gt;After forking poliastro, I immediately dived in and tried to make sense of the
+codebase. Fortunately, poliastro is extensively 
+&lt;a href="https://docs.poliastro.space/en/stable/"&gt;documented&lt;/a&gt; so the learning curve wasn't
+as steep as I expected. After getting familiar with the project structure, I started
+browsing the open issues to find ways to make myself useful. What caught my attention
+was the ongoing process of adding visualization features to poliastro, which would 
+make the library more accessible to professionals and beginners alike.&lt;/p&gt;
+&lt;p&gt;It should be noted that poliastro does provide a way to easily create both 
+&lt;a href="https://docs.poliastro.space/en/stable/examples/Catch%20that%20asteroid!.html?highlight=plot"&gt;2D&lt;/a&gt;
+and  &lt;a href="https://docs.poliastro.space/en/stable/examples/Plotting%20in%203D.html"&gt;3D&lt;/a&gt; plots.
+However, while matplotlib and plotly excell at data visualization, neither of them
+are really suitable for this particular task. &lt;/p&gt;
+&lt;h1&gt;Cesium to the rescue&lt;/h1&gt;
+&lt;p&gt;One of the project ideas was to create an application who could extract orbitary data with
+the help of poliastro and visualize it with Cesium. While I've heard of Cesium before,
+as it is arguably one of the most well-known javascript libraries (and is also open source!), 
+I didn't know just how extensive its functionality is.&lt;/p&gt;
+&lt;p&gt;I immediately started looking at similar projects both for inspiration and in order to get 
+a sense of what can be achieved on the tecnhical side. I was pleasantly surprised by a large
+selection of &lt;a href="https://cesiumjs.org/demos/"&gt;demos&lt;/a&gt;, 
+&lt;a href="https://cesiumjs.org/demos/OrbitalPredictor/"&gt;some&lt;/a&gt; of which were particulary relevant to
+poliastro.&lt;/p&gt;
+&lt;h1&gt;Summer is coming&lt;/h1&gt;
+&lt;p&gt;So what is there to be done during the summer? Well, fortunately far more that I initially 
+expected. I currently have a working, albeit basic version of the project which allows the users 
+to define Earth-based sattelites and visualize their trajectories, but when it comes to additional
+features, sky's the limit. &lt;/p&gt;
+&lt;p&gt;Some of the features I plan to tackle first are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add communication satellites and ground stations and visualize their line of sight.&lt;/li&gt;
+&lt;li&gt;Add a groundtrack plotter capabilities (hopefully following Jorge's work) that will also work
+with Cesium's 2D view&lt;/li&gt;
+&lt;li&gt;Implement planetary orbits &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I'm really excited to start working on the project and hope for an exciting and productive summer!&lt;/p&gt;</content><category term="GSCOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry></feed>

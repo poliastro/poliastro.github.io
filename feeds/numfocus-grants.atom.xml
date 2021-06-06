@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>poliastro - NumFOCUS grants</title><link href="https://www.poliastro.space/" rel="alternate"></link><link href="https://www.poliastro.space/feeds/numfocus-grants.atom.xml" rel="self"></link><id>https://www.poliastro.space/</id><updated>2021-02-17T09:30:00+01:00</updated><subtitle>poliastro website</subtitle><entry><title>Impulsive 3D maneuvers have been validated!</title><link href="https://www.poliastro.space/blog/2021/02/17/2021-02-17-validation-of-3dmaneuvers/" rel="alternate"></link><published>2021-02-17T09:30:00+01:00</published><updated>2021-02-17T09:30:00+01:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2021-02-17:/blog/2021/02/17/2021-02-17-validation-of-3dmaneuvers/</id><summary type="html">&lt;p&gt;As part of the NumFOCUS small development grants, the
+&lt;a href="https://github.com/poliastro/validation"&gt;poliastro/validation&lt;/a&gt; repository has
+increased its activity in order to reach its main goal: validate poliastro's
+most complex features against similar software.&lt;/p&gt;
+&lt;p&gt;One of those features are impulsive maneuvers (Hohmann and Bi-elliptic) when
+applied to non-equatorial orbits. The absence of numerical results in literature
+and similar sources, made impossible to test associated pieces of code to
+impulsive maneuvers for orbits with inclination and spacecraft not placed in
+periapsis. However, this situation has changed, as they are now validated
+against Orekit and GMAT.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bi-elliptic transfer in GMAT" src="https://www.poliastro.space/images/poliastro_bielliptic.png"&gt;
+&lt;img alt="Bi-elliptic transfer in GMAT" src="https://www.poliastro.space/images/gmat_bielliptic.png"&gt;&lt;/p&gt;
+&lt;p&gt;You can see corresponding pull-request for &lt;a href="https://github.com/poliastro/validation/pull/18"&gt;Hohmann
+validation&lt;/a&gt; and &lt;a href="https://github.com/poliastro/validation/pull/20"&gt;Bi-elliptic
+validation&lt;/a&gt;. Not only that, a
+continuous integration tool has been setup. This ensures that if any bug is
+introduced within main poliastro source code, we can detect it and fix it
+without any problem.&lt;/p&gt;
+&lt;p&gt;One interesting thing is that …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As part of the NumFOCUS small development grants, the
+&lt;a href="https://github.com/poliastro/validation"&gt;poliastro/validation&lt;/a&gt; repository has
+increased its activity in order to reach its main goal: validate poliastro's
+most complex features against similar software.&lt;/p&gt;
+&lt;p&gt;One of those features are impulsive maneuvers (Hohmann and Bi-elliptic) when
+applied to non-equatorial orbits. The absence of numerical results in literature
+and similar sources, made impossible to test associated pieces of code to
+impulsive maneuvers for orbits with inclination and spacecraft not placed in
+periapsis. However, this situation has changed, as they are now validated
+against Orekit and GMAT.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bi-elliptic transfer in GMAT" src="https://www.poliastro.space/images/poliastro_bielliptic.png"&gt;
+&lt;img alt="Bi-elliptic transfer in GMAT" src="https://www.poliastro.space/images/gmat_bielliptic.png"&gt;&lt;/p&gt;
+&lt;p&gt;You can see corresponding pull-request for &lt;a href="https://github.com/poliastro/validation/pull/18"&gt;Hohmann
+validation&lt;/a&gt; and &lt;a href="https://github.com/poliastro/validation/pull/20"&gt;Bi-elliptic
+validation&lt;/a&gt;. Not only that, a
+continuous integration tool has been setup. This ensures that if any bug is
+introduced within main poliastro source code, we can detect it and fix it
+without any problem.&lt;/p&gt;
+&lt;p&gt;One interesting thing is that code making use of poliastro API is shorter than
+that one based in Orekit or GMAT. This is important from the point of view of
+readable code and simplicity. However, let us not forget that both Orekit and
+GMAT provide amazing capabilities, so this might be a reason behind more lines
+of code when using their APIs.&lt;/p&gt;
+&lt;p&gt;In addition to previous implementations, having a look at other similar software
+has given us some ideas about future features of poliastro. For example, we
+thought about the possibility of expanding our events detectors in order to
+locate in time special situations such us when spacecraft will be under umbra
+(eclipse) or when it will be visible over the horizon for a particular
+topocentric location.&lt;/p&gt;
+&lt;p&gt;The idea is now to keep validating more code, in this case the one associated
+with planetary reference frames and their conversions between them. This is a
+major topic within the actual state of poliastro, as it is not easy at all to
+check if conversions are properly performed.&lt;/p&gt;
+&lt;p&gt;Stay tuned for more about the validation work we are carrying out!&lt;/p&gt;</content><category term="NumFOCUS grants"></category><category term="NumFOCUS"></category><category term="maneuvers"></category><category term="orekit"></category><category term="GMAT"></category></entry></feed>
