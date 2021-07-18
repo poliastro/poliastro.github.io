@@ -19,8 +19,8 @@ process much easier!
 Yash and Jorge had a very productive month: after a lot of discussion in our
 weekly community calls and several rounds of code reviews, [we finally have
 eclipse event detection
-working](https://github.com/poliastro/poliastro/pull/1246), and about to be
-merged! Yash has passed the first Google Summer of Code evaluation with
+merged!](https://github.com/poliastro/poliastro/pull/1246)
+Yash has passed the first Google Summer of Code evaluation with
 flying colors and will publish an entry in our blog soon. The work Jorge did
 [on our validation
 infrastructure](https://github.com/poliastro/validation/pull/33) as part of the
