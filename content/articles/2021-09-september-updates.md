@@ -1,4 +1,4 @@
-Title: August updates
+Title: September updates
 Date: 2021-09-13 20:00 CET
 Tags: NumFOCUS,Updates
 slug: september-updates
