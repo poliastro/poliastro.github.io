@@ -16,11 +16,11 @@ and we have already started coordinating what will be the next steps.
 
 In other news, a team of researchers participating in the
 [Global Trajectory Optimization Competition](https://sophia.estec.esa.int/gtoc_portal/)
-is using the poliastro,
+is using poliastro,
 and they discovered a few bugs and made numerous code contributions.
 Special thanks to [Manuel López Ibáñez](https://github.com/MLopez-Ibanez)!
 
-Among other things, we fixed long standing bugs op
+Among other things, we fixed long standing bugs of
 [our Izzo algorithm for the Lambert problem](https://github.com/poliastro/poliastro/issues/1362)
 and [our accelerated `rotation_matrix` function](https://github.com/poliastro/poliastro/issues/1360).
 We plan to release the next version of poliastro
@@ -33,7 +33,7 @@ We rescued some past work
 and [contributed a new higher-order method to SciPy](https://github.com/scipy/scipy/pull/14956)
 that we hope to finish soon.
 
-And finally, both the [Open Source Cubesat Workshop](https://events.libre.space/event/5/abstracts/)
+And finally, both the [Open Source CubeSat Workshop](https://events.libre.space/event/5/abstracts/)
 and [SciPy Latin America](https://www.scipy.lat/conf/2021/),
 two very special events for us,
 have been announced!
