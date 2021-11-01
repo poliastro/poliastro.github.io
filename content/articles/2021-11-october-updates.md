@@ -18,7 +18,7 @@ In other news, a team of researchers participating in the
 [Global Trajectory Optimization Competition](https://sophia.estec.esa.int/gtoc_portal/)
 is using poliastro,
 and they discovered a few bugs and made numerous code contributions.
-Special thanks to [Manuel López Ibáñez](https://github.com/MLopez-Ibanez)!
+Special thanks to [Manuel López Ibáñez](http://lopez-ibanez.eu)!
 
 Among other things, we fixed long standing bugs of
 [our Izzo algorithm for the Lambert problem](https://github.com/poliastro/poliastro/issues/1362)
