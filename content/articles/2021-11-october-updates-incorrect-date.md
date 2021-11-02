@@ -4,6 +4,5 @@ Tags: NumFOCUS,Updates
 slug: october-updates
 lang: en
 Author: Juan Luis Cano Rodríguez
-Status: draft
 
 (Post moved [here](/blog/2021/11/01/october-updates/))
