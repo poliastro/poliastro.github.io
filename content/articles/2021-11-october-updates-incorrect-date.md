@@ -1,4 +1,4 @@
-Title: October updates
+Title: October updates (moved)
 Date: 2021-10-01 20:00 CET
 Tags: NumFOCUS,Updates
 slug: october-updates
