@@ -1,14 +1,14 @@
-Title: December updates
-Date: 2021-02-01 16:00 CET
+Title: January updates
+Date: 2022-02-01 16:00 CET
 Tags: NumFOCUS,Updates
 slug: january-updates
 lang: en
 Author: Juan Luis Cano Rodríguez
 
-This January we have spent a lot of time discussing Sebastian proposal
+This January, we spent a lot of time discussing Sebastian's proposal
 to [add a new `OrbitArray` object](https://github.com/poliastro/poliastro/pull/1445)
 in line with our Small Development Grant.
-We are now all in the same page and the implementation is progressing nicely!
+We are now all on the same page and the implementation is progressing nicely!
 
 Apart from that, our contributors have been working on a number of things:
 
