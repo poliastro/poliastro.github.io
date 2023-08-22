@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="poliastro developer team">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>Home | poliastro</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="alternate" type="application/atom+xml" title="poliastro blog atom feed" href="https://www.poliastro.space/feeds/all.atom.xml" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/theme/css/fontello.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+        <style>body {
+  margin: 0;
+  padding: 0;
+  font: 15px 'Source Sans Pro', sans-serif;
+  line-height: 1.6em;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #007ee5;
+  text-decoration: none;
+}
+a:hover {
+  color: #007ee5;
+  text-decoration: none;
+}
+header.main-header {
+  background: none repeat scroll 0% 0% #205F29;
+  margin-bottom: 0px;
+}
+header.main-header a {
+  color: #fff;
+}
+header.main-header .container {
+  max-width: 1000px;
+}
+header.main-header .container nav a:hover {
+  background-color: #5C881C;
+}
+header.navbar-default {
+  border-bottom: none;
+  background-color: #EFEFEF;
+}
+article {
+  margin: 0;
+}
+article header.about {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+article header {
+  padding-bottom: 20px;
+}
+article header h1 {
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #000;
+}
+article header time {
+  color: #9E9E9E;
+  float: right;
+}
+article header time.left {
+  color: #9E9E9E;
+  float: left;
+}
+article div.social-links ul {
+  padding: 0px;
+}
+article div.social-links li {
+  display: inline;
+  font-size: 20px;
+}
+article div.social-links li a {
+  color: #000;
+  padding: 10px;
+}
+article div.social-links li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+article p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+article p.note {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 0.533em 0.733em;
+}
+article p.update {
+  background-color: #FEEFB3;
+  border: 1px solid #e6e68a;
+  padding: 0.533em 0.733em;
+}
+article p.alert {
+  background-color: #ffe2e2;
+  border: 1px solid #ffb2b2;
+  padding: 0.533em 0.733em;
+}
+article ul,
+article ol {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+article li {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article blockquote {
+  border-left: 2px solid #c7c7cc;
+  color: #666;
+  margin: 30px 0;
+  padding: 0 0 0 25px;
+}
+article img {
+  max-width: 100%;
+}
+article code {
+  color: #333;
+  background-color: #EEE;
+  border-radius: 0;
+  font-size: 13px;
+}
+article .meta {
+  margin-top: 35px;
+}
+article .meta a:hover {
+  text-decoration: none;
+}
+article .meta div {
+  display: block;
+}
+article .meta address:before,
+article .meta time:before,
+article .meta a.tag:before {
+  font-family: 'fontello';
+  margin-right: 6px;
+}
+article .meta address.author {
+  float: left;
+}
+article .meta address:before {
+  content: '\e819';
+}
+article .meta time:before {
+  content: '\f133';
+}
+article .meta div.tags {
+  clear: both;
+}
+article .meta a.tag {
+  margin: 0 10px 10px 0;
+  padding: 1px 12px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.05);
+}
+article .meta a.tag:before {
+  content: '\e821';
+}
+article .meta a.tag:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+article .meta a.read_more,
+article .meta a.comments_btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 20px;
+  color: #007aa3;
+  background: #FFF;
+  border: 1px solid #007aa3;
+}
+article .meta a.read_more:hover,
+article .meta a.comments_btn:hover {
+  color: #FFF;
+  background: #007aa3;
+}
+article .meta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.index {
+  max-width: 700px;
+}
+.index article header h2 {
+  font-size: 36px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.index article header h2 a {
+  color: #333;
+}
+.index article header h2 a:hover {
+  color: #007ee5;
+  text-decoration: none;
+}
+.index .separator {
+  padding: 40px 0 0 0;
+  margin: 0 0 40px 0;
+  height: 10px;
+  border-bottom: solid 1px #CCC;
+}
+.index .pagination {
+  display: block;
+  margin-bottom: 100px;
+}
+.index .pagination .left {
+  text-align: right;
+}
+.index .pagination .right {
+  text-align: left;
+}
+.index .pagination a {
+  display: inline-block;
+  border: 2px solid #5C881C;
+  margin: 0 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: #5C881C;
+}
+.index .pagination a:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.post {
+  max-width: 700px;
+}
+.post h1 {
+  font-size: 42px;
+}
+.post h2:before {
+  content: "# ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h3:before {
+  content: "## ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h4:before {
+  content: "### ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post p {
+  font-size: 18px;
+}
+.list {
+  max-width: 700px;
+}
+.list ul.double-list {
+  margin: 0 auto 60px;
+  padding: 0;
+  list-style-type: none;
+}
+.list ul.double-list li {
+  padding: 5px 0;
+}
+.list ul.double-list li h2 {
+  font-size: 1em;
+  display: inline;
+  font-weight: normal;
+}
+.list ul.double-list li span {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  padding-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+.full-width-content {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		extensions: ["tex2jax.js"],
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			processEscapes: true
+		},
+		"HTML-CSS": { fonts: ["TeX"] }
+	});
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">
+	</script>
+
+    </head>
+
+    <body>
+        <header class="navbar navbar-default bs-docs-nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span> 
+		  </button>
+                  <a class="navbar-brand" href="/" title="Home" class="title">poliastro</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
+		    <ul class="nav navbar-nav navbar-right">
+
+                        <!--- DOCS PAGE -->
+                            <li><a class="icon-link" href="https://docs.poliastro.space/en/latest/" title="Documentation">Documentation</a></li>
+
+                        <!--- COMMUNITY PAGE -->
+                            <li><a class="icon-link" href="http://chat.poliastro.space/" title="Community">Community</a></li>
+
+                        <!--- TUTORIALS PAGE -->
+                            <li><a class="icon-link" href="https://beta.mybinder.org/v2/gh/poliastro/poliastro/main?filepath=index.ipynb" title="Tutorials">Tutorials</a></li>
+
+                        <!--- GITHUB PAGE -->
+                            <li><a class="icon-github" href="https://github.com/poliastro/poliastro" title="Code">Source Code</a></li>
+
+                        <!--- TWITTER LINK -->
+                            <li><a class="icon-twitter" href="http://twitter.com/poliastro_py" title="Twitter">Twitter</a></li>
+
+                        <!--- BLOG PAGE -->
+			<li><a href="https://www.poliastro.space/blog/index.html" title="Blog">Blog</a></li>                                    
+
+                        <!--- SHOW ARCHIVES -->
+			<li><a href="https://www.poliastro.space/archives.html" title="Archive">Archive</a></li>
+			<li><a class="nodec icon-rss" href="https://www.poliastro.space/feeds/all.atom.xml" title="poliastro RSS feed" rel="me"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+<div class="container index">
+
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/07/16/2019-07-16-new-propagators/">New propagators</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-07-16T09:00:00+02:00" pubdate>Tue 16 July 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/jorge-martinez-garrido.html">Jorge Martínez Garrido</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+                <a href="https://www.poliastro.space/tag/kepler.html" class="tag">kepler</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <h2>What are propagators and why do we care about them?</h2>
+<p>One of the most common problems in astrodynamics and orbital mechanics is that
+we want to know where a body will be at a given position along its orbit for a
+given time. It is possible to integrate by hard the two-body equation and then
+apply some boundary conditions. However, this last option is just insane and
+would take several hours or days to be done by a human.</p>
+<p>There is a better way to get the position as a function of time or <code>propagate</code> an
+orbit. Johannes Kepler's contributions to the astrodynamics and orbital
+mechanics field were really important and can be summarized here, in the
+so-called Kepler's Laws:</p>
+<ul>
+<li>Planets' orbits follow an elliptical path around the Sun, which is located in one of the focus.</li>
+<li>Planets cover equal …</li></ul>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/07/16/2019-07-16-new-propagators/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/07/15/2019-07-15-moving-forward-with-the-cesium-application/">Moving forward with the Cesium application</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-07-15T17:50:00+02:00" pubdate>Mon 15 July 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/eleftheria-chatziargyriou.html">Eleftheria Chatziargyriou</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>I feel like in the last couple of weeks I got to work a little in several aspects
+of the project. While this didn't allow me to focus on a single feature, it allowed
+me to make progress in various different areas.</p>
+<h2>Bug resolving and 2D mode</h2>
+<p>First and foremost, I got rid of a particularly frustrating bug in the application.
+Certain javascript events (such as the one that allows the inertial view), where tied 
+to a single <code>Viewer</code> and thus wouldn't trigger when the <code>Viewer</code> was destroyed 
+(which is the case when, for example, loading the data from the file). I also made a 
+few minor changes in the code and introduced the option to set the Viewer mode to 2D.
+This isn't any useful as of now, but it will be with the new feature I'm planning to …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/07/15/2019-07-15-moving-forward-with-the-cesium-application/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/06/30/2019-06-30-converting-to-czml-and-next-steps/">Converting to CZML and next steps</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-06-30T11:30:00+02:00" pubdate>Sun 30 June 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/eleftheria-chatziargyriou.html">Eleftheria Chatziargyriou</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>So the first phase of GSoC is over and with it, it's time to reflect what
+has been achieved in the last couple of months.</p>
+<h1>CZML3</h1>
+<p>As I mentioned in the 
+<a href="https://blog.poliastro.space/2019/06/13/2019-06-13-communication-satellites-and-refactoring/">last blogpost</a>
+this is a very useful <a href="https://github.com/poliastro/czml3">library</a> created by juanlu. After a
+few patches, the library now supports most CZML properties and - as far as I can tell - this is 
+the only currently mantained Python library for creating CZML packets.</p>
+<h1>CZML Extractor</h1>
+<p>This is the first feature I've started to work on and while it is still far from complete,
+I'm happy to say that it is now usable. </p>
+<p>At first, the czml document was represented by a nested dictionary and then converted to 
+valid JSON format. This worked ok and I did write a function which made manipulating the
+dictionary a tad more intuitive, but it was …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/06/30/2019-06-30-converting-to-czml-and-next-steps/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/06/29/2019-06-29-getting-done-for-next-release/">Getting done for next release</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-06-29T07:00:00+02:00" pubdate>Sat 29 June 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/jorge-martinez-garrido.html">Jorge Martínez Garrido</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <h2>Version 0.13 is getting closer</h2>
+<p>Version 0.13 is expected to be tagged in about a month. As any other release,
+it includes new features such as a new method in the <code>Orbit</code> class called
+<code>change_attractor</code> or the <code>trail</code> parameter in <code>StaticOrbitPlotter</code>. However,
+this release will also include really important bug fixes such as:</p>
+<ul>
+<li>Minor issues related to Lambert's problem.</li>
+<li>Propagator's are supposed not to hang out anymore due to robust solutions and propagation methods.</li>
+</ul>
+<p>Now that my final exams ended I am completely free to work in poliastro and
+direct all my efforts to the software. I want to close issues
+<a href="https://github.com/poliastro/poliastro/issues/495">#495</a> and
+<a href="https://github.com/poliastro/poliastro/issues/475">#475</a>  in the next days since they are previously commented bugs.</p>
+<h3>Propagator methods in the twobody problem</h3>
+<p>Kepler's equation (KE) allows us to solve either for the time at a given
+position or the position …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/06/29/2019-06-29-getting-done-for-next-release/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/06/13/2019-06-13-communication-satellites-and-refactoring/">Communication satellites and refactoring</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-06-13T21:00:00+02:00" pubdate>Thu 13 June 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/eleftheria-chatziargyriou.html">Eleftheria Chatziargyriou</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>Those couple of weeks were spent mainly on setting future milestones
+and improving the quality of the code. In a way, Tom Cargill's famous
+aphorism came to my mind:</p>
+<blockquote>
+<p>The first 90 percent of the code accounts for the first 90 percent 
+of the development time. The remaining 10 percent of the code accounts
+for the other 90 percent of the development time.</p>
+</blockquote>
+<p>Writing stuff that "just works" is relatively easy. But when programming,
+you always have to keep track of myriad variables including but not limited
+to: maintanability, integration and readability. </p>
+<h1>CZML3</h1>
+<p>My mentor, Juanlu, wrote a fully-fledged <a href="https://github.com/poliastro/czml3">library</a>
+for composing czml packets. While it's still in the early stages of development,
+I  would urge anyone interested to check it out. I'm currently trying to refactor
+the czml core, so it utilizes the library instead of the current approach …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/06/13/2019-06-13-communication-satellites-and-refactoring/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/06/13/2019-06-13-Lambert-maneuvers-and-trails-in-plots/">Lambert maneuvers and trails in plots</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-06-13T09:00:00+02:00" pubdate>Thu 13 June 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/jorge-martinez-garrido.html">Jorge Martínez Garrido</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <h2>What's new?</h2>
+<p>Three weeks have passed since the coding phase began and new features have been
+added to the software:</p>
+<ul>
+<li>Lambert is now a <code>Maneuver</code> instance.</li>
+<li>A trail keyword in <code>StaticOrbitPlotter</code> for showing orbits' trails.</li>
+</ul>
+<h3>Lambert just needs now two orbits!</h3>
+<p>Although the raw algorithms are kept under the module <code>poliastro.iod</code>, it is 
+possible now to simplify the process of solving this famous astrodynamics 
+problem by making use of the <code>poliastro.maneuver</code> module.</p>
+<p>Imagine that we want to solve the classical problem ongoing from Earth to Mars
+for a trip of 600 days duration. Let us compare  before and after
+<code>Maneuver.lambert</code> implementations:</p>
+<p>With 0.12 version:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">astropy</span> <span class="kn">import</span> <span class="n">units</span> <span class="k">as</span> <span class="n">u</span>
+<span class="kn">from</span> <span class="nn">astropy.time</span> <span class="kn">import</span> <span class="n">Time</span>
+
+<span class="kn">from</span> <span class="nn">poliastro.bodies</span> <span class="kn">import</span> <span class="n">Earth</span><span class="p">,</span> <span class="n">Mars</span><span class="p">,</span> <span class="n">Sun</span>
+<span class="kn">from</span> <span class="nn">poliastro.iod.izzo</span> <span class="kn">import</span> <span class="n">lambert</span>
+<span class="kn">from</span> <span class="nn">poliastro.twobody</span> <span class="kn">import</span> <span class="n">Orbit</span>
+
+<span class="n">LAUNCH</span> <span class="o">=</span> <span class="n">Time</span><span class="o">.</span><span class="n">now …</span></code></pre></div>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/06/13/2019-06-13-Lambert-maneuvers-and-trails-in-plots/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/05/29/2019-05-29-let-the-coding-begin/">Let the coding begin</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-05-29T23:30:00+02:00" pubdate>Wed 29 May 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/eleftheria-chatziargyriou.html">Eleftheria Chatziargyriou</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <h1>Let the coding begin</h1>
+<p>So the bonding period is over, which means that the coding phase has officially begun.
+I've already worked on some of the key features I'd like to add since my examination
+period is around the corner. Hopefully, this won't slow me down and I'll keep up with 
+the workload.</p>
+<h1>The work so far</h1>
+<p>I've worked on the main part of the project, which was to connect poliastro to the
+visualization capabilities offered by the Cesium API. There is already the possibility
+of adding orbits and defining custom attractors, along with various visual customizations.
+As exciting as this is, there are still way more things that could be added to give life to the
+project, rendering it more useful and interesting.</p>
+<h1>Communications satellites</h1>
+<p>In the past days, I became increasingly interested in adding communication satellites
+and visualizing …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/05/29/2019-05-29-let-the-coding-begin/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/05/27/2019-05-27-coding-phase-starts/">Coding phase starts!</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-05-27T11:30:00+02:00" pubdate>Mon 27 May 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/jorge-martinez-garrido.html">Jorge Martínez Garrido</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <h2>The End of the bonding period</h2>
+<p>Today bonding period ends for all students selected at GSoC'19. The aim of this
+period was to learn more about your project community: get in touch with
+mentors, other developers and their future ideas on the software...</p>
+<p>As I said in my last post, I started contributing to poliastro several months
+ago, even before GSOC was announced. Therefore, and since I am taking my final
+exams, all my efforts were towards passing them.</p>
+<p>But today the coding phase starts! That means we all should start working on
+our proposal features.</p>
+<h2>The coding phase at poliastro</h2>
+<p>The release of poliastro version 0.13 is getting closer. During this first part
+of the coding phase, I am planning to solve for different issues, most of them
+related to frames, <a href="https://github.com/poliastro/poliastro/milestone/14">check out milestones 0.13</a>.</p>
+<p>Frames are …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/05/27/2019-05-27-coding-phase-starts/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/05/13/2019-05-10-poliastro-gsoc-eleftheria/">The beginning of GSoC</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-05-13T20:30:00+02:00" pubdate>Mon 13 May 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/eleftheria-chatziargyriou.html">Eleftheria Chatziargyriou</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>Hello everyone, I'm Eleftheria and this summer I'll be working with poliastro 
+under Open Astronomy as part of GSoC 2019. I'm hoping this blog will prove to 
+be interesting to those who are interested in poliastro or simply a source of 
+inspiration to those looking for a way to get their feet wet with open source.</p>
+<h1>The beginning of a journey</h1>
+<p>After forking poliastro, I immediately dived in and tried to make sense of the
+codebase. Fortunately, poliastro is extensively 
+<a href="https://docs.poliastro.space/en/stable/">documented</a> so the learning curve wasn't
+as steep as I expected. After getting familiar with the project structure, I started
+browsing the open issues to find ways to make myself useful. What caught my attention
+was the ongoing process of adding visualization features to poliastro, which would 
+make the library more accessible to professionals and beginners alike.</p>
+<p>It should be …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/05/13/2019-05-10-poliastro-gsoc-eleftheria/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2019/05/10/2019-05-10-poliastro-gsoc-jorge/">GSOC-19 starts!</a></h2>
+      <div class="meta">
+        <time datetime="" title="2019-05-10T11:00:00+02:00" pubdate>Fri 10 May 2019</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/jorge-martinez-garrido.html">Jorge Martínez Garrido</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc19.html" class="tag">GSOC19</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <h2>From my first pull request to GSOC student</h2>
+<p>Hi, my name is Jorge, and I am one of the selected students for this GSOC
+edition at poliastro under the OpenAstronomy organization. I started working on
+poliastro project after Juanlu came to my university to give a talk about Open
+Source software in engineering. </p>
+<p>After forking poliastro, I decided to improve API Docs, which gave me an
+overview on how the project was built and how the different modules talked
+among them. I had no idea on how Git and GitHub worked and therefore,
+when finished with the docs my first pull request was quite massive...</p>
+<p>But after that I started feeling more confortable with GitHub and Sphinx, the
+tool used nowadays in poliastro for building documentation. Then, I decided to
+work on a porkchop plotter.</p>
+<p>I spent the week after …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2019/05/10/2019-05-10-poliastro-gsoc-jorge/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+
+  <nav class="pagination row">
+    <div class="col-xs-6 left">
+        <a class="prev" href="https://www.poliastro.space/blog/index5.html">&#8592; Older posts</a>
+    </div>
+    <div class="col-xs-6 right">
+        <a class="next" href="https://www.poliastro.space/blog/index3.html">Newer posts &#8594;</a>
+    </div>
+  </nav>
+
+  </div>
+
+</div>
+
+        </div>
+<!--
+    <footer>
+      <p>
+        © 2012-2017 poliastro developer team, license <a href="https://github.com/poliastro/poliastro.github.io/blob/sources/LICENSE"> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a>.
+      </p>
+    </footer>
+-->
+    </body>
+</html>

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="poliastro developer team">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>poliastro - articles category | poliastro</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="alternate" type="application/atom+xml" title="poliastro blog atom feed" href="https://www.poliastro.space/feeds/all.atom.xml" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/theme/css/fontello.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #808080 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+        <style>body {
+  margin: 0;
+  padding: 0;
+  font: 15px 'Source Sans Pro', sans-serif;
+  line-height: 1.6em;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #007ee5;
+  text-decoration: none;
+}
+a:hover {
+  color: #007ee5;
+  text-decoration: none;
+}
+header.main-header {
+  background: none repeat scroll 0% 0% #205F29;
+  margin-bottom: 0px;
+}
+header.main-header a {
+  color: #fff;
+}
+header.main-header .container {
+  max-width: 1000px;
+}
+header.main-header .container nav a:hover {
+  background-color: #5C881C;
+}
+header.navbar-default {
+  border-bottom: none;
+  background-color: #EFEFEF;
+}
+article {
+  margin: 0;
+}
+article header.about {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+article header {
+  padding-bottom: 20px;
+}
+article header h1 {
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #000;
+}
+article header time {
+  color: #9E9E9E;
+  float: right;
+}
+article header time.left {
+  color: #9E9E9E;
+  float: left;
+}
+article div.social-links ul {
+  padding: 0px;
+}
+article div.social-links li {
+  display: inline;
+  font-size: 20px;
+}
+article div.social-links li a {
+  color: #000;
+  padding: 10px;
+}
+article div.social-links li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+article p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+article p.note {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 0.533em 0.733em;
+}
+article p.update {
+  background-color: #FEEFB3;
+  border: 1px solid #e6e68a;
+  padding: 0.533em 0.733em;
+}
+article p.alert {
+  background-color: #ffe2e2;
+  border: 1px solid #ffb2b2;
+  padding: 0.533em 0.733em;
+}
+article ul,
+article ol {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+article li {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article blockquote {
+  border-left: 2px solid #c7c7cc;
+  color: #666;
+  margin: 30px 0;
+  padding: 0 0 0 25px;
+}
+article img {
+  max-width: 100%;
+}
+article code {
+  color: #333;
+  background-color: #EEE;
+  border-radius: 0;
+  font-size: 13px;
+}
+article .meta {
+  margin-top: 35px;
+}
+article .meta a:hover {
+  text-decoration: none;
+}
+article .meta div {
+  display: block;
+}
+article .meta address:before,
+article .meta time:before,
+article .meta a.tag:before {
+  font-family: 'fontello';
+  margin-right: 6px;
+}
+article .meta address.author {
+  float: left;
+}
+article .meta address:before {
+  content: '\e819';
+}
+article .meta time:before {
+  content: '\f133';
+}
+article .meta div.tags {
+  clear: both;
+}
+article .meta a.tag {
+  margin: 0 10px 10px 0;
+  padding: 1px 12px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.05);
+}
+article .meta a.tag:before {
+  content: '\e821';
+}
+article .meta a.tag:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+article .meta a.read_more,
+article .meta a.comments_btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 20px;
+  color: #007aa3;
+  background: #FFF;
+  border: 1px solid #007aa3;
+}
+article .meta a.read_more:hover,
+article .meta a.comments_btn:hover {
+  color: #FFF;
+  background: #007aa3;
+}
+article .meta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.index {
+  max-width: 700px;
+}
+.index article header h2 {
+  font-size: 36px;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+.index article header h2 a {
+  color: #333;
+}
+.index article header h2 a:hover {
+  color: #007ee5;
+  text-decoration: none;
+}
+.index .separator {
+  padding: 40px 0 0 0;
+  margin: 0 0 40px 0;
+  height: 10px;
+  border-bottom: solid 1px #CCC;
+}
+.index .pagination {
+  display: block;
+  margin-bottom: 100px;
+}
+.index .pagination .left {
+  text-align: right;
+}
+.index .pagination .right {
+  text-align: left;
+}
+.index .pagination a {
+  display: inline-block;
+  border: 2px solid #5C881C;
+  margin: 0 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: #5C881C;
+}
+.index .pagination a:hover {
+  color: #FFF;
+  background: #5C881C;
+}
+.post {
+  max-width: 700px;
+}
+.post h1 {
+  font-size: 42px;
+}
+.post h2:before {
+  content: "# ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h3:before {
+  content: "## ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post h4:before {
+  content: "### ";
+  font-weight: bold;
+  color: #DDD;
+}
+.post p {
+  font-size: 18px;
+}
+.list {
+  max-width: 700px;
+}
+.list ul.double-list {
+  margin: 0 auto 60px;
+  padding: 0;
+  list-style-type: none;
+}
+.list ul.double-list li {
+  padding: 5px 0;
+}
+.list ul.double-list li h2 {
+  font-size: 1em;
+  display: inline;
+  font-weight: normal;
+}
+.list ul.double-list li span {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  padding-top: 3px;
+  font-size: 12px;
+  color: #999;
+}
+.full-width-content {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		extensions: ["tex2jax.js"],
+		jax: ["input/TeX", "output/HTML-CSS"],
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			processEscapes: true
+		},
+		"HTML-CSS": { fonts: ["TeX"] }
+	});
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML">
+	</script>
+
+    </head>
+
+    <body>
+        <header class="navbar navbar-default bs-docs-nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span> 
+		  </button>
+                  <a class="navbar-brand" href="/" title="Home" class="title">poliastro</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
+		    <ul class="nav navbar-nav navbar-right">
+
+                        <!--- DOCS PAGE -->
+                            <li><a class="icon-link" href="https://docs.poliastro.space/en/latest/" title="Documentation">Documentation</a></li>
+
+                        <!--- COMMUNITY PAGE -->
+                            <li><a class="icon-link" href="http://chat.poliastro.space/" title="Community">Community</a></li>
+
+                        <!--- TUTORIALS PAGE -->
+                            <li><a class="icon-link" href="https://beta.mybinder.org/v2/gh/poliastro/poliastro/main?filepath=index.ipynb" title="Tutorials">Tutorials</a></li>
+
+                        <!--- GITHUB PAGE -->
+                            <li><a class="icon-github" href="https://github.com/poliastro/poliastro" title="Code">Source Code</a></li>
+
+                        <!--- TWITTER LINK -->
+                            <li><a class="icon-twitter" href="http://twitter.com/poliastro_py" title="Twitter">Twitter</a></li>
+
+                        <!--- BLOG PAGE -->
+			<li><a href="https://www.poliastro.space/blog/index.html" title="Blog">Blog</a></li>                                    
+
+                        <!--- SHOW ARCHIVES -->
+			<li><a href="https://www.poliastro.space/archives.html" title="Archive">Archive</a></li>
+			<li><a class="nodec icon-rss" href="https://www.poliastro.space/feeds/all.atom.xml" title="poliastro RSS feed" rel="me"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+<div class="container index">
+<h2>Articles in the articles category</h2>
+
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2021/08/17/august-updates/">August updates</a></h2>
+      <div class="meta">
+        <time datetime="" title="2021-08-17T12:00:00+02:00" pubdate>Tue 17 August 2021</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/juan-luis-cano-rodriguez.html">Juan Luis Cano Rodríguez</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/numfocus.html" class="tag">NumFOCUS</a>
+                <a href="https://www.poliastro.space/tag/updates.html" class="tag">Updates</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>This month Yash has been wrapping up his Google of Summer of Code work
+by adding <a href="https://github.com/poliastro/poliastro/pull/1246">eclipse event detection</a>,
+<a href="https://github.com/poliastro/poliastro/pull/1293">node crossing event detection</a>,
+and <a href="https://github.com/poliastro/poliastro/pull/1288">fixing the propagation logic for non-terminal events</a>.
+Besides, Yash is also writing <a href="https://github.com/poliastro/poliastro/pull/1304">a new how-to guide for the event detection</a>
+that we hope to get merged soon.
+Jorge has been thoroughly reviewing all that work
+and <a href="https://github.com/poliastro/poliastro/pull/1288">adding validation cases</a> when appropriate.</p>
+<p>Libre Space Foundation <a href="https://libre.space/2021/08/12/gsoc-project-expanding-events-detection-poliastro/">published a summary of Yash work</a>,
+you can read it on their blog.</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2021/08/17/august-updates/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2021/07/18/july-updates/">July updates</a></h2>
+      <div class="meta">
+        <time datetime="" title="2021-07-18T17:00:00+02:00" pubdate>Sun 18 July 2021</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/juan-luis-cano-rodriguez.html">Juan Luis Cano Rodríguez</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/numfocus.html" class="tag">NumFOCUS</a>
+                <a href="https://www.poliastro.space/tag/updates.html" class="tag">Updates</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>This month <a href="https://github.com/poliastro/poliastro/">the poliastro repository</a>
+has crossed ⭐️ 500 GitHub stars ⭐️, thanks everyone for believing in the
+project!</p>
+<p>Juan Luis <a href="https://docs.poliastro.space/en/v0.15.2/changelog.html">released version
+0.15.2</a> with <a href="https://github.com/poliastro/poliastro/pull/1228">a fix for
+newer astroquery versions</a>,
+as well as compatibility with Plotly 5.0, which allows users to install all the
+required JupyterLab extensions without Node.js. This will make the installation
+process much easier!</p>
+<p>Yash and Jorge had a very productive month: after a lot of discussion in our
+weekly community calls and several rounds of code reviews, <a href="https://github.com/poliastro/poliastro/pull/1246">we finally have
+eclipse event detection
+merged!</a>
+Yash has passed the first Google Summer of Code evaluation with
+flying colors and will publish an entry in our blog soon. The work Jorge did
+<a href="https://github.com/poliastro/validation/pull/33">on our validation
+infrastructure</a> as part of the
+NumFOCUS Small Development Grant has proven to be extremely useful.
+In addition, Yash has also …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2021/07/18/july-updates/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2021/05/08/april-updates/">April updates</a></h2>
+      <div class="meta">
+        <time datetime="" title="2021-05-08T21:00:00+02:00" pubdate>Sat 08 May 2021</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/juan-luis-cano-rodriguez.html">Juan Luis Cano Rodríguez</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/numfocus.html" class="tag">NumFOCUS</a>
+                <a href="https://www.poliastro.space/tag/updates.html" class="tag">Updates</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>The first (and hopefully) only <strong>beta of poliastro 0.15</strong> is out! 🎉
+It took us a bit longer to get this release out,
+but we are happy that poliastro 0.15 is now around the corner.
+We will soon write detailed release notes and a proper announcement for it,
+and in the meanwhile you can read <a href="https://docs.poliastro.space/en/latest/changelog.html">the preliminary poliastro 0.15 changelog</a>.</p>
+<p>Juan Luis revamped our website a bit,
+by <a href="https://github.com/poliastro/poliastro.github.io/issues/2">adjusting our domain names</a>
+and <a href="https://github.com/poliastro/poliastro.github.io/pull/74">improving the navigation bar</a>
+(<a href="https://github.com/poliastro/poliastro.github.io/pull/77">twice</a>).
+Besides, he has finished the reorganization of our docs
+following <a href="https://diataxis.fr/">the Diátaxis Framework by Daniele Procida</a>,
+<a href="https://github.com/poliastro/poliastro/pull/1188">prepared for the upcoming Sphinx 4.0 release</a>,
+and <a href="https://github.com/poliastro/poliastro/pull/1206/">updated our installation and contribution instructions</a>.</p>
+<p>Jorge has finished <a href="https://github.com/poliastro/validation/pull/24">validating our planetary transformations against GMAT and Orekit</a>,
+which required reaching out to the Orekit developers
+and <a href="https://github.com/poliastro/poliastro/pull/1193">adjusting one outdated constant in poliastro</a>.
+This wraps up …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2021/05/08/april-updates/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2021/02/24/2021-02-24-February-updates/">February updates</a></h2>
+      <div class="meta">
+        <time datetime="" title="2021-02-24T21:00:00+01:00" pubdate>Wed 24 February 2021</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/juan-luis-cano-rodriguez.html">Juan Luis Cano Rodríguez</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/numfocus.html" class="tag">NumFOCUS</a>
+                <a href="https://www.poliastro.space/tag/updates.html" class="tag">Updates</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>poliastro <a href="https://github.com/poliastro/poliastro/pull/1027">finally landed support for Python 3.9</a>,
+thanks to the fine folks of numba! <a href="https://numba.discourse.group/t/numba-0-53-0-and-llvmlite-0-36-0-release-candidates/504?u=astrojuanlu">Their release candidate already works with the newest Python
+release</a>,
+and we've been told that <a href="https://twitter.com/numba_jit/status/1363868866984751107">the stable release is around the
+corner</a>. This means that the next stable
+release of poliastro will also support it 🚀</p>
+<p>On the validation side, Jorge has been working on more enhancements, and we have finally confirmed
+that our 3D impulsive maneuvers give the same result as GMAT and Orekit! You can read the full
+details <a href="https://blog.poliastro.space/blog/2021/02/17/2021-02-17-validation-of-3dmaneuvers/">in this blog
+post</a>.</p>
+<p>And finally, we have made some small improvements on the development side, by <a href="https://twitter.com/numba_jit/status/1363868866984751107">fixing some
+continuous integration small failures</a>,
+<a href="https://github.com/poliastro/poliastro/pull/1092">reducing the number of warnings in our tests</a>,
+and <a href="https://github.com/poliastro/poliastro/pull/1094">other small fixes</a>. Thanks Yash, Dhruv, zkl2,
+and Souhit!</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2021/02/24/2021-02-24-February-updates/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2021/01/24/2021-01-24-January-updates/">January updates</a></h2>
+      <div class="meta">
+        <time datetime="" title="2021-01-24T12:00:00+01:00" pubdate>Sun 24 January 2021</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/juan-luis-cano-rodriguez.html">Juan Luis Cano Rodríguez</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/numfocus.html" class="tag">NumFOCUS</a>
+                <a href="https://www.poliastro.space/tag/updates.html" class="tag">Updates</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>We got awarded a Small Development Grant by NumFOCUS to <a href="https://github.com/poliastro/numfocus_proposal/">validate poliastro against commercial and
+non-commercial similar applications</a>! 🎉 Jorge
+started by setting GitHub Actions to <a href="https://github.com/poliastro/poliastro/pull/1051/">trigger the validations
+automatically</a>, <a href="https://github.com/poliastro/validation/pull/4">validating our conversion
+between cartesian and Keplerian elements against
+Orekit</a>, and is now <a href="https://github.com/poliastro/validation/pull/15">fighting some discrepancies
+with Hohmann transfers</a>.  </p>
+<p>On the development front, while we wait for Numba to release Python 3.9-compatible wheels for our
+next release, <a href="https://github.com/poliastro/poliastro/pull/1053">we refactored our Cowell
+propagator</a> to make the code simpler and more
+numba-friendly, we tried to merge <a href="https://github.com/poliastro/poliastro/pull/719">Eleftheria's implementation of the Escobal method for satellite
+visibility</a> (and <a href="https://space.stackexchange.com/q/49136/10716">sadly got blocked in the
+process</a>), and kept working on <a href="https://gist.github.com/astrojuanlu/c44e57a8f4e001d5cbc6d6e53ecb66e0">our analysis of
+Walker constellations</a> for
+<a href="https://opensatcom.org/">the OpenSatCom activity</a>. We also engaged with the authors of <a href="https://github.com/hgrecco/numbakit-ode/">the
+awesome numbakit-ode</a> to <a href="https://github.com/poliastro/poliastro/pull/1049">rewrite our Cowell method using
+numba</a>, but found some issues along the way and
+we decided …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2021/01/24/2021-01-24-January-updates/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2020/08/31/2020-08-31-This-is-an-end-of-an-era/">This is an end of an era</a></h2>
+      <div class="meta">
+        <time datetime="" title="2020-08-31T11:00:00+02:00" pubdate>Mon 31 August 2020</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/meuge.html">Meuge</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc20.html" class="tag">GSOC20</a>
+                <a href="https://www.poliastro.space/tag/google.html" class="tag">Google</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>Contributing to Poliastro has been an incredible experience for me. Since it was the first time, I've participated in GSOC. And the first time I've ever approached to package dedicated to problems arising in Astrodynamics and Orbital Mechanics. Being part of Poliastro was an exciting challenge that I had to surmount and also an unbelievable opportunity to learn about Space, Math and Physics.</p>
+<p><img alt="era" src="https://media.giphy.com/media/Vekuh5ATS6oXPVsij7/giphy.gif"></p>
+<p>With the thorough knowledge learned, and the feedback from JuanLu and Jorge, I was able to overcome every challenge in my Poliastro's journey. As I had said when I had the opportunity, I am grateful to both of my mentors who accepted me to be part of this exceptional community.  :)</p>
+<p><img alt="wall-e" src="https://media.giphy.com/media/2uFLqNEmuOW08/giphy.gif"></p>
+<h1>Git-log</h1>
+<p>What we have achieved in the past three months:</p>
+<ul>
+<li><a href="https://github.com/poliastro/poliastro/pulls?q=is%3Apr+author%3A%40me+is%3Aclosed">#965 Stationary and Synchronous Orbit Implementation</a></li>
+<li><a href="https://github.com/poliastro/poliastro/pull/969"># 969 Fix for the flaky Horizon Test</a></li>
+<li><a href="https://github.com/poliastro/poliastro/pulls?q=is%3Apr+author%3A%40me+is%3Aclosed">#970 Earth Satellite Implementation …</a></li></ul>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2020/08/31/2020-08-31-This-is-an-end-of-an-era/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2020/08/20/2020-08-20-Looking-for-the-answers!/">Looking for the answers!</a></h2>
+      <div class="meta">
+        <time datetime="" title="2020-08-20T12:00:00+02:00" pubdate>Thu 20 August 2020</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/meuge.html">Meuge</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc20.html" class="tag">GSOC20</a>
+                <a href="https://www.poliastro.space/tag/google.html" class="tag">Google</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>Hey, folks! The last weeks were really exciting getting done an algorithm for ground-track orbit. After long days trying to find the perfect approach for Poliastro, we decided to give it a go bringing to life this <a href="[https://www.researchgate.net/publication/287869810_Daily_repeat-groundtrack_Mars_orbits">paper</a></p>
+<p><img alt="wow" src="https://media.giphy.com/media/gZBYbXHtVcYKs/giphy.gif"></p>
+<h1>But everything it's not what it seems</h1>
+<p>Well, we thought it will be quite straightforward but much too learn still I have , right Master Yoda?  </p>
+<p><img alt="do-or-do-not" src="https://media.giphy.com/media/pvDp7Ewpzt0o8/giphy.gif"></p>
+<p>So I am not gonna lie to you folks, it wasn't that easy, but as Rocky says, "Every champion was once a contender who refused to give up". So now you are gonna know how we solve it. Game on!  First things first, we needed to apply numerical analysis in order to obtain the roots of the equation, because given the complexity of the function, there was no other way around. </p>
+<p><img alt="oh-no" src="https://media.giphy.com/media/xT5LMLMPdRh2VRNVLi/giphy.gif"></p>
+<p>So we had to come up …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2020/08/20/2020-08-20-Looking-for-the-answers!/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2020/07/24/2020-07-24-On-the-move!/">On the move!</a></h2>
+      <div class="meta">
+        <time datetime="" title="2020-07-24T09:00:00+02:00" pubdate>Fri 24 July 2020</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/meuge.html">Meuge</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc20.html" class="tag">GSOC20</a>
+                <a href="https://www.poliastro.space/tag/google.html" class="tag">Google</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>Hey, folks! Here's Meuge, your usual host from the last few months. </p>
+<p><img alt="Johnny" src="https://media.giphy.com/media/RoajqIorBfSE/giphy.gif"></p>
+<p>In the last few weeks, we got a little bit of everything, analyzing, coding, and searching for feasible solutions to reach the best result. Therefore, we came up with a new feature in Poliastro's Earth module. The API may change in the future, so be aware by the time you read this. Hence, I bet you might be wondering, what's all the fuzz?</p>
+<p><img alt="Really?" src="https://media.giphy.com/media/US0y4X7FONHaM/giphy.gif"></p>
+<p>Well, now you can experiment with the new API to compute the visibility of sensors that are on board of the satellites. The FOV, field of view, the question is about meeting mission goals within the limit of a satellite sensor. 
+Given some parameters about the viewing satellite, the fundamental problem related to calculating the field of view is estimating how much of Earth we …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2020/07/24/2020-07-24-On-the-move!/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2020/06/28/2020-06-28-What-we'-ve-been-working-on-these-days!/">What we've been working on these days!</a></h2>
+      <div class="meta">
+        <time datetime="" title="2020-06-28T09:00:00+02:00" pubdate>Sun 28 June 2020</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/meuge.html">Meuge</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc20.html" class="tag">GSOC20</a>
+                <a href="https://www.poliastro.space/tag/google.html" class="tag">Google</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>Hey, folks! I hope everyone is okay out there. Today, I am going to explain a little bit about <strong>Repeat ground track orbits</strong>, and the value that lies behind. 
+Orbits with repeating ground tracks play a significant role in space engineering. Ground tracks that repeat according to any pattern have meaningful applications in remote sensing missions, reconnaissance missions, and numerous rendezvous and docking opportunities with an orbiting spacecraft. Since they overfly the same points on the planet’s surface every repeat cycle, such as those studying gravity, the atmosphere, or the movement of the polar ice cap.</p>
+<p><img alt="mind-blown" src="https://media.giphy.com/media/OK27wINdQS5YQ/giphy.gif"></p>
+<p>So as you might imagine, this is amazing. In one way, the data we consume relies on these orbits. As mentioned before, Repeat ground track (RGT) orbits allows a satellite to reobserve the same area after a repeat cycle. </p>
+<p><img alt="repeat-ground-track" src="https://www.iceye.com/hs-fs/hubfs/new-pages-website-2019/Img%20(no%20adding)/Sat%20Data%20-%20constellation.gif?width=450&amp;name=Sat%20Data%20-%20constellation.gif"></p>
+<h1>So how do we …</h1>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2020/06/28/2020-06-28-What-we'-ve-been-working-on-these-days!/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+  <article>
+    <header>
+      <h2><a href="https://www.poliastro.space/blog/2020/06/27/2020-06-27-to-infinity-and-beyond!/">To Infinity and Beyond!</a></h2>
+      <div class="meta">
+        <time datetime="" title="2020-06-27T21:45:00+02:00" pubdate>Sat 27 June 2020</time>
+        <address class="vcard author">By
+	    <a class="url fn" href="https://www.poliastro.space/author/meuge.html">Meuge</a>
+        </address>
+        <div class="tags">
+                <a href="https://www.poliastro.space/tag/gsoc.html" class="tag">GSOC</a>
+                <a href="https://www.poliastro.space/tag/gsoc20.html" class="tag">GSOC20</a>
+                <a href="https://www.poliastro.space/tag/google.html" class="tag">Google</a>
+                <a href="https://www.poliastro.space/tag/poliastro.html" class="tag">poliastro</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="article_content">
+      <p>Hey folks! It's been a while, but here I am to keep you posted about what we've been up to these last days. </p>
+<p><img alt="news" src="https://media.giphy.com/media/3o84sJXOIrnjvlwnF6/giphy.gif"></p>
+<h1>What have we been up to?</h1>
+<p>We began the coding period with a video call with the mentors, as you might already know, <strong>JuanLu</strong> and <strong>Jorge</strong>. We got to know each other a little better, and we started to design what was ahead of our path.</p>
+<p><img alt="future" src="https://media.giphy.com/media/KZocN3LfuqktW/giphy.gif"></p>
+<p>But, before dropping any line of code, we first had to think about what would be the best way to integrate the new features to <strong>Poliastro community</strong> in order to capture the desired requirements from an end-user perspective. After some deliberation, we came up with the idea of adding two new objects. </p>
+<p><img alt="Spock" src="https://media.giphy.com/media/sBl8Fowq0ErFC/giphy.gif"></p>
+<p>By now, I hope to have your attention as well as Spock's. So we created <em>EarthSatellite</em> and <em>Spacecraft</em>. Both …</p>
+    </div>
+
+    <div class="meta">
+      <div>
+        <a href="https://www.poliastro.space/blog/2020/06/27/2020-06-27-to-infinity-and-beyond!/" class="read_more">Read more &#8594;</a>
+      </div>
+
+    </div>
+
+  </article>
+  <div class="separator"></div>
+
+  <nav class="pagination row">
+    <div class="col-xs-6 left">
+        <a class="prev" href="https://www.poliastro.space/category/articles3.html">&#8592; Older posts</a>
+    </div>
+    <div class="col-xs-6 right">
+        <a class="next" href="https://www.poliastro.space/category/articles.html">Newer posts &#8594;</a>
+    </div>
+  </nav>
+
+  </div>
+
+</div>
+
+        </div>
+<!--
+    <footer>
+      <p>
+        © 2012-2017 poliastro developer team, license <a href="https://github.com/poliastro/poliastro.github.io/blob/sources/LICENSE"> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a>.
+      </p>
+    </footer>
+-->
+    </body>
+</html>

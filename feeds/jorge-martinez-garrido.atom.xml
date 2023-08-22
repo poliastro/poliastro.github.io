@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>poliastro - Jorge Martinez Garrido</title><link href="https://www.poliastro.space/" rel="alternate"></link><link href="https://www.poliastro.space/feeds/jorge-martinez-garrido.atom.xml" rel="self"></link><id>https://www.poliastro.space/</id><updated>2023-08-22T21:00:00+02:00</updated><subtitle>poliastro website</subtitle><entry><title>Jorge Martinez steps down as maintainer of the project</title><link href="https://www.poliastro.space/blog/2023/08/22/jorge-martinez-steps-down/" rel="alternate"></link><published>2023-08-22T21:00:00+02:00</published><updated>2023-08-22T21:00:00+02:00</updated><author><name>Jorge Martinez Garrido</name></author><id>tag:www.poliastro.space,2023-08-22:/blog/2023/08/22/jorge-martinez-steps-down/</id><summary type="html">&lt;p&gt;Dear community,&lt;/p&gt;
+&lt;p&gt;I want to share with you that, due to professional commitments, I have made the
+decision to step down from my role as a maintainer of the poliastro project.&lt;/p&gt;
+&lt;p&gt;Rather than delving into the specific circumstances that led to this choice, I'd
+like to take this opportunity to offer inspiration to new developers who are
+considering joining the vibrant world of free and open-source software.&lt;/p&gt;
+&lt;p&gt;Looking back to December 2018, shortly after the holiday season, I can vividly
+recall the excitement of having &lt;a href="https://github.com/poliastro/poliastro/pull/491"&gt;my first pull request for
+poliastro&lt;/a&gt; merged. It was an
+exhilarating moment, as it marked the first time in months that I truly felt my
+contributions were making a meaningful impact, being valued and utilized by
+others.&lt;/p&gt;
+&lt;p&gt;Throughout my journey, &lt;a href="https://github.com/astrojuanlu"&gt;Juan Luis Cano Rodríguez&lt;/a&gt;,
+an exceptional mentor, has provided invaluable guidance. His meticulous code
+reviews …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Dear community,&lt;/p&gt;
+&lt;p&gt;I want to share with you that, due to professional commitments, I have made the
+decision to step down from my role as a maintainer of the poliastro project.&lt;/p&gt;
+&lt;p&gt;Rather than delving into the specific circumstances that led to this choice, I'd
+like to take this opportunity to offer inspiration to new developers who are
+considering joining the vibrant world of free and open-source software.&lt;/p&gt;
+&lt;p&gt;Looking back to December 2018, shortly after the holiday season, I can vividly
+recall the excitement of having &lt;a href="https://github.com/poliastro/poliastro/pull/491"&gt;my first pull request for
+poliastro&lt;/a&gt; merged. It was an
+exhilarating moment, as it marked the first time in months that I truly felt my
+contributions were making a meaningful impact, being valued and utilized by
+others.&lt;/p&gt;
+&lt;p&gt;Throughout my journey, &lt;a href="https://github.com/astrojuanlu"&gt;Juan Luis Cano Rodríguez&lt;/a&gt;,
+an exceptional mentor, has provided invaluable guidance. His meticulous code
+reviews have been a wellspring of insights that greatly enriched my learning
+experience. I extend my heartfelt gratitude for the generous time and effort he
+invested in teaching and mentoring me.&lt;/p&gt;
+&lt;p&gt;My tenure with poliastro not only allowed me to develop astro-related skills but
+also opened doors to larger opportunities. As a recipient of the 
+&lt;a href="https://summerofcode.withgoogle.com/archive/2019/projects/4887352839766016"&gt;Google Summer of Code&lt;/a&gt;,
+I had the privilege of receiving compensation for my software development
+contributions, marking a significant milestone in my journey, especially as a
+student at that time.&lt;/p&gt;
+&lt;p&gt;I devoted countless nights to coding and learning, expanding my horizons beyond
+the realm of astrophysics. One such passion is my fascination with Linux, a
+topic that I find equally captivating.&lt;/p&gt;
+&lt;p&gt;As I take this step back, I encourage you all to consider embracing open-source
+projects like poliastro. The journey is rewarding, providing not only technical
+growth but also a strong sense of community and purpose. New contributors, your
+efforts can truly make a difference, just as mine did when I started on this
+remarkable journey.&lt;/p&gt;
+&lt;p&gt;With gratitude and optimism,&lt;/p&gt;
+&lt;p&gt;Jorge Martinez&lt;/p&gt;</content><category term="articles"></category><category term="poliastro"></category></entry><entry><title>Impulsive 3D maneuvers have been validated!</title><link href="https://www.poliastro.space/blog/2021/02/17/2021-02-17-validation-of-3dmaneuvers/" rel="alternate"></link><published>2021-02-17T09:30:00+01:00</published><updated>2021-02-17T09:30:00+01:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2021-02-17:/blog/2021/02/17/2021-02-17-validation-of-3dmaneuvers/</id><summary type="html">&lt;p&gt;As part of the NumFOCUS small development grants, the
+&lt;a href="https://github.com/poliastro/validation"&gt;poliastro/validation&lt;/a&gt; repository has
+increased its activity in order to reach its main goal: validate poliastro's
+most complex features against similar software.&lt;/p&gt;
+&lt;p&gt;One of those features are impulsive maneuvers (Hohmann and Bi-elliptic) when
+applied to non-equatorial orbits. The absence of numerical results in literature
+and similar sources, made impossible to test associated pieces of code to
+impulsive maneuvers for orbits with inclination and spacecraft not placed in
+periapsis. However, this situation has changed, as they are now validated
+against Orekit and GMAT.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bi-elliptic transfer in GMAT" src="https://www.poliastro.space/images/poliastro_bielliptic.png"&gt;
+&lt;img alt="Bi-elliptic transfer in GMAT" src="https://www.poliastro.space/images/gmat_bielliptic.png"&gt;&lt;/p&gt;
+&lt;p&gt;You can see corresponding pull-request for &lt;a href="https://github.com/poliastro/validation/pull/18"&gt;Hohmann
+validation&lt;/a&gt; and &lt;a href="https://github.com/poliastro/validation/pull/20"&gt;Bi-elliptic
+validation&lt;/a&gt;. Not only that, a
+continuous integration tool has been setup. This ensures that if any bug is
+introduced within main poliastro source code, we can detect it and fix it
+without any problem.&lt;/p&gt;
+&lt;p&gt;One interesting thing is that …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As part of the NumFOCUS small development grants, the
+&lt;a href="https://github.com/poliastro/validation"&gt;poliastro/validation&lt;/a&gt; repository has
+increased its activity in order to reach its main goal: validate poliastro's
+most complex features against similar software.&lt;/p&gt;
+&lt;p&gt;One of those features are impulsive maneuvers (Hohmann and Bi-elliptic) when
+applied to non-equatorial orbits. The absence of numerical results in literature
+and similar sources, made impossible to test associated pieces of code to
+impulsive maneuvers for orbits with inclination and spacecraft not placed in
+periapsis. However, this situation has changed, as they are now validated
+against Orekit and GMAT.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bi-elliptic transfer in GMAT" src="https://www.poliastro.space/images/poliastro_bielliptic.png"&gt;
+&lt;img alt="Bi-elliptic transfer in GMAT" src="https://www.poliastro.space/images/gmat_bielliptic.png"&gt;&lt;/p&gt;
+&lt;p&gt;You can see corresponding pull-request for &lt;a href="https://github.com/poliastro/validation/pull/18"&gt;Hohmann
+validation&lt;/a&gt; and &lt;a href="https://github.com/poliastro/validation/pull/20"&gt;Bi-elliptic
+validation&lt;/a&gt;. Not only that, a
+continuous integration tool has been setup. This ensures that if any bug is
+introduced within main poliastro source code, we can detect it and fix it
+without any problem.&lt;/p&gt;
+&lt;p&gt;One interesting thing is that code making use of poliastro API is shorter than
+that one based in Orekit or GMAT. This is important from the point of view of
+readable code and simplicity. However, let us not forget that both Orekit and
+GMAT provide amazing capabilities, so this might be a reason behind more lines
+of code when using their APIs.&lt;/p&gt;
+&lt;p&gt;In addition to previous implementations, having a look at other similar software
+has given us some ideas about future features of poliastro. For example, we
+thought about the possibility of expanding our events detectors in order to
+locate in time special situations such us when spacecraft will be under umbra
+(eclipse) or when it will be visible over the horizon for a particular
+topocentric location.&lt;/p&gt;
+&lt;p&gt;The idea is now to keep validating more code, in this case the one associated
+with planetary reference frames and their conversions between them. This is a
+major topic within the actual state of poliastro, as it is not easy at all to
+check if conversions are properly performed.&lt;/p&gt;
+&lt;p&gt;Stay tuned for more about the validation work we are carrying out!&lt;/p&gt;</content><category term="NumFOCUS grants"></category><category term="NumFOCUS"></category><category term="maneuvers"></category><category term="orekit"></category><category term="GMAT"></category></entry><entry><title>New features after GSOC19</title><link href="https://www.poliastro.space/blog/2019/08/20/2019-08-20-new-features-after-gsoc19/" rel="alternate"></link><published>2019-08-20T22:00:00+02:00</published><updated>2019-08-20T22:00:00+02:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2019-08-20:/blog/2019/08/20/2019-08-20-new-features-after-gsoc19/</id><summary type="html">&lt;p&gt;GSOC 2019 Edition has almost finished. All along this last three months lots of
+issues where solved, &lt;code&gt;poliastro 0.13&lt;/code&gt; was raised, new features were applied and
+of course, new issues and bugs appeared.&lt;/p&gt;
+&lt;p&gt;The objective of this post is just to collect all the implementations that have
+been merged during this GSOC and also those that are still required to be done.&lt;/p&gt;
+&lt;h2&gt;ALREADY IMPLEMENTED&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[x] Lambert minor issues were fixed.&lt;/li&gt;
+&lt;li&gt;[x] Lambert as Maneuver instances.&lt;/li&gt;
+&lt;li&gt;[x] Docs and notebook on previous implementations.&lt;/li&gt;
+&lt;li&gt;[x] Trail plotting option.&lt;/li&gt;
+&lt;li&gt;[x] Fix minor issues on CI and tests.&lt;/li&gt;
+&lt;li&gt;[x] New twobody propagators.&lt;/li&gt;
+&lt;li&gt;[x] Maneuver fixes: Hohmann time to pericenter and units bug.&lt;/li&gt;
+&lt;li&gt;[x] Atmospheric models: COESA62 and COESA76.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A detailed description and link to the code can be found in the following lines.&lt;/p&gt;
+&lt;h3&gt;Izzo Algorithm minor errors&lt;/h3&gt;
+&lt;p&gt;Some errors appeared in the minimum …&lt;/p&gt;</summary><content type="html">&lt;p&gt;GSOC 2019 Edition has almost finished. All along this last three months lots of
+issues where solved, &lt;code&gt;poliastro 0.13&lt;/code&gt; was raised, new features were applied and
+of course, new issues and bugs appeared.&lt;/p&gt;
+&lt;p&gt;The objective of this post is just to collect all the implementations that have
+been merged during this GSOC and also those that are still required to be done.&lt;/p&gt;
+&lt;h2&gt;ALREADY IMPLEMENTED&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[x] Lambert minor issues were fixed.&lt;/li&gt;
+&lt;li&gt;[x] Lambert as Maneuver instances.&lt;/li&gt;
+&lt;li&gt;[x] Docs and notebook on previous implementations.&lt;/li&gt;
+&lt;li&gt;[x] Trail plotting option.&lt;/li&gt;
+&lt;li&gt;[x] Fix minor issues on CI and tests.&lt;/li&gt;
+&lt;li&gt;[x] New twobody propagators.&lt;/li&gt;
+&lt;li&gt;[x] Maneuver fixes: Hohmann time to pericenter and units bug.&lt;/li&gt;
+&lt;li&gt;[x] Atmospheric models: COESA62 and COESA76.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A detailed description and link to the code can be found in the following lines.&lt;/p&gt;
+&lt;h3&gt;Izzo Algorithm minor errors&lt;/h3&gt;
+&lt;p&gt;Some errors appeared in the minimum transfer time for the Izzo algorithm. After
+a little bit of debugging, Juanlu found that &lt;code&gt;time-of-flight equation that does
+not need external computation of one of the terms&lt;/code&gt;. I was asked to write some
+unit tests.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/709"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Lambert becomes Maneuver&lt;/h3&gt;
+&lt;p&gt;After the logic in Izzo's algorithm was fixed it was time to create a
+&lt;code&gt;Maneuver.lambert(ss_origin, ss_final)&lt;/code&gt;. Finally, a really simple and powerful
+implementation was achieved!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;LAUNCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;ARRIVAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;LAUNCH&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;600&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;day&lt;/span&gt;
+
+&lt;span class="n"&gt;ss_earth&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_body_ephem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;epoch&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;LAUNCH&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;ss_mars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_body_ephem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Mars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;epoch&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;ARRIVAL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;man_lambert&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Maneuver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lambert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ss_earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ss_mars&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;ss_trans&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ss_target&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ss_earth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply_maneuver&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;man_lambert&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;intermediate&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/680"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Document Lambert's maneuver&lt;/h3&gt;
+&lt;p&gt;It was necessary to update some of the Jupyter notebooks that made use of the
+previous * raw* implementation of the algorithm.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/699"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Lambert's multirevolution example&lt;/h3&gt;
+&lt;p&gt;After &lt;code&gt;#680&lt;/code&gt; it was even easier to work with &lt;code&gt;Lambert transfers&lt;/code&gt;. Therefore, I
+decided to add some more documentation on the multi revolution problem. A
+custom explanatory image was designed and finally merge in the following pull
+request.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+!({static}/images/multi_lambert.png)
+&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/725"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Add trail plotting option&lt;/h3&gt;
+&lt;p&gt;To give a more &lt;em&gt;dynamical&lt;/em&gt; perspective to the user when working with
+&lt;code&gt;StaticOrbitPlotter()&lt;/code&gt; instances this feature was proposed. Initial
+implementation was not merged but improved by mentor Juanlu. Thank you so much
+for your help!&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;img alt="trail" src="https://www.poliastro.space/images/faded_orbit.png"&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/688"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Add ipywidgets to tox -e images&lt;/h3&gt;
+&lt;p&gt;This is one of the minor issues that appear while coding. It was really easy to
+solve.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/696"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Update tests to astropy 3.2&lt;/h3&gt;
+&lt;p&gt;Some of the tests were coded by hard, meaning that they are subjected to
+updates on NASA's JPL database. Therefore, when &lt;code&gt;astropy 3.2&lt;/code&gt; was released it
+was necessary to update some of them.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/700"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;New powerful twobody propagators&lt;/h3&gt;
+&lt;p&gt;While working with &lt;a href="https://github.com/poliastro/poliastro/issues/475"&gt;#475&lt;/a&gt; I
+decided to implement a new propagator to compare the solutions against the
+available ones in &lt;strong&gt;poliastro&lt;/strong&gt;. However, I became interested in Kepler's
+problem and decided to collect and implement all possible algorithms I was able
+to find. Following routines were added:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mikkola&lt;/code&gt;:  https://doi.org/10.1007/BF01235850&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;markley&lt;/code&gt;: https://doi.org/10.1007/BF00691917 (this is the previously called &lt;code&gt;kepler_improved&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pimienta&lt;/code&gt;: &lt;a href="https://www.researchgate.net/publication/288133262_Accurate_Kepler_equation_solver_without_transcendental_function_evaluations"&gt;link to the paper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gooding&lt;/code&gt;: https://doi.org/10.1007/BF01235540&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;danby&lt;/code&gt;: https://doi.org/10.1007/BF00691917&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/718"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Orbit method &lt;code&gt;change_attractor&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;When retrieving orbits from external sources, such for example Jupyter's moons
+by making use of &lt;code&gt;Orbit.from_sbdb&lt;/code&gt; they were retrieved with an ICRS frame.
+However, if a user wants to study their orbit around Jupyter it was necessary
+to implement some &lt;code&gt;Orbit&lt;/code&gt; method.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;change_attractor&lt;/code&gt; orbit solved this issue. It checked when and &lt;code&gt;Orbit&lt;/code&gt; instance was under or out its attractor's SOI.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/729"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Hohmann time to pericenter&lt;/h3&gt;
+&lt;p&gt;In all books, Hohmann maneuvers are explained from the PQW orbital frame, with
+the satellite at an initial perfect circular orbit and &lt;code&gt;true anomaly&lt;/code&gt; equal to
+zero. This may not be the case in the real world, since the initial orbit may
+be elliptical and the satellite could be in another position rather than at
+periapsis. If this was the case, the orbit was propagated by force without
+notifying the user and this time was not taken into account. &lt;/p&gt;
+&lt;p&gt;Finally, this was solved by keeping the forced propagation and adding that
+&lt;code&gt;time_to_anomaly&lt;/code&gt; in the corresponding &lt;code&gt;Maneuver&lt;/code&gt; instance.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/744"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Add atmospheric models&lt;/h3&gt;
+&lt;p&gt;After &lt;a href="https://github.com/poliastro/poliastro/issues/694"&gt;#694&lt;/a&gt; was opened, it
+was necessary to implement a better atmospheric model instead of using the ISA
+one. Some models such as COESA62, COESA76 were merged in the master code after
+0.13 was released. However, previous models were not fully implemented and just
+worked under 100km geometric altitude.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/738"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h3&gt;Reformat on atmospheres&lt;/h3&gt;
+&lt;p&gt;After more research on the topic, I was finally able to implement COESA76 up to
+1000km instead of 86km. A 4th order polynomial was used but this required
+hard-coding lots of coefficients.&lt;/p&gt;
+&lt;p&gt;That was the reason behind the reformat of the &lt;code&gt;poliastro.atmosphere&lt;/code&gt; module.
+By making use of &lt;code&gt;astropy&lt;/code&gt; generated &lt;code&gt;.dat&lt;/code&gt; files it was possible to clean up
+last implementations and make them more readable.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+&lt;strong&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/756"&gt;Link to the corresponding pull request&lt;/a&gt;&lt;/strong&gt;
+&lt;/center&gt;&lt;/p&gt;
+&lt;h2&gt;WHAT IS LEFT #TODO&lt;/h2&gt;
+&lt;p&gt;Comparing my &lt;code&gt;Open Astronomy&lt;/code&gt; proposal with the previous implementations following features are still required to be developed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] SS and Earth-Moon barycenters are still required to be developed.&lt;/li&gt;
+&lt;li&gt;[ ] New orbit creation such us &lt;code&gt;from_TLE&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;[ ] More plotting capabilities such us different attractors in the same figure or groundtracks.&lt;/li&gt;
+&lt;li&gt;[ ] Verner78 ODE method may be implemented in Scipy following same idea for the &lt;a href="https://github.com/scipy/scipy/pull/10173"&gt;DOP853&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;My experience as GSOC student&lt;/h2&gt;
+&lt;p&gt;During the last months, I have learned a lot of new things. Although most of them
+are related to scientific content (astrodynamics in particular), others refer
+to Python language such as packaging, docs, CI, version release...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It was a great experience working during this summer with &lt;code&gt;poliastro&lt;/code&gt; and
+&lt;code&gt;Open Astronomy&lt;/code&gt; people. Juanlu has been an amazing mentor, answering almost in
+time all my questions. He understood that some topics were a little bit
+complicated and required more time than expected to be studied and applied
+to the code.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A total of 5299 lines of code were added while 2620 were removed. But
+contributions will not stop there! The Python package &lt;code&gt;poliastro&lt;/code&gt; shows an
+amazing future in computational astrodynamics and I want to be part of that
+future. For sure I will keep opening issues, pull requests and learning lots of
+things. Thank you all very much.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Per Python ad astra!&lt;/em&gt;&lt;/p&gt;</content><category term="GSOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>Hard reformat week</title><link href="https://www.poliastro.space/blog/2019/08/18/2019-08-16-hard-reformat-week/" rel="alternate"></link><published>2019-08-18T17:30:00+02:00</published><updated>2019-08-18T17:30:00+02:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2019-08-18:/blog/2019/08/18/2019-08-16-hard-reformat-week/</id><summary type="html">&lt;h2&gt;Reformat on poliastro.atmosphere&lt;/h2&gt;
+&lt;p&gt;After implementing the &lt;code&gt;COESA62&lt;/code&gt; and &lt;code&gt;COESA76&lt;/code&gt; models in
+&lt;a href="https://github.com/poliastro/poliastro/pull/738"&gt;#738&lt;/a&gt; I was not completly
+happy because of lots of data and coefficients at the beginning of each script.
+Therefore and after asking Juanlu, it was finally decided to move all those
+numbers to text files under the &lt;code&gt;*.dat&lt;/code&gt; extension.&lt;/p&gt;
+&lt;p&gt;Furthermore, I decided not only to do that but also to completely reformat the
+&lt;code&gt;poliastro.atmosphere&lt;/code&gt; module:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;base.py&lt;/code&gt;: holds different mother classes for atmospheric models.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coesa62.py&lt;/code&gt;: U.S Standard Atmosphere 1962 model.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coesa76.py&lt;/code&gt;: U.S Standard Atmosphere 1976 model.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;util.py&lt;/code&gt;: contains atmospheric utilities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Documentation was also added together with a notebook to better see not only how
+these objects work but their differences in output results. In the following
+image properties for COESA76 against geometrical altitude are plotted:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="COESA76" src="https://www.poliastro.space/images/atm76.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Reformat on poliastro.bodies&lt;/h2&gt;
+&lt;p&gt;While working …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Reformat on poliastro.atmosphere&lt;/h2&gt;
+&lt;p&gt;After implementing the &lt;code&gt;COESA62&lt;/code&gt; and &lt;code&gt;COESA76&lt;/code&gt; models in
+&lt;a href="https://github.com/poliastro/poliastro/pull/738"&gt;#738&lt;/a&gt; I was not completly
+happy because of lots of data and coefficients at the beginning of each script.
+Therefore and after asking Juanlu, it was finally decided to move all those
+numbers to text files under the &lt;code&gt;*.dat&lt;/code&gt; extension.&lt;/p&gt;
+&lt;p&gt;Furthermore, I decided not only to do that but also to completely reformat the
+&lt;code&gt;poliastro.atmosphere&lt;/code&gt; module:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;base.py&lt;/code&gt;: holds different mother classes for atmospheric models.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coesa62.py&lt;/code&gt;: U.S Standard Atmosphere 1962 model.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;coesa76.py&lt;/code&gt;: U.S Standard Atmosphere 1976 model.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;util.py&lt;/code&gt;: contains atmospheric utilities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Documentation was also added together with a notebook to better see not only how
+these objects work but their differences in output results. In the following
+image properties for COESA76 against geometrical altitude are plotted:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="COESA76" src="https://www.poliastro.space/images/atm76.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Reformat on poliastro.bodies&lt;/h2&gt;
+&lt;p&gt;While working on the previous module, Eleftheria completed
+&lt;a href="https://github.com/poliastro/poliastro/pull/746"&gt;#746&lt;/a&gt; and was merged. This
+allowed me to start working on Sun-synchronous orbits for any Solar System body
+since sidereal times were added. However, a small bug was introduced, since
+inheritance was not properly structured. Taking advantage of this, Juanlu
+decided to reformat &lt;code&gt;poliastro.bodies&lt;/code&gt;, &lt;code&gt;poliastro.coordinates&lt;/code&gt; and
+&lt;code&gt;poliastro.frames&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Previous changes can be checked at
+&lt;a href="https://github.com/poliastro/poliastro/pull/763"&gt;#763&lt;/a&gt;. Since this is a
+"critical" issue, I am redirecting all my efforts towards it to check and
+adapt different modules and tests that depend on previous ones.&lt;/p&gt;
+&lt;h2&gt;Last evaluations and code submissions&lt;/h2&gt;
+&lt;p&gt;Previous issue and associated ones may lead to a delay for SS0 orbits to be
+merged. Any work produced after August 26th will not be taken into account,
+however, it does not mean to stop contributing to &lt;code&gt;poliastro&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Lots of things still need to be done for the 0.14 version such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pass &lt;code&gt;frames&lt;/code&gt; in &lt;code&gt;StaticOrbitPlotter&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Properly define SS barycenter and EM barycenter.&lt;/li&gt;
+&lt;li&gt;Test cases against Orekit, GMAT...&lt;/li&gt;
+&lt;li&gt;Implement new orbit creation methods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Most of them require deep analysis since, again, they are critical issues.&lt;/p&gt;
+&lt;p&gt;But even if GSOC ends I will be still contributing to &lt;code&gt;poliastro&lt;/code&gt; for sure. It
+is not only the number of thigns I have learned since I enjoyed the project but
+the people involved in it.&lt;/p&gt;</content><category term="GSOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category><category term="atmosphere"></category><category term="bodies"></category></entry><entry><title>Atmospheric models and more!</title><link href="https://www.poliastro.space/blog/2019/08/01/2019-08-01-atmospheric-models-and-more/" rel="alternate"></link><published>2019-08-01T21:00:00+02:00</published><updated>2019-08-01T21:00:00+02:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2019-08-01:/blog/2019/08/01/2019-08-01-atmospheric-models-and-more/</id><summary type="html">&lt;h2&gt;Tasks for this last period...&lt;/h2&gt;
+&lt;p&gt;While checking the stability of the 0.13, GSOC continues and new bugs,
+implementations, and others need to be solved for the 0.14. Most of them are
+related to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New frame modeling, implementation, and testing.&lt;/li&gt;
+&lt;li&gt;New plotting capabilities, such us two attractors in the same plot.&lt;/li&gt;
+&lt;li&gt;New orbit creation methods.&lt;/li&gt;
+&lt;li&gt;Start using non-dimensional units.&lt;/li&gt;
+&lt;li&gt;Different bug solving.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Issues related to frames are the most tricky ones since working with them is
+not so intuitive. Plotting capabilities are directly related to frames and
+therefore no major improvements are done in this field without solving something
+in the previous one.&lt;/p&gt;
+&lt;h2&gt;New atmospheric models&lt;/h2&gt;
+&lt;p&gt;I have been trying to model and implement some famous atmospheric models for
+poliastro. Drag is one of the main perturbations for LEO orbits. By making use
+of Cowell's formulation we can integrate …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Tasks for this last period...&lt;/h2&gt;
+&lt;p&gt;While checking the stability of the 0.13, GSOC continues and new bugs,
+implementations, and others need to be solved for the 0.14. Most of them are
+related to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New frame modeling, implementation, and testing.&lt;/li&gt;
+&lt;li&gt;New plotting capabilities, such us two attractors in the same plot.&lt;/li&gt;
+&lt;li&gt;New orbit creation methods.&lt;/li&gt;
+&lt;li&gt;Start using non-dimensional units.&lt;/li&gt;
+&lt;li&gt;Different bug solving.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Issues related to frames are the most tricky ones since working with them is
+not so intuitive. Plotting capabilities are directly related to frames and
+therefore no major improvements are done in this field without solving something
+in the previous one.&lt;/p&gt;
+&lt;h2&gt;New atmospheric models&lt;/h2&gt;
+&lt;p&gt;I have been trying to model and implement some famous atmospheric models for
+poliastro. Drag is one of the main perturbations for LEO orbits. By making use
+of Cowell's formulation we can integrate the acceleration caused by this force
+which is directly proportional to air density. This implies that having a good
+atmospheric model is critical since it determines the drag force.&lt;/p&gt;
+&lt;p&gt;Different models have been published along the years:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;U.S Standard Atmosphere 1962 and 1976&lt;/li&gt;
+&lt;li&gt;Jacchia-Roberts 1971 and 1977&lt;/li&gt;
+&lt;li&gt;Russian Ghost models &lt;/li&gt;
+&lt;li&gt;NRLMSISE-00&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each model assumes different atmospheric conditions and factors that affect the
+temperature distribution, pressure and density among others. While U.S Standard
+Atmospheres take the value of the gravity at 45[deg] latitude, Jacchia solves
+it no matter the location in the globe. Furthermore, it also includes solar
+radiation flux.&lt;/p&gt;
+&lt;h2&gt;Pericenter and units bug in poliastro.maneuver&lt;/h2&gt;
+&lt;p&gt;Two different issues were found in the &lt;code&gt;poliastro.maneuver&lt;/code&gt; module: one related
+with the units and others with a time of flight of maneuvers.&lt;/p&gt;
+&lt;p&gt;On one hand, the issue related to the time to pericenter was that
+poliastro propagated internally the orbit for both &lt;strong&gt;Hohmann&lt;/strong&gt; and &lt;strong&gt;Bielliptic&lt;/strong&gt; when
+not at pericenter to solve for those maneuvers. The time it took the orbit for
+being at pericenter was not taken into account and the user was not warned. This
+problem was finally solved by adding this time in the Maneuver instance.&lt;/p&gt;
+&lt;p&gt;On the other hand, some strange behavior of &lt;code&gt;astropy.units&lt;/code&gt; were causing that
+conversions among units internally inside this module were not correct in some
+cases. By forcing their simplification this was solved.&lt;/p&gt;</content><category term="GSOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category><category term="twobody"></category></entry><entry><title>New propagators</title><link href="https://www.poliastro.space/blog/2019/07/16/2019-07-16-new-propagators/" rel="alternate"></link><published>2019-07-16T09:00:00+02:00</published><updated>2019-07-16T09:00:00+02:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2019-07-16:/blog/2019/07/16/2019-07-16-new-propagators/</id><summary type="html">&lt;h2&gt;What are propagators and why do we care about them?&lt;/h2&gt;
+&lt;p&gt;One of the most common problems in astrodynamics and orbital mechanics is that
+we want to know where a body will be at a given position along its orbit for a
+given time. It is possible to integrate by hard the two-body equation and then
+apply some boundary conditions. However, this last option is just insane and
+would take several hours or days to be done by a human.&lt;/p&gt;
+&lt;p&gt;There is a better way to get the position as a function of time or &lt;code&gt;propagate&lt;/code&gt; an
+orbit. Johannes Kepler's contributions to the astrodynamics and orbital
+mechanics field were really important and can be summarized here, in the
+so-called Kepler's Laws:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Planets' orbits follow an elliptical path around the Sun, which is located in one of the focus.&lt;/li&gt;
+&lt;li&gt;Planets cover equal …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;What are propagators and why do we care about them?&lt;/h2&gt;
+&lt;p&gt;One of the most common problems in astrodynamics and orbital mechanics is that
+we want to know where a body will be at a given position along its orbit for a
+given time. It is possible to integrate by hard the two-body equation and then
+apply some boundary conditions. However, this last option is just insane and
+would take several hours or days to be done by a human.&lt;/p&gt;
+&lt;p&gt;There is a better way to get the position as a function of time or &lt;code&gt;propagate&lt;/code&gt; an
+orbit. Johannes Kepler's contributions to the astrodynamics and orbital
+mechanics field were really important and can be summarized here, in the
+so-called Kepler's Laws:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Planets' orbits follow an elliptical path around the Sun, which is located in one of the focus.&lt;/li&gt;
+&lt;li&gt;Planets cover equal areas for given equal amounts of time.&lt;/li&gt;
+&lt;li&gt;The square of the period is proportional to the cube of the semi-major axis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Although Kepler applied previous laws to planets and they lead to good
+approximations, they just can be applied when one of the masses is really small
+compared to the other. Otherwise, the two masses will orbit around their common
+center of mass, breaking this way the first law.&lt;/p&gt;
+&lt;p&gt;But one of the greatest relations that Kepler gave us was his famous Kepler's
+Equation:&lt;/p&gt;
+&lt;p&gt;$$M = E - \sin(E)$$&lt;/p&gt;
+&lt;p&gt;This equation can be rewrited in the following form:
+$$ M - M_{0} = n(t - t_{0}) = E - \sin(E) - E_{0} + \sin(E_{0}) $$&lt;/p&gt;
+&lt;p&gt;Where $$n = \sqrt{\frac{a^{3}}{\mu}}$$ is usually known as mean motion. Variables
+M and E are respectively mean anomaly and eccentricity anomaly. This last one
+can be realted to the true anomaly by:&lt;/p&gt;
+&lt;p&gt;$$ \cos(E) = \frac{e + \cos(\nu)}{1 + e\cos({\nu})} $$&lt;/p&gt;
+&lt;p&gt;Notice that given a certain amount of time, if we want to solve for the
+position (solving for true anomaly) we must solve first for E and the previous
+equation has not an analytical solution due to a sinusoidal function.&lt;/p&gt;
+&lt;p&gt;That fact makes this expression one of the most interesting topics in
+astrodynamics: how to develop equivalent expressions, algorithms, procedures to
+solve efficiently the Kepler's equation. Several algorithms have been raised
+during the last years and now can be found in poliastro:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mean_motion [already implemented]: propagates step by step and covers all geometric shapes.&lt;/li&gt;
+&lt;li&gt;Kepler [already implemented]: propagates making use of universal formulation.&lt;/li&gt;
+&lt;li&gt;mikkola [new]: applies a cubic approximation.&lt;/li&gt;
+&lt;li&gt;markley [new]: fifth-order refinement of Mikkola's solution.&lt;/li&gt;
+&lt;li&gt;pimienta [new]: 15th order polynomial approximation.&lt;/li&gt;
+&lt;li&gt;gooding [new]: third-order polynomial approximation.&lt;/li&gt;
+&lt;li&gt;danby [new]: fourth order convergence after initial guess.&lt;/li&gt;
+&lt;li&gt;cowell [already implemented]: direct two-body equation integration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Which one is faster?&lt;/h3&gt;
+&lt;p&gt;All the previous Kepler solvers are numerical methods. Numerical methods are
+based on different mathematical concepts (derivatives, Taylor expansions...)
+and sometimes they do not cover specific cases where singularities appear. For
+these reason there is no such a great or perfect numerical method that works
+well no matter the function to evaluate.&lt;/p&gt;
+&lt;p&gt;By having all this propagators, we are able now to compare which one is better
+against different conditions: long time propagation, near equatorial orbits,
+near parabolic orbits...&lt;/p&gt;
+&lt;h2&gt;Version 0.13&lt;/h2&gt;
+&lt;p&gt;The release of poliastro 0.13 is getting closer and different checks need to be
+done. This implies no more great features or implementations during the next
+days until the version has been released. Some milestones where moved to version
+0.14 due to their complexity, most of them related to frames. &lt;/p&gt;
+&lt;p&gt;Is not rocket science, it is computer rocket science in fact! Modelling physical
+concepts and implement them inside a computer is amazing but requires a good
+approach and practices from the software engineering perspective, so all the
+different algorithms work fast and be reusable.&lt;/p&gt;</content><category term="GSOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category><category term="kepler"></category></entry><entry><title>Getting done for next release</title><link href="https://www.poliastro.space/blog/2019/06/29/2019-06-29-getting-done-for-next-release/" rel="alternate"></link><published>2019-06-29T07:00:00+02:00</published><updated>2019-06-29T07:00:00+02:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2019-06-29:/blog/2019/06/29/2019-06-29-getting-done-for-next-release/</id><summary type="html">&lt;h2&gt;Version 0.13 is getting closer&lt;/h2&gt;
+&lt;p&gt;Version 0.13 is expected to be tagged in about a month. As any other release,
+it includes new features such as a new method in the &lt;code&gt;Orbit&lt;/code&gt; class called
+&lt;code&gt;change_attractor&lt;/code&gt; or the &lt;code&gt;trail&lt;/code&gt; parameter in &lt;code&gt;StaticOrbitPlotter&lt;/code&gt;. However,
+this release will also include really important bug fixes such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minor issues related to Lambert's problem.&lt;/li&gt;
+&lt;li&gt;Propagator's are supposed not to hang out anymore due to robust solutions and propagation methods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now that my final exams ended I am completely free to work in poliastro and
+direct all my efforts to the software. I want to close issues
+&lt;a href="https://github.com/poliastro/poliastro/issues/495"&gt;#495&lt;/a&gt; and
+&lt;a href="https://github.com/poliastro/poliastro/issues/475"&gt;#475&lt;/a&gt;  in the next days since they are previously commented bugs.&lt;/p&gt;
+&lt;h3&gt;Propagator methods in the twobody problem&lt;/h3&gt;
+&lt;p&gt;Kepler's equation (KE) allows us to solve either for the time at a given
+position or the position …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Version 0.13 is getting closer&lt;/h2&gt;
+&lt;p&gt;Version 0.13 is expected to be tagged in about a month. As any other release,
+it includes new features such as a new method in the &lt;code&gt;Orbit&lt;/code&gt; class called
+&lt;code&gt;change_attractor&lt;/code&gt; or the &lt;code&gt;trail&lt;/code&gt; parameter in &lt;code&gt;StaticOrbitPlotter&lt;/code&gt;. However,
+this release will also include really important bug fixes such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minor issues related to Lambert's problem.&lt;/li&gt;
+&lt;li&gt;Propagator's are supposed not to hang out anymore due to robust solutions and propagation methods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now that my final exams ended I am completely free to work in poliastro and
+direct all my efforts to the software. I want to close issues
+&lt;a href="https://github.com/poliastro/poliastro/issues/495"&gt;#495&lt;/a&gt; and
+&lt;a href="https://github.com/poliastro/poliastro/issues/475"&gt;#475&lt;/a&gt;  in the next days since they are previously commented bugs.&lt;/p&gt;
+&lt;h3&gt;Propagator methods in the twobody problem&lt;/h3&gt;
+&lt;p&gt;Kepler's equation (KE) allows us to solve either for the time at a given
+position or the position for a known time. Although it is a very short
+equation, there have been lots of numerical methods along with history since it
+has not an analytical solution.&lt;/p&gt;
+&lt;p&gt;The most famous numerical method related to root finding is probably the so
+called &lt;a href="https://es.wikipedia.org/wiki/M%C3%A9todo_de_Newton"&gt;Newton-Raphson
+method&lt;/a&gt;. By making use of
+the function derivative it is possible to reach with great accuracy and speed
+the solution to the equation. Other methods also use higher order derivatives
+to achieve a faster connvergence. Although the Newton-Raphson methods works
+really well most of the cases, it is possible that sometimes the derivative at
+some point of the evaluated function becomes zero, making to diverge the
+numerical method.&lt;/p&gt;
+&lt;p&gt;Along the years, different approaches have been developed to solve this famous
+equation: conversion to a third order polynomial, higher order derivatives
+iterative methods, series expansion... Most of the different papers available
+claim convergence regarding the speed of computation, somehting that is not
+&lt;em&gt;fair&lt;/em&gt; if we consider that CPUs computational power evolve as years pass.
+Numerical methods should be compared fixing a relative error and number of
+iterations. But remember: there is not a perfect numerical methods. While for
+examples the &lt;em&gt;bisection&lt;/em&gt; method always converges it does really slowly, on the
+other hand, &lt;em&gt;Newton-Rapshon&lt;/em&gt; based methods have a great rate convergence but
+are subjected to zero derivative singularities.&lt;/p&gt;
+&lt;p&gt;After a huge research on the topic, the most interesting algorithms from my
+point of view are the following ones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://dx.doi.org/10.1007/BF00049384"&gt;Fukushima's work on KE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://doi.org/10.1051/0004-6361/201833563"&gt;Solving the KE with SDG-CODE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both are universal, meaning that no matter the geometrical nature of the orbit
+we can solve the KE. They claim low interations with huge numerical precission
+onli limited by mantissa errors (floating point precission).&lt;/p&gt;
+&lt;h3&gt;Implementation of previous methods&lt;/h3&gt;
+&lt;p&gt;As said before, there is no such a perfect numerical solver for the KE. I would
+like to implement not only the previous cited ones, but also more of them and
+compare their performance on the near-parabolic regime.&lt;/p&gt;
+&lt;p&gt;Fukushima's work also includes some Fortran77 codes and his research on the KE
+topic is huge. It looks really promising. On the other hand, the SDG group at
+UPM may be a really good contact source if I got stucked with the
+implementation of the algorithm.&lt;/p&gt;
+&lt;p&gt;Last week I already added a new one that was called by me as
+&lt;a href="https://gist.github.com/jorgepiloto/8d572ea4bb50c9ffed93c56dfaa81160"&gt;&lt;em&gt;kepler_improved&lt;/em&gt;&lt;/a&gt;
+and although it is a non-iterative method it has a great accuracy. But after
+some tests, I realized that it was diverging for eccentricities near 0.999. I
+will contact with the &lt;a href="https://juliaastro.github.io/"&gt;Julia Astro&lt;/a&gt; people to
+compare the results.&lt;/p&gt;
+&lt;p&gt;Stay tuned!🚀 &lt;/p&gt;</content><category term="GSOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>Lambert maneuvers and trails in plots</title><link href="https://www.poliastro.space/blog/2019/06/13/2019-06-13-Lambert-maneuvers-and-trails-in-plots/" rel="alternate"></link><published>2019-06-13T09:00:00+02:00</published><updated>2019-06-13T09:00:00+02:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2019-06-13:/blog/2019/06/13/2019-06-13-Lambert-maneuvers-and-trails-in-plots/</id><summary type="html">&lt;h2&gt;What's new?&lt;/h2&gt;
+&lt;p&gt;Three weeks have passed since the coding phase began and new features have been
+added to the software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lambert is now a &lt;code&gt;Maneuver&lt;/code&gt; instance.&lt;/li&gt;
+&lt;li&gt;A trail keyword in &lt;code&gt;StaticOrbitPlotter&lt;/code&gt; for showing orbits' trails.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Lambert just needs now two orbits!&lt;/h3&gt;
+&lt;p&gt;Although the raw algorithms are kept under the module &lt;code&gt;poliastro.iod&lt;/code&gt;, it is 
+possible now to simplify the process of solving this famous astrodynamics 
+problem by making use of the &lt;code&gt;poliastro.maneuver&lt;/code&gt; module.&lt;/p&gt;
+&lt;p&gt;Imagine that we want to solve the classical problem ongoing from Earth to Mars
+for a trip of 600 days duration. Let us compare  before and after
+&lt;code&gt;Maneuver.lambert&lt;/code&gt; implementations:&lt;/p&gt;
+&lt;p&gt;With 0.12 version:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;units&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy.time&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Time&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.bodies&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Mars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Sun&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.iod.izzo&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;lambert&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.twobody&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;
+
+&lt;span class="n"&gt;LAUNCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;now …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;What's new?&lt;/h2&gt;
+&lt;p&gt;Three weeks have passed since the coding phase began and new features have been
+added to the software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lambert is now a &lt;code&gt;Maneuver&lt;/code&gt; instance.&lt;/li&gt;
+&lt;li&gt;A trail keyword in &lt;code&gt;StaticOrbitPlotter&lt;/code&gt; for showing orbits' trails.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Lambert just needs now two orbits!&lt;/h3&gt;
+&lt;p&gt;Although the raw algorithms are kept under the module &lt;code&gt;poliastro.iod&lt;/code&gt;, it is 
+possible now to simplify the process of solving this famous astrodynamics 
+problem by making use of the &lt;code&gt;poliastro.maneuver&lt;/code&gt; module.&lt;/p&gt;
+&lt;p&gt;Imagine that we want to solve the classical problem ongoing from Earth to Mars
+for a trip of 600 days duration. Let us compare  before and after
+&lt;code&gt;Maneuver.lambert&lt;/code&gt; implementations:&lt;/p&gt;
+&lt;p&gt;With 0.12 version:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;units&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy.time&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Time&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.bodies&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Mars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Sun&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.iod.izzo&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;lambert&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.twobody&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;
+
+&lt;span class="n"&gt;LAUNCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;ARRIVAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;LAUNCH&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;600&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;day&lt;/span&gt;
+&lt;span class="n"&gt;TOF&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ARRIVAL&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;LAUNCH&lt;/span&gt;
+
+&lt;span class="n"&gt;ss_earth&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_body_ephem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;epoch&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;LAUNCH&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;ss_mars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_body_ephem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Mars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;epoch&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;ARRIVAL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dv_a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dv_b&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lambert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Sun&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ss_earth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ss_mars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;tof&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;TOF&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;ss_trans&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_vectors&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Sun&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ss_earth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dv_a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;ss_target&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_vectors&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Sun&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ss_mars&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dv_b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Notice that we work with a &lt;em&gt;raw Lambert's algorithm&lt;/em&gt;. Therefore, we 
+needed to pass the gravitational parameter, initial position,
+final one and finally the time of flight. After that the transfer
+and target orbits are created.&lt;/p&gt;
+&lt;p&gt;However with the 0.13 version this process will be not only
+simplified but more intuitive:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;units&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy.time&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Time&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.bodies&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Mars&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.maneuver&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Maneuver&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.twobody&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;
+
+&lt;span class="n"&gt;LAUNCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;now&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;ARRIVAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;LAUNCH&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;600&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;day&lt;/span&gt;
+
+&lt;span class="n"&gt;ss_earth&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_body_ephem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;epoch&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;LAUNCH&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;ss_mars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_body_ephem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Mars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;epoch&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;ARRIVAL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;man_lambert&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Maneuver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lambert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ss_earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ss_mars&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;ss_trans&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ss_target&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ss_earth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply_maneuver&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;man_lambert&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;intermediate&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Although we have the same number of imports, the fact that we have a &lt;code&gt;Maneuver&lt;/code&gt;
+instance, as a result, is very powerful. It not only contains all the different
+impulses but also can be applied to the departure orbit. This means that we do
+not care anymore about working with vectors and times but with Orbit instances,
+which are the core of poliastro.&lt;/p&gt;
+&lt;h3&gt;Trails can now be plotted&lt;/h3&gt;
+&lt;p&gt;When it comes to plotting, it is very difficult to recreate movement on static
+images. And if we also add the fact that representing a 3D trajectory on a
+two-dimensions plot sometimes can lead to confusion, things get even worst.&lt;/p&gt;
+&lt;p&gt;For that, and with a lot of Juanlu's help, we finally implemented a trail option
+that fades any orbit trajectory, giving the user the feeling that that object
+was moving along the drawn path when the plot was made. It works with the 
+&lt;code&gt;StaticOrbitPlotter&lt;/code&gt; class just by passing the argument trail=True:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
+&lt;span class="n"&gt;poliastro&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bodies&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;Earth&lt;/span&gt;
+&lt;span class="n"&gt;froms&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plotting&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;static&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;StaticOrbitPlotter&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.twobody&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;                                             
+
+&lt;span class="n"&gt;ss_earth&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_body_ephem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plotter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;StaticOrbitPlotter&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;plotter&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ss_earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;trail&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="Faded Orbit" src="https://www.poliastro.space/images/faded_orbit.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Astropy 3.2&lt;/h2&gt;
+&lt;p&gt;Astropy 3.2 was tagged and some poliastro tests were failing. Most of the are
+related with astroquery, since the JPL database was updated.&lt;/p&gt;
+&lt;p&gt;In particular, some tiny precission errors appeared but they were solved easily
+after deleting the astropy's caché file. However, something that needs a further
+inspection is the last failing test related to the new
+&lt;code&gt;GeocentricSolarEcliptic&lt;/code&gt;. A deep inspection on Astropy's changelog is needed
+on solving this.&lt;/p&gt;
+&lt;h2&gt;For the next weeks&lt;/h2&gt;
+&lt;p&gt;For the next weeks, I am planning to solve the previous issue and updating the
+user's guide to the new Lambert maneuver. Also, since working on this topic, a
+multi-revolution example will be added to the documentation and minor errors
+in Lambert's algorithms need further inspection.&lt;/p&gt;
+&lt;p&gt;However, Gauss' algorithm is still something that frustrates me. It is supposed
+that it will properly propagate any orbit no matter it's nature and therefore
+may be the solution to near-parabolic orbits. But for the moment, I have not
+succeeded in implementing this algorithm. I hope it to be ready for the end of
+this month!&lt;/p&gt;</content><category term="GSOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>Coding phase starts!</title><link href="https://www.poliastro.space/blog/2019/05/27/2019-05-27-coding-phase-starts/" rel="alternate"></link><published>2019-05-27T11:30:00+02:00</published><updated>2019-05-27T11:30:00+02:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2019-05-27:/blog/2019/05/27/2019-05-27-coding-phase-starts/</id><summary type="html">&lt;h2&gt;The End of the bonding period&lt;/h2&gt;
+&lt;p&gt;Today bonding period ends for all students selected at GSoC'19. The aim of this
+period was to learn more about your project community: get in touch with
+mentors, other developers and their future ideas on the software...&lt;/p&gt;
+&lt;p&gt;As I said in my last post, I started contributing to poliastro several months
+ago, even before GSOC was announced. Therefore, and since I am taking my final
+exams, all my efforts were towards passing them.&lt;/p&gt;
+&lt;p&gt;But today the coding phase starts! That means we all should start working on
+our proposal features.&lt;/p&gt;
+&lt;h2&gt;The coding phase at poliastro&lt;/h2&gt;
+&lt;p&gt;The release of poliastro version 0.13 is getting closer. During this first part
+of the coding phase, I am planning to solve for different issues, most of them
+related to frames, &lt;a href="https://github.com/poliastro/poliastro/milestone/14"&gt;check out milestones 0.13&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Frames are …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;The End of the bonding period&lt;/h2&gt;
+&lt;p&gt;Today bonding period ends for all students selected at GSoC'19. The aim of this
+period was to learn more about your project community: get in touch with
+mentors, other developers and their future ideas on the software...&lt;/p&gt;
+&lt;p&gt;As I said in my last post, I started contributing to poliastro several months
+ago, even before GSOC was announced. Therefore, and since I am taking my final
+exams, all my efforts were towards passing them.&lt;/p&gt;
+&lt;p&gt;But today the coding phase starts! That means we all should start working on
+our proposal features.&lt;/p&gt;
+&lt;h2&gt;The coding phase at poliastro&lt;/h2&gt;
+&lt;p&gt;The release of poliastro version 0.13 is getting closer. During this first part
+of the coding phase, I am planning to solve for different issues, most of them
+related to frames, &lt;a href="https://github.com/poliastro/poliastro/milestone/14"&gt;check out milestones 0.13&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Frames are really important: they enable to define where we are measuring from.
+It should be easy to use them but also to define frames around custom bodies.
+One solution as stated in
+&lt;a href="https://github.com/poliastro/poliastro/wiki/Orbits-and-reference-frames#proposed-steps"&gt;Wiki&lt;/a&gt;
+is, no matter which frame is defined for each body, always work with a common one
+internally at poliastro.&lt;/p&gt;
+&lt;p&gt;I will need to ask Juanlu and find the best approach on how to solve this
+problem. When solved, I am sure poliastro plotting capabilities will increase. 
+For example, plotting different bodies with different attractors in the same
+figure.&lt;/p&gt;
+&lt;p&gt;Previous issues may be followed by defining Solar System Barycenter so more
+accurate solutions could be worked by poliastro. But clearly, frame issues are
+the most important thing for the moment.&lt;/p&gt;
+&lt;h2&gt;Hands on Gauss Algorithm&lt;/h2&gt;
+&lt;p&gt;Some time ago I found great mathematician Gauss developed in his "Theoria motus
+corporum coelestium in sectionibus conicis Solem ambientium" a way to transform
+Kepler's algorithm into a third order polynomial. This led to an amazing fast
+convergence when solving near parabolic orbits.&lt;/p&gt;
+&lt;p&gt;On Battin 1999 and improved Gauss algorithm is explained. However after several
+hours of coding and debugging I have not been able to find why it does not
+converge to the expected solution. I will come back to it after some time and
+for sure make a post about this algorithm, because it is amazing how Gauss
+was able to find a solution just by using convergent series!&lt;/p&gt;</content><category term="GSOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry><entry><title>GSOC-19 starts!</title><link href="https://www.poliastro.space/blog/2019/05/10/2019-05-10-poliastro-gsoc-jorge/" rel="alternate"></link><published>2019-05-10T11:00:00+02:00</published><updated>2019-05-10T11:00:00+02:00</updated><author><name>Jorge Martínez Garrido</name></author><id>tag:www.poliastro.space,2019-05-10:/blog/2019/05/10/2019-05-10-poliastro-gsoc-jorge/</id><summary type="html">&lt;h2&gt;From my first pull request to GSOC student&lt;/h2&gt;
+&lt;p&gt;Hi, my name is Jorge, and I am one of the selected students for this GSOC
+edition at poliastro under the OpenAstronomy organization. I started working on
+poliastro project after Juanlu came to my university to give a talk about Open
+Source software in engineering. &lt;/p&gt;
+&lt;p&gt;After forking poliastro, I decided to improve API Docs, which gave me an
+overview on how the project was built and how the different modules talked
+among them. I had no idea on how Git and GitHub worked and therefore,
+when finished with the docs my first pull request was quite massive...&lt;/p&gt;
+&lt;p&gt;But after that I started feeling more confortable with GitHub and Sphinx, the
+tool used nowadays in poliastro for building documentation. Then, I decided to
+work on a porkchop plotter.&lt;/p&gt;
+&lt;p&gt;I spent the week after …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;From my first pull request to GSOC student&lt;/h2&gt;
+&lt;p&gt;Hi, my name is Jorge, and I am one of the selected students for this GSOC
+edition at poliastro under the OpenAstronomy organization. I started working on
+poliastro project after Juanlu came to my university to give a talk about Open
+Source software in engineering. &lt;/p&gt;
+&lt;p&gt;After forking poliastro, I decided to improve API Docs, which gave me an
+overview on how the project was built and how the different modules talked
+among them. I had no idea on how Git and GitHub worked and therefore,
+when finished with the docs my first pull request was quite massive...&lt;/p&gt;
+&lt;p&gt;But after that I started feeling more confortable with GitHub and Sphinx, the
+tool used nowadays in poliastro for building documentation. Then, I decided to
+work on a porkchop plotter.&lt;/p&gt;
+&lt;p&gt;I spent the week after taking my final exams with the porkchop plotter. Reading
+lots of blogs, posts and others on how to plot contours in Python, vectorize
+functions... But finally, I was able to code the plotting utility and it was
+included in poliastro.&lt;/p&gt;
+&lt;h2&gt;GSOC acceptance and first ideas&lt;/h2&gt;
+&lt;p&gt;After being accepted at GSOC I have received a lot of emails, comming either
+from Google, OpenAstronomy and poliastro. We need to regulary meet our tutors
+or at least be in contact with them, so everyone knows how things are evolving.&lt;/p&gt;
+&lt;p&gt;Yesterday I talked with Juanlu about the main goals for this Summer of Code.
+My objective during the first weeks of coding phase will be the development of
+a propagation algorithm capable of working with all possible orbits, no matter
+their eccentricity.&lt;/p&gt;
+&lt;p&gt;This would be amazing, since no integrators would be needed for near parabolic
+orbits where numerical methods start failing. The algorithm that we expect to
+solve for this is the one developed by Gauss.&lt;/p&gt;
+&lt;h2&gt;My plans for this summer in poliastro&lt;/h2&gt;
+&lt;p&gt;Previous algorithm is just one of many utilities I am expected to code
+all along this summer.  Although most of them are related
+to numerical methods and inegrators, others dealt with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plotting utilities such us a groundtrack plotter.&lt;/li&gt;
+&lt;li&gt;Orbit determination and TLE retreival from Celestrack.&lt;/li&gt;
+&lt;li&gt;Atmospheric models.&lt;/li&gt;
+&lt;li&gt;Rendezvous maneuvers and low-thrust guidance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At this moment, there are two main important core issues that I would like to
+solve before first GSOC evaluation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gauss propagator for any kind of orbit.&lt;/li&gt;
+&lt;li&gt;Solar-system and Earth-Moon barycenters implementations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am still thinking how to approach the second one and this will need another
+talk with Juanlu, for sure. But for the moment, I will focus on my final exams.&lt;/p&gt;
+&lt;p&gt;Can't wait to start the coding phase!&lt;/p&gt;</content><category term="GSOC"></category><category term="GSOC"></category><category term="GSOC19"></category><category term="poliastro"></category></entry></feed>

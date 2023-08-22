@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>poliastro - articles</title><link href="https://www.poliastro.space/" rel="alternate"></link><link href="https://www.poliastro.space/feeds/articles.atom.xml" rel="self"></link><id>https://www.poliastro.space/</id><updated>2023-08-22T21:00:00+02:00</updated><subtitle>poliastro website</subtitle><entry><title>Jorge Martinez steps down as maintainer of the project</title><link href="https://www.poliastro.space/blog/2023/08/22/jorge-martinez-steps-down/" rel="alternate"></link><published>2023-08-22T21:00:00+02:00</published><updated>2023-08-22T21:00:00+02:00</updated><author><name>Jorge Martinez Garrido</name></author><id>tag:www.poliastro.space,2023-08-22:/blog/2023/08/22/jorge-martinez-steps-down/</id><summary type="html">&lt;p&gt;Dear community,&lt;/p&gt;
+&lt;p&gt;I want to share with you that, due to professional commitments, I have made the
+decision to step down from my role as a maintainer of the poliastro project.&lt;/p&gt;
+&lt;p&gt;Rather than delving into the specific circumstances that led to this choice, I'd
+like to take this opportunity to offer inspiration to new developers who are
+considering joining the vibrant world of free and open-source software.&lt;/p&gt;
+&lt;p&gt;Looking back to December 2018, shortly after the holiday season, I can vividly
+recall the excitement of having &lt;a href="https://github.com/poliastro/poliastro/pull/491"&gt;my first pull request for
+poliastro&lt;/a&gt; merged. It was an
+exhilarating moment, as it marked the first time in months that I truly felt my
+contributions were making a meaningful impact, being valued and utilized by
+others.&lt;/p&gt;
+&lt;p&gt;Throughout my journey, &lt;a href="https://github.com/astrojuanlu"&gt;Juan Luis Cano Rodríguez&lt;/a&gt;,
+an exceptional mentor, has provided invaluable guidance. His meticulous code
+reviews …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Dear community,&lt;/p&gt;
+&lt;p&gt;I want to share with you that, due to professional commitments, I have made the
+decision to step down from my role as a maintainer of the poliastro project.&lt;/p&gt;
+&lt;p&gt;Rather than delving into the specific circumstances that led to this choice, I'd
+like to take this opportunity to offer inspiration to new developers who are
+considering joining the vibrant world of free and open-source software.&lt;/p&gt;
+&lt;p&gt;Looking back to December 2018, shortly after the holiday season, I can vividly
+recall the excitement of having &lt;a href="https://github.com/poliastro/poliastro/pull/491"&gt;my first pull request for
+poliastro&lt;/a&gt; merged. It was an
+exhilarating moment, as it marked the first time in months that I truly felt my
+contributions were making a meaningful impact, being valued and utilized by
+others.&lt;/p&gt;
+&lt;p&gt;Throughout my journey, &lt;a href="https://github.com/astrojuanlu"&gt;Juan Luis Cano Rodríguez&lt;/a&gt;,
+an exceptional mentor, has provided invaluable guidance. His meticulous code
+reviews have been a wellspring of insights that greatly enriched my learning
+experience. I extend my heartfelt gratitude for the generous time and effort he
+invested in teaching and mentoring me.&lt;/p&gt;
+&lt;p&gt;My tenure with poliastro not only allowed me to develop astro-related skills but
+also opened doors to larger opportunities. As a recipient of the 
+&lt;a href="https://summerofcode.withgoogle.com/archive/2019/projects/4887352839766016"&gt;Google Summer of Code&lt;/a&gt;,
+I had the privilege of receiving compensation for my software development
+contributions, marking a significant milestone in my journey, especially as a
+student at that time.&lt;/p&gt;
+&lt;p&gt;I devoted countless nights to coding and learning, expanding my horizons beyond
+the realm of astrophysics. One such passion is my fascination with Linux, a
+topic that I find equally captivating.&lt;/p&gt;
+&lt;p&gt;As I take this step back, I encourage you all to consider embracing open-source
+projects like poliastro. The journey is rewarding, providing not only technical
+growth but also a strong sense of community and purpose. New contributors, your
+efforts can truly make a difference, just as mine did when I started on this
+remarkable journey.&lt;/p&gt;
+&lt;p&gt;With gratitude and optimism,&lt;/p&gt;
+&lt;p&gt;Jorge Martinez&lt;/p&gt;</content><category term="articles"></category><category term="poliastro"></category></entry><entry><title>Juan Luis steps down as maintainer of the project</title><link href="https://www.poliastro.space/blog/2022/12/21/juan-luis-steps-down/" rel="alternate"></link><published>2022-12-21T19:00:00+01:00</published><updated>2022-12-21T19:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2022-12-21:/blog/2022/12/21/juan-luis-steps-down/</id><summary type="html">&lt;p&gt;Today is &lt;a href="https://www.volunteeramnestyday.net/"&gt;Volunteer Responsibility Amnesty Day&lt;/a&gt;,
+and with a heavy heart I, &lt;a href="https://github.com/astrojuanlu/"&gt;Juan Luis&lt;/a&gt;, would like to announce
+that I am stepping down as maintainer of poliastro, almost a decade after creating the project.&lt;/p&gt;
+&lt;p&gt;Some of you might find this surprising, some others may have seen this coming for some time.
+This is a continuation of my decision to
+&lt;a href="https://github.com/astropy/astropy.github.com/pull/452#issuecomment-961131035"&gt;step down as co-maintainer of &lt;code&gt;astropy.coordinates&lt;/code&gt;&lt;/a&gt;
+a year ago, and a realization of the fact that
+I have been spending less and less time in poliastro in the past months.&lt;/p&gt;
+&lt;p&gt;Before getting into details about why stepping down now,
+I would like to comfort existing users by saying that I spoke to
+&lt;a href="https://github.com/jorgepiloto/"&gt;Jorge Martínez&lt;/a&gt;,
+co-maintainer since he started as a Google Summer of Code Student in 2018-2019,
+and he accepted taking over the maintenance of the project.
+The pace will …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Today is &lt;a href="https://www.volunteeramnestyday.net/"&gt;Volunteer Responsibility Amnesty Day&lt;/a&gt;,
+and with a heavy heart I, &lt;a href="https://github.com/astrojuanlu/"&gt;Juan Luis&lt;/a&gt;, would like to announce
+that I am stepping down as maintainer of poliastro, almost a decade after creating the project.&lt;/p&gt;
+&lt;p&gt;Some of you might find this surprising, some others may have seen this coming for some time.
+This is a continuation of my decision to
+&lt;a href="https://github.com/astropy/astropy.github.com/pull/452#issuecomment-961131035"&gt;step down as co-maintainer of &lt;code&gt;astropy.coordinates&lt;/code&gt;&lt;/a&gt;
+a year ago, and a realization of the fact that
+I have been spending less and less time in poliastro in the past months.&lt;/p&gt;
+&lt;p&gt;Before getting into details about why stepping down now,
+I would like to comfort existing users by saying that I spoke to
+&lt;a href="https://github.com/jorgepiloto/"&gt;Jorge Martínez&lt;/a&gt;,
+co-maintainer since he started as a Google Summer of Code Student in 2018-2019,
+and he accepted taking over the maintenance of the project.
+The pace will still be slow for a while until Jorge finds a good work-life balance
+and sorts out his own personal circumstances.
+On a personal note, Jorge is one of the kindest and most brilliant people I have ever met,
+and I am sure the project is in good hands.&lt;/p&gt;
+&lt;p&gt;When I evolved poliastro beyond a disorganized collection of MATLAB and FORTRAN scripts
+glued together with Python, I wanted to prove several things:
+that a pure-Python package could be "fast enough" for most use cases;
+that it was possible to define a friendly, yet rigorous API
+that would lower the barrier of entry for Astrodynamics;
+that making the effort of maintaining the code over an extended period of time
+and resisting the urge of abandoning it would attract users;
+and that we could collectively rescue decades of scientific progress
+from the oblivion of paywalled journals and obscure PDFs
+and turn it into well tested, carefully validated, reasonably documented, open source code.
+From this point of view, I think poliastro has been a great success:
+it's been used by &lt;a href="https://github.com/AnalyticalGraphicsInc/STKCodeExamples/blob/466c139/StkAutomation/Python/Scenario_Analysis/Lifetime%20Analysis/RunLifetimeAnalysis.ipynb#L30"&gt;the creators of STK&lt;/a&gt;,
+&lt;a href="https://github.com/IBM/spacetech-ssa"&gt;IBM Space Tech&lt;/a&gt;,
+&lt;a href="https://github.com/satellogic/orbit-predictor/blob/686af07/orbit_predictor/keplerian.py#L24"&gt;Satellogic&lt;/a&gt;,
+&lt;a href="https://gitlab.com/librespacefoundation/polaris/vinvelivaanilai"&gt;the Libre Space Foundation&lt;/a&gt;,
+and many other relevant companies in the space sector.
+In fact, I would say that my biggest achievement with poliastro is that 
+many people's first contact with GitHub was to open an issue in our repository.
+All of this wouldn't have been possible without a supportive community,
+funding from various entities (the European Space Agency, Google Summer of Code, and NumFOCUS),
+and our dear students over the years.
+I'm incredibly proud and thankful of all the things we have achieved together over the past decade.&lt;/p&gt;
+&lt;p&gt;And yet, I feel it is the moment to step down as the maintainer of the project and focus on other things.
+There are numerous reasons for my decision, and it is something I have meditated for a very long time.&lt;/p&gt;
+&lt;p&gt;To start, it has been very difficult to find a consistent audience for poliastro.
+When I presented the project at PyCon, PyData, and SciPy events,
+everybody told me that poliastro was really cool (we put a lot of effort into those plots!)
+but we never met people with the skills, time, and motivation to contribute
+(some of them had the skills but no time, and viceversa).
+The one time I presented it at an industry conference
+I felt tiny compared to bigger projects like Orekit, let alone commercial ones,
+and didn't get much feedback.
+And finally, when I reached out to the few alive scientists that had worked on astrodynamics
+projects that were within our reach, I got very little help
+(the one exception being David A. Vallado, who always replied promptly to my emails
+and showed genuine excitement and encouragement and to whom I am deeply thankful).
+It has always been too much astrodynamics for software engineers,
+and too much software engineering for astrodynamicists.
+This is not new of open source computational science projects,
+with the difference that I was not working in academia,
+and most of the time I didn't even have direct connection with people using it for real projects.
+The icing in the cake, sadly, were space companies that told me they were using poliastro,
+but when I asked them for a brief testimonial, they never replied.&lt;/p&gt;
+&lt;p&gt;For people as privileged as myself, that can afford to spend afternoons and weekends writing code for free,
+the currency for volunteering work is sometimes very intangible: a bit of recognition can go a long way.
+At the same time, I know I could have been much more persistent, reached out to industry actors directly,
+established more clear ways to contribute to the project,
+secured a business model that didn't rely on grants. I don't want to somehow convey that
+I tried everything I could think of: in fact, there are so many ideas that could make
+poliastro more sustainable. This is very good news: it means that someone else can try them out!&lt;/p&gt;
+&lt;p&gt;At the technical level, poliastro is now more mature and it has started to hit several bottlenecks:
+the performance of &lt;code&gt;astropy.units&lt;/code&gt;, the complexity of &lt;code&gt;astropy.coordinates&lt;/code&gt;,
+the limitations of &lt;code&gt;numba&lt;/code&gt;, the overhead of &lt;code&gt;numpy&lt;/code&gt; for small arrays,
+and the lack of maintainers for &lt;code&gt;scipy.integrate&lt;/code&gt;, to name a few.
+There are various unfinished prototypes that try to move past these bottlenecks:
+&lt;a href="https://github.com/astrojuanlu/fastunits/"&gt;a (hopefully) faster units package&lt;/a&gt;,
+&lt;a href="https://github.com/astrojuanlu/astropy/commit/f7873c5a"&gt;a proof of concept of a simpler coordinate frames implementation&lt;/a&gt;,
+&lt;a href="https://github.com/pleiszenburg/bulk_propagate/blob/master/test_notation.ipynb"&gt;an attempt of replacing small arrays by tuples&lt;/a&gt;,
+&lt;a href="https://github.com/hgrecco/numbakit-ode/"&gt;conversations with a numba-accelerated ODE integration library&lt;/a&gt;.
+But at this point, experiments and proofs of concept are no longer enough:
+for poliastro to keep moving forward it is essential to keep pushing these ideas
+and contribute to the upstream dependencies, which requires patience, dedication, time, and focus.&lt;/p&gt;
+&lt;p&gt;Finally, I found it extremely hard to reconcile my ardent passion for space
+with the reality of the space industry. When I was younger, inspired by the wonderful works of Carl Sagan
+and ideas behind the Moon Treaty, I thought that space exploration would help humanity achieve world peace,
+and that we would venture the Solar System in a peaceful, cooperative way.
+In addition, I truly believed that space observation would help us tackle the climate emergency,
+humanity's most important and pressing problem.
+What we got instead was the militarization of space with the creation of the US Space Force,
+the rolling of the Artemis Accords aligned with the US interests,
+a new space race of bored tech billionaires,
+fervent adoration towards Elon Musk despite being the most toxic CEO of our times,
+&lt;a href="https://joemorrison.substack.com/p/the-commercial-satellite-imagery"&gt;the US military being the main customer of space observation companies&lt;/a&gt;,
+and in general a reek of long-termism and tech solutionism I can't stand anymore.
+I got exhausted of the space industry and I don't plan to go back,
+which made my involvement in poliastro even more meaningless.&lt;/p&gt;
+&lt;p&gt;Despite these bittersweet lines, I am incredibly thankful of having spent the past decade
+developing poliastro, learning from the broader open source community,
+and working with kind and passionate human beings
+(I especially miss my Argentinian colleagues from Satellogic so very much).
+I am looking forward to spending the next decade applying these learnings to
+accelerate the &lt;a href="https://solidarityeconomyprinciples.org/"&gt;Solidarity Economy&lt;/a&gt;
+and working towards a sustainable, regenerative future.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Per Python ad astra!&lt;/em&gt;&lt;/p&gt;</content><category term="articles"></category><category term="poliastro"></category></entry><entry><title>April updates</title><link href="https://www.poliastro.space/blog/2022/05/12/april-updates/" rel="alternate"></link><published>2022-05-12T12:00:00+02:00</published><updated>2022-05-12T12:00:00+02:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2022-05-12:/blog/2022/05/12/april-updates/</id><content type="html">&lt;p&gt;We call them April updates but we've mostly started working in May,
+allow us this small inconsistency 😉&lt;/p&gt;
+&lt;p&gt;Juan Luis will give a talk about poliastro at SciPy US 2022 in Austin, Texas, USA!
+We are thrilled to have this opportunity to present almost a decade of work in such an important event,
+and we have already started
+&lt;a href="https://github.com/poliastro/scipy_proceedings/tree/poliastro/papers/juanluis_cano_poliastro"&gt;working on a full conference paper&lt;/a&gt;
+as well,
+with a draft hopefully ready by the end of the month.&lt;/p&gt;
+&lt;p&gt;Since our last update we have published two bugfix releases of poliastro,
+the last one being &lt;a href="https://docs.poliastro.space/en/v0.16.3/changelog.html#poliastro-0-16-3-2022-05-09"&gt;poliastro 0.16.3&lt;/a&gt;,
+with documentation improvements and several compatibility fixes with the latest versions of Astropy and Python.&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>January updates</title><link href="https://www.poliastro.space/blog/2022/02/01/january-updates/" rel="alternate"></link><published>2022-02-01T16:00:00+01:00</published><updated>2022-02-01T16:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2022-02-01:/blog/2022/02/01/january-updates/</id><summary type="html">&lt;p&gt;This January, we spent a lot of time discussing Sebastian's proposal
+to &lt;a href="https://github.com/poliastro/poliastro/pull/1445"&gt;add a new &lt;code&gt;OrbitArray&lt;/code&gt; object&lt;/a&gt;
+in line with our Small Development Grant.
+We are now all on the same page and the implementation is progressing nicely!&lt;/p&gt;
+&lt;p&gt;Apart from that, our contributors have been working on a number of things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After the release of numba 0.55, Juan Luis
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1441"&gt;added support for Python 3.10&lt;/a&gt;
+  and dropped 3.7.&lt;/li&gt;
+&lt;li&gt;Jorge has &lt;a href="https://github.com/poliastro/poliastro/pull/1450"&gt;fixed some long-standing problems with the Lambert
+  API&lt;/a&gt;
+  by unifying the two algorithms included in the libary, removing an unnecessary iteration,
+  and documenting everything in depth.&lt;/li&gt;
+&lt;li&gt;Yash &lt;a href="https://github.com/poliastro/poliastro/pull/1443"&gt;addressed a pickling error with bodies&lt;/a&gt;
+  that was discovered after using poliastro in multiprocessing workloads,
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1442"&gt;unified the computation of vector norms&lt;/a&gt;,
+  and &lt;a href="https://github.com/poliastro/poliastro/pull/1444"&gt;fixed a propagation error&lt;/a&gt;
+  that was affecting highly eccentric orbits.&lt;/li&gt;
+&lt;li&gt;Kevin, a new contributor, added
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1439"&gt;the propagation algorithm he …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;This January, we spent a lot of time discussing Sebastian's proposal
+to &lt;a href="https://github.com/poliastro/poliastro/pull/1445"&gt;add a new &lt;code&gt;OrbitArray&lt;/code&gt; object&lt;/a&gt;
+in line with our Small Development Grant.
+We are now all on the same page and the implementation is progressing nicely!&lt;/p&gt;
+&lt;p&gt;Apart from that, our contributors have been working on a number of things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After the release of numba 0.55, Juan Luis
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1441"&gt;added support for Python 3.10&lt;/a&gt;
+  and dropped 3.7.&lt;/li&gt;
+&lt;li&gt;Jorge has &lt;a href="https://github.com/poliastro/poliastro/pull/1450"&gt;fixed some long-standing problems with the Lambert
+  API&lt;/a&gt;
+  by unifying the two algorithms included in the libary, removing an unnecessary iteration,
+  and documenting everything in depth.&lt;/li&gt;
+&lt;li&gt;Yash &lt;a href="https://github.com/poliastro/poliastro/pull/1443"&gt;addressed a pickling error with bodies&lt;/a&gt;
+  that was discovered after using poliastro in multiprocessing workloads,
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1442"&gt;unified the computation of vector norms&lt;/a&gt;,
+  and &lt;a href="https://github.com/poliastro/poliastro/pull/1444"&gt;fixed a propagation error&lt;/a&gt;
+  that was affecting highly eccentric orbits.&lt;/li&gt;
+&lt;li&gt;Kevin, a new contributor, added
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1439"&gt;the propagation algorithm he developed&lt;/a&gt;
+  as part of his Masters thesis, and
+  contributed several functions related to the
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1451"&gt;Circular Restricted Three Body Problem&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the coming weeks, Juan Luis will work with the Libre Space Foundation to prepare
+Google Summer of Code 2022 and keep working with Sebastian on &lt;code&gt;OrbitArray&lt;/code&gt; objects.&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>December updates</title><link href="https://www.poliastro.space/blog/2021/12/14/december-updates/" rel="alternate"></link><published>2021-12-14T00:00:00+01:00</published><updated>2021-12-14T00:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-12-14:/blog/2021/12/14/december-updates/</id><content type="html">&lt;p&gt;poliastro wishes everyone a merry new revolution around the Sun! 💫&lt;/p&gt;
+&lt;p&gt;During the December break, Juan Luis wrote &lt;a href="https://docs.poliastro.space/en/latest/examples/Loading%20OMM%20and%20TLE%20satellite%20data.html"&gt;a new example on how to read OMM and TLE
+data&lt;/a&gt;
+that will help with a number of typical satellite observation use cases and
+merged &lt;a href="https://github.com/poliastro/poliastro/pull/1434"&gt;a few refactors&lt;/a&gt;
+&lt;a href="https://github.com/poliastro/poliastro/pull/1430"&gt;and cleanups&lt;/a&gt; of the source code.
+We expect to make a 0.16.1 release soon to ship the documentation improvements,
+and will keep cleaning up the code over the coming weeks and addressing some
+long-standing issues.&lt;/p&gt;
+&lt;p&gt;In addition, Sebastian will kick off &lt;a href="https://github.com/poliastro/documents/blob/master/numfocus-sdg-2021-r3.md"&gt;the project to add array types to
+poliastro&lt;/a&gt;
+very soon. This work will be possible thanks to the generous funding of
+NumFOCUS, and will improve the performance of the library for some use cases.&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>poliastro 0.16.0 released 🚀</title><link href="https://www.poliastro.space/blog/2021/12/08/release-0.16.0/" rel="alternate"></link><published>2021-12-08T12:00:00+01:00</published><updated>2021-12-08T12:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-12-08:/blog/2021/12/08/release-0.16.0/</id><content type="html">&lt;p&gt;It fills us with astronomical joy to announce the release of poliastro 0.16.0! 🚀&lt;/p&gt;
+&lt;p&gt;This release shipped numerous new APIs and performance improvements. Yash, our
+Google Summer of Code 2021 student,  added a number of event detectors for
+numerical propagation, and several contributors helped accelerate more parts of
+the code, which should result in significant speedups for most workflows. In
+addition, we have new community-contributed scripts for relative orbits and mean
+elements computations.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.poliastro.space/en/v0.16.0/changelog.html#poliastro-0-16-0-2021-12-08"&gt;You can read 0.16.0 full release notes online&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We will present these changes at the
+&lt;a href="https://events.libre.space/event/5/"&gt;Open Source Cubesat Workshop 2021&lt;/a&gt;, to be
+held online on December 9-10.&lt;/p&gt;
+&lt;p&gt;Per Python ad astra!&lt;/p&gt;</content><category term="articles"></category><category term="releases"></category><category term="oscw"></category><category term="oscw21"></category><category term="conferences"></category><category term="events"></category></entry><entry><title>November updates</title><link href="https://www.poliastro.space/blog/2021/12/01/november-updates/" rel="alternate"></link><published>2021-12-01T00:00:00+01:00</published><updated>2021-12-01T00:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-12-01:/blog/2021/12/01/november-updates/</id><summary type="html">&lt;p&gt;We have released the first beta of poliastro 0.16!
+&lt;a href="https://docs.poliastro.space/en/latest/changelog.html"&gt;Highlights include&lt;/a&gt;
+new events detectors written by Yash as part of GSOC 2021,
+a new &lt;code&gt;.plot_maneuver&lt;/code&gt; method, and many performance improvements.
+We expect to release 0.16.0 in the first days of December,
+and users are encouraged to test their code with the beta.&lt;/p&gt;
+&lt;p&gt;During this month we have made some small improvements to the library
+and the development workflow. In particular, we have added
+a continuous integration check that ensures that &lt;code&gt;poliastro.core&lt;/code&gt;
+depends only on NumPy and numba. For the next release we want to
+keep working on the consistency and quality of the code and do some cleanups.&lt;/p&gt;
+&lt;p&gt;We discussed the possibility of adding new APIs to interface with TLE data,
+which will enable a whole new range of use cases
+related to commercial terrestrial satellites …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have released the first beta of poliastro 0.16!
+&lt;a href="https://docs.poliastro.space/en/latest/changelog.html"&gt;Highlights include&lt;/a&gt;
+new events detectors written by Yash as part of GSOC 2021,
+a new &lt;code&gt;.plot_maneuver&lt;/code&gt; method, and many performance improvements.
+We expect to release 0.16.0 in the first days of December,
+and users are encouraged to test their code with the beta.&lt;/p&gt;
+&lt;p&gt;During this month we have made some small improvements to the library
+and the development workflow. In particular, we have added
+a continuous integration check that ensures that &lt;code&gt;poliastro.core&lt;/code&gt;
+depends only on NumPy and numba. For the next release we want to
+keep working on the consistency and quality of the code and do some cleanups.&lt;/p&gt;
+&lt;p&gt;We discussed the possibility of adding new APIs to interface with TLE data,
+which will enable a whole new range of use cases
+related to commercial terrestrial satellites.
+Hopefully we will be able to present a prototype in the upcoming
+&lt;a href="https://events.libre.space/event/5/"&gt;Open Source Cubesat Workshop 2021&lt;/a&gt;.&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>October updates</title><link href="https://www.poliastro.space/blog/2021/11/01/october-updates/" rel="alternate"></link><published>2021-11-01T20:00:00+01:00</published><updated>2021-11-01T20:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-11-01:/blog/2021/11/01/october-updates/</id><summary type="html">&lt;p&gt;October was a particularly intense month, with lots of exciting news!&lt;/p&gt;
+&lt;p&gt;We are thrilled to announce that NumFOCUS accepted to fund
+&lt;a href="https://github.com/poliastro/documents/blob/master/numfocus-sdg-2021-r3.md"&gt;our proposal to introduce array orbit types
+to accelerate parallel computing workflows in poliastro&lt;/a&gt;
+as part of their Small Development Grants program.
+The proposal was written by Sebastian M. Ernst
+and we have already started coordinating what will be the next steps.&lt;/p&gt;
+&lt;p&gt;In other news, a team of researchers participating in the
+&lt;a href="https://sophia.estec.esa.int/gtoc_portal/"&gt;Global Trajectory Optimization Competition&lt;/a&gt;
+is using poliastro,
+and they discovered a few bugs and made numerous code contributions.
+Special thanks to &lt;a href="http://lopez-ibanez.eu"&gt;Manuel López Ibáñez&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Among other things, we fixed long standing bugs of
+&lt;a href="https://github.com/poliastro/poliastro/issues/1362"&gt;our Izzo algorithm for the Lambert problem&lt;/a&gt;
+and &lt;a href="https://github.com/poliastro/poliastro/issues/1360"&gt;our accelerated &lt;code&gt;rotation_matrix&lt;/code&gt; function&lt;/a&gt;.
+We plan to release the next version of poliastro
+with these and other fixes
+&lt;a href="https://github.com/poliastro/poliastro/pull/1348"&gt;in the coming weeks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lately we have been …&lt;/p&gt;</summary><content type="html">&lt;p&gt;October was a particularly intense month, with lots of exciting news!&lt;/p&gt;
+&lt;p&gt;We are thrilled to announce that NumFOCUS accepted to fund
+&lt;a href="https://github.com/poliastro/documents/blob/master/numfocus-sdg-2021-r3.md"&gt;our proposal to introduce array orbit types
+to accelerate parallel computing workflows in poliastro&lt;/a&gt;
+as part of their Small Development Grants program.
+The proposal was written by Sebastian M. Ernst
+and we have already started coordinating what will be the next steps.&lt;/p&gt;
+&lt;p&gt;In other news, a team of researchers participating in the
+&lt;a href="https://sophia.estec.esa.int/gtoc_portal/"&gt;Global Trajectory Optimization Competition&lt;/a&gt;
+is using poliastro,
+and they discovered a few bugs and made numerous code contributions.
+Special thanks to &lt;a href="http://lopez-ibanez.eu"&gt;Manuel López Ibáñez&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Among other things, we fixed long standing bugs of
+&lt;a href="https://github.com/poliastro/poliastro/issues/1362"&gt;our Izzo algorithm for the Lambert problem&lt;/a&gt;
+and &lt;a href="https://github.com/poliastro/poliastro/issues/1360"&gt;our accelerated &lt;code&gt;rotation_matrix&lt;/code&gt; function&lt;/a&gt;.
+We plan to release the next version of poliastro
+with these and other fixes
+&lt;a href="https://github.com/poliastro/poliastro/pull/1348"&gt;in the coming weeks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lately we have been struggling with our numerical propagators,
+because we want to squeeze more data from the integration process.
+We rescued some past work
+and &lt;a href="https://github.com/scipy/scipy/pull/14956"&gt;contributed a new higher-order method to SciPy&lt;/a&gt;
+that we hope to finish soon.&lt;/p&gt;
+&lt;p&gt;And finally, both the &lt;a href="https://events.libre.space/event/5/abstracts/"&gt;Open Source CubeSat Workshop&lt;/a&gt;
+and &lt;a href="https://www.scipy.lat/conf/2021/"&gt;SciPy Latin America&lt;/a&gt;,
+two very special events for us,
+have been announced!
+We intend to be present in both, let us know if you will be joining as well!&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>October updates (moved)</title><link href="https://www.poliastro.space/blog/2021/10/01/october-updates/" rel="alternate"></link><published>2021-10-01T20:00:00+02:00</published><updated>2021-10-01T20:00:00+02:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-10-01:/blog/2021/10/01/october-updates/</id><content type="html">&lt;p&gt;(Post moved &lt;a href="/blog/2021/11/01/october-updates/"&gt;here&lt;/a&gt;)&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>September updates</title><link href="https://www.poliastro.space/blog/2021/09/13/september-updates/" rel="alternate"></link><published>2021-09-13T20:00:00+02:00</published><updated>2021-09-13T20:00:00+02:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-09-13:/blog/2021/09/13/september-updates/</id><content type="html">&lt;p&gt;Hacktoberfest is coming! We are preparing ourselves for this celebration of open source
+by appropriately tagging some open issues and reviewing our contributing documentation.
+We have also discussed possible improvements for the development experience,
+like &lt;a href="https://github.com/poliastro/poliastro/issues/1312"&gt;checking for dead code&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/issues/1319"&gt;dropping some unused CI checks&lt;/a&gt;
+or &lt;a href="https://github.com/poliastro/poliastro/issues/1319"&gt;adding a bot that reformats the code&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Yash has been struggling with some corner cases
+of his &lt;a href="https://github.com/poliastro/poliastro/pull/1298"&gt;attractor surface visibility&lt;/a&gt;
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1299"&gt;satellite visibility&lt;/a&gt;
+pull requests, we hope to get them to a working state soon.&lt;/p&gt;
+&lt;p&gt;Finally, we submitted &lt;a href="https://github.com/poliastro/documents/blob/master/numfocus-sdg-2021-r3.md"&gt;a proposal&lt;/a&gt;
+for the NumFOCUS Small Development Grants, and we hope to see it accepted!&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>August updates</title><link href="https://www.poliastro.space/blog/2021/08/17/august-updates/" rel="alternate"></link><published>2021-08-17T12:00:00+02:00</published><updated>2021-08-17T12:00:00+02:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-08-17:/blog/2021/08/17/august-updates/</id><content type="html">&lt;p&gt;This month Yash has been wrapping up his Google of Summer of Code work
+by adding &lt;a href="https://github.com/poliastro/poliastro/pull/1246"&gt;eclipse event detection&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/pull/1293"&gt;node crossing event detection&lt;/a&gt;,
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1288"&gt;fixing the propagation logic for non-terminal events&lt;/a&gt;.
+Besides, Yash is also writing &lt;a href="https://github.com/poliastro/poliastro/pull/1304"&gt;a new how-to guide for the event detection&lt;/a&gt;
+that we hope to get merged soon.
+Jorge has been thoroughly reviewing all that work
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1288"&gt;adding validation cases&lt;/a&gt; when appropriate.&lt;/p&gt;
+&lt;p&gt;Libre Space Foundation &lt;a href="https://libre.space/2021/08/12/gsoc-project-expanding-events-detection-poliastro/"&gt;published a summary of Yash work&lt;/a&gt;,
+you can read it on their blog.&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>July updates</title><link href="https://www.poliastro.space/blog/2021/07/18/july-updates/" rel="alternate"></link><published>2021-07-18T17:00:00+02:00</published><updated>2021-07-18T17:00:00+02:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-07-18:/blog/2021/07/18/july-updates/</id><summary type="html">&lt;p&gt;This month &lt;a href="https://github.com/poliastro/poliastro/"&gt;the poliastro repository&lt;/a&gt;
+has crossed ⭐️ 500 GitHub stars ⭐️, thanks everyone for believing in the
+project!&lt;/p&gt;
+&lt;p&gt;Juan Luis &lt;a href="https://docs.poliastro.space/en/v0.15.2/changelog.html"&gt;released version
+0.15.2&lt;/a&gt; with &lt;a href="https://github.com/poliastro/poliastro/pull/1228"&gt;a fix for
+newer astroquery versions&lt;/a&gt;,
+as well as compatibility with Plotly 5.0, which allows users to install all the
+required JupyterLab extensions without Node.js. This will make the installation
+process much easier!&lt;/p&gt;
+&lt;p&gt;Yash and Jorge had a very productive month: after a lot of discussion in our
+weekly community calls and several rounds of code reviews, &lt;a href="https://github.com/poliastro/poliastro/pull/1246"&gt;we finally have
+eclipse event detection
+merged!&lt;/a&gt;
+Yash has passed the first Google Summer of Code evaluation with
+flying colors and will publish an entry in our blog soon. The work Jorge did
+&lt;a href="https://github.com/poliastro/validation/pull/33"&gt;on our validation
+infrastructure&lt;/a&gt; as part of the
+NumFOCUS Small Development Grant has proven to be extremely useful.
+In addition, Yash has also …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This month &lt;a href="https://github.com/poliastro/poliastro/"&gt;the poliastro repository&lt;/a&gt;
+has crossed ⭐️ 500 GitHub stars ⭐️, thanks everyone for believing in the
+project!&lt;/p&gt;
+&lt;p&gt;Juan Luis &lt;a href="https://docs.poliastro.space/en/v0.15.2/changelog.html"&gt;released version
+0.15.2&lt;/a&gt; with &lt;a href="https://github.com/poliastro/poliastro/pull/1228"&gt;a fix for
+newer astroquery versions&lt;/a&gt;,
+as well as compatibility with Plotly 5.0, which allows users to install all the
+required JupyterLab extensions without Node.js. This will make the installation
+process much easier!&lt;/p&gt;
+&lt;p&gt;Yash and Jorge had a very productive month: after a lot of discussion in our
+weekly community calls and several rounds of code reviews, &lt;a href="https://github.com/poliastro/poliastro/pull/1246"&gt;we finally have
+eclipse event detection
+merged!&lt;/a&gt;
+Yash has passed the first Google Summer of Code evaluation with
+flying colors and will publish an entry in our blog soon. The work Jorge did
+&lt;a href="https://github.com/poliastro/validation/pull/33"&gt;on our validation
+infrastructure&lt;/a&gt; as part of the
+NumFOCUS Small Development Grant has proven to be extremely useful.
+In addition, Yash has also added &lt;a href="https://github.com/poliastro/poliastro/pull/1268"&gt;latitude crossing
+detection&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/pull/1280"&gt;accelerated some Earth atmosphere
+calculations&lt;/a&gt;, and done some
+other minor improvements, while Jorge has added &lt;a href="https://github.com/poliastro/validation/pull/31"&gt;some developer documentation
+on how we handle Orekit&lt;/a&gt; in our
+validation infrastructure, done a lot of reviews for Yash, and &lt;a href="https://github.com/poliastro/validation/pull/32"&gt;validated our
+latitude crossing detection&lt;/a&gt;
+against Orekit.&lt;/p&gt;
+&lt;p&gt;Finally, Javier Tegedor &lt;a href="https://github.com/poliastro/poliastro/pull/1250"&gt;accelerated some thrust
+functions&lt;/a&gt;, making the slowest
+tests 40 % faster!&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>April updates</title><link href="https://www.poliastro.space/blog/2021/05/08/april-updates/" rel="alternate"></link><published>2021-05-08T21:00:00+02:00</published><updated>2021-05-08T21:00:00+02:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-05-08:/blog/2021/05/08/april-updates/</id><summary type="html">&lt;p&gt;The first (and hopefully) only &lt;strong&gt;beta of poliastro 0.15&lt;/strong&gt; is out! 🎉
+It took us a bit longer to get this release out,
+but we are happy that poliastro 0.15 is now around the corner.
+We will soon write detailed release notes and a proper announcement for it,
+and in the meanwhile you can read &lt;a href="https://docs.poliastro.space/en/latest/changelog.html"&gt;the preliminary poliastro 0.15 changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Juan Luis revamped our website a bit,
+by &lt;a href="https://github.com/poliastro/poliastro.github.io/issues/2"&gt;adjusting our domain names&lt;/a&gt;
+and &lt;a href="https://github.com/poliastro/poliastro.github.io/pull/74"&gt;improving the navigation bar&lt;/a&gt;
+(&lt;a href="https://github.com/poliastro/poliastro.github.io/pull/77"&gt;twice&lt;/a&gt;).
+Besides, he has finished the reorganization of our docs
+following &lt;a href="https://diataxis.fr/"&gt;the Diátaxis Framework by Daniele Procida&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/pull/1188"&gt;prepared for the upcoming Sphinx 4.0 release&lt;/a&gt;,
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1206/"&gt;updated our installation and contribution instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Jorge has finished &lt;a href="https://github.com/poliastro/validation/pull/24"&gt;validating our planetary transformations against GMAT and Orekit&lt;/a&gt;,
+which required reaching out to the Orekit developers
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1193"&gt;adjusting one outdated constant in poliastro&lt;/a&gt;.
+This wraps up …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The first (and hopefully) only &lt;strong&gt;beta of poliastro 0.15&lt;/strong&gt; is out! 🎉
+It took us a bit longer to get this release out,
+but we are happy that poliastro 0.15 is now around the corner.
+We will soon write detailed release notes and a proper announcement for it,
+and in the meanwhile you can read &lt;a href="https://docs.poliastro.space/en/latest/changelog.html"&gt;the preliminary poliastro 0.15 changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Juan Luis revamped our website a bit,
+by &lt;a href="https://github.com/poliastro/poliastro.github.io/issues/2"&gt;adjusting our domain names&lt;/a&gt;
+and &lt;a href="https://github.com/poliastro/poliastro.github.io/pull/74"&gt;improving the navigation bar&lt;/a&gt;
+(&lt;a href="https://github.com/poliastro/poliastro.github.io/pull/77"&gt;twice&lt;/a&gt;).
+Besides, he has finished the reorganization of our docs
+following &lt;a href="https://diataxis.fr/"&gt;the Diátaxis Framework by Daniele Procida&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/pull/1188"&gt;prepared for the upcoming Sphinx 4.0 release&lt;/a&gt;,
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1206/"&gt;updated our installation and contribution instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Jorge has finished &lt;a href="https://github.com/poliastro/validation/pull/24"&gt;validating our planetary transformations against GMAT and Orekit&lt;/a&gt;,
+which required reaching out to the Orekit developers
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1193"&gt;adjusting one outdated constant in poliastro&lt;/a&gt;.
+This wraps up the work we started with our first &lt;a href="https://numfocus.org/programs/small-development-grants"&gt;NumFOCUS Small Development Grant&lt;/a&gt;,
+and we will be also sending a report and an announcement very soon!&lt;/p&gt;
+&lt;p&gt;Finally, Dhruv and Abdul have made some small fixes and cleanups,
+and Yash has started moving many parts of poliastro computation to our core API
+to make them faster,
+like our &lt;a href="https://github.com/poliastro/poliastro/pull/1136"&gt;maneuver computations&lt;/a&gt;
+and our &lt;a href="https://github.com/poliastro/poliastro/pull/1136"&gt;spheroid arithmetic&lt;/a&gt;.
+We have more pull requests like this in the pipeline,
+which we will start reviewing soon
+now that the &lt;code&gt;0.15.x&lt;/code&gt; branch has been created.&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>February updates</title><link href="https://www.poliastro.space/blog/2021/02/24/2021-02-24-February-updates/" rel="alternate"></link><published>2021-02-24T21:00:00+01:00</published><updated>2021-02-24T21:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-02-24:/blog/2021/02/24/2021-02-24-February-updates/</id><content type="html">&lt;p&gt;poliastro &lt;a href="https://github.com/poliastro/poliastro/pull/1027"&gt;finally landed support for Python 3.9&lt;/a&gt;,
+thanks to the fine folks of numba! &lt;a href="https://numba.discourse.group/t/numba-0-53-0-and-llvmlite-0-36-0-release-candidates/504?u=astrojuanlu"&gt;Their release candidate already works with the newest Python
+release&lt;/a&gt;,
+and we've been told that &lt;a href="https://twitter.com/numba_jit/status/1363868866984751107"&gt;the stable release is around the
+corner&lt;/a&gt;. This means that the next stable
+release of poliastro will also support it 🚀&lt;/p&gt;
+&lt;p&gt;On the validation side, Jorge has been working on more enhancements, and we have finally confirmed
+that our 3D impulsive maneuvers give the same result as GMAT and Orekit! You can read the full
+details &lt;a href="https://blog.poliastro.space/blog/2021/02/17/2021-02-17-validation-of-3dmaneuvers/"&gt;in this blog
+post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And finally, we have made some small improvements on the development side, by &lt;a href="https://twitter.com/numba_jit/status/1363868866984751107"&gt;fixing some
+continuous integration small failures&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/pull/1092"&gt;reducing the number of warnings in our tests&lt;/a&gt;,
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1094"&gt;other small fixes&lt;/a&gt;. Thanks Yash, Dhruv, zkl2,
+and Souhit!&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>January updates</title><link href="https://www.poliastro.space/blog/2021/01/24/2021-01-24-January-updates/" rel="alternate"></link><published>2021-01-24T12:00:00+01:00</published><updated>2021-01-24T12:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2021-01-24:/blog/2021/01/24/2021-01-24-January-updates/</id><summary type="html">&lt;p&gt;We got awarded a Small Development Grant by NumFOCUS to &lt;a href="https://github.com/poliastro/numfocus_proposal/"&gt;validate poliastro against commercial and
+non-commercial similar applications&lt;/a&gt;! 🎉 Jorge
+started by setting GitHub Actions to &lt;a href="https://github.com/poliastro/poliastro/pull/1051/"&gt;trigger the validations
+automatically&lt;/a&gt;, &lt;a href="https://github.com/poliastro/validation/pull/4"&gt;validating our conversion
+between cartesian and Keplerian elements against
+Orekit&lt;/a&gt;, and is now &lt;a href="https://github.com/poliastro/validation/pull/15"&gt;fighting some discrepancies
+with Hohmann transfers&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;On the development front, while we wait for Numba to release Python 3.9-compatible wheels for our
+next release, &lt;a href="https://github.com/poliastro/poliastro/pull/1053"&gt;we refactored our Cowell
+propagator&lt;/a&gt; to make the code simpler and more
+numba-friendly, we tried to merge &lt;a href="https://github.com/poliastro/poliastro/pull/719"&gt;Eleftheria's implementation of the Escobal method for satellite
+visibility&lt;/a&gt; (and &lt;a href="https://space.stackexchange.com/q/49136/10716"&gt;sadly got blocked in the
+process&lt;/a&gt;), and kept working on &lt;a href="https://gist.github.com/astrojuanlu/c44e57a8f4e001d5cbc6d6e53ecb66e0"&gt;our analysis of
+Walker constellations&lt;/a&gt; for
+&lt;a href="https://opensatcom.org/"&gt;the OpenSatCom activity&lt;/a&gt;. We also engaged with the authors of &lt;a href="https://github.com/hgrecco/numbakit-ode/"&gt;the
+awesome numbakit-ode&lt;/a&gt; to &lt;a href="https://github.com/poliastro/poliastro/pull/1049"&gt;rewrite our Cowell method using
+numba&lt;/a&gt;, but found some issues along the way and
+we decided …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We got awarded a Small Development Grant by NumFOCUS to &lt;a href="https://github.com/poliastro/numfocus_proposal/"&gt;validate poliastro against commercial and
+non-commercial similar applications&lt;/a&gt;! 🎉 Jorge
+started by setting GitHub Actions to &lt;a href="https://github.com/poliastro/poliastro/pull/1051/"&gt;trigger the validations
+automatically&lt;/a&gt;, &lt;a href="https://github.com/poliastro/validation/pull/4"&gt;validating our conversion
+between cartesian and Keplerian elements against
+Orekit&lt;/a&gt;, and is now &lt;a href="https://github.com/poliastro/validation/pull/15"&gt;fighting some discrepancies
+with Hohmann transfers&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;On the development front, while we wait for Numba to release Python 3.9-compatible wheels for our
+next release, &lt;a href="https://github.com/poliastro/poliastro/pull/1053"&gt;we refactored our Cowell
+propagator&lt;/a&gt; to make the code simpler and more
+numba-friendly, we tried to merge &lt;a href="https://github.com/poliastro/poliastro/pull/719"&gt;Eleftheria's implementation of the Escobal method for satellite
+visibility&lt;/a&gt; (and &lt;a href="https://space.stackexchange.com/q/49136/10716"&gt;sadly got blocked in the
+process&lt;/a&gt;), and kept working on &lt;a href="https://gist.github.com/astrojuanlu/c44e57a8f4e001d5cbc6d6e53ecb66e0"&gt;our analysis of
+Walker constellations&lt;/a&gt; for
+&lt;a href="https://opensatcom.org/"&gt;the OpenSatCom activity&lt;/a&gt;. We also engaged with the authors of &lt;a href="https://github.com/hgrecco/numbakit-ode/"&gt;the
+awesome numbakit-ode&lt;/a&gt; to &lt;a href="https://github.com/poliastro/poliastro/pull/1049"&gt;rewrite our Cowell method using
+numba&lt;/a&gt;, but found some issues along the way and
+we decided to charge batteries and try again after some time.  &lt;/p&gt;
+&lt;p&gt;And finally, we made a &lt;em&gt;lot&lt;/em&gt; of documentation changes! Dhruv sent a series of PRs to amend some
+small issues, but most importantly he &lt;a href="https://github.com/poliastro/poliastro/pull/1073"&gt;rewrote all the docs using
+MyST&lt;/a&gt;, a Markdown dialect compatible with Sphinx
+that is getting popular. We also &lt;a href="https://github.com/poliastro/poliastro/pull/1087"&gt;removed the need to install LaTeX to compile our
+docs&lt;/a&gt;, and &lt;a href="https://github.com/poliastro/poliastro/pull/1082"&gt;fixed some long standing problems
+with our Binder examples&lt;/a&gt;.&lt;/p&gt;</content><category term="articles"></category><category term="NumFOCUS"></category><category term="Updates"></category></entry><entry><title>This is an end of an era</title><link href="https://www.poliastro.space/blog/2020/08/31/2020-08-31-This-is-an-end-of-an-era/" rel="alternate"></link><published>2020-08-31T11:00:00+02:00</published><updated>2020-08-31T11:00:00+02:00</updated><author><name>Meuge</name></author><id>tag:www.poliastro.space,2020-08-31:/blog/2020/08/31/2020-08-31-This-is-an-end-of-an-era/</id><summary type="html">&lt;p&gt;Contributing to Poliastro has been an incredible experience for me. Since it was the first time, I've participated in GSOC. And the first time I've ever approached to package dedicated to problems arising in Astrodynamics and Orbital Mechanics. Being part of Poliastro was an exciting challenge that I had to surmount and also an unbelievable opportunity to learn about Space, Math and Physics.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="era" src="https://media.giphy.com/media/Vekuh5ATS6oXPVsij7/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;With the thorough knowledge learned, and the feedback from JuanLu and Jorge, I was able to overcome every challenge in my Poliastro's journey. As I had said when I had the opportunity, I am grateful to both of my mentors who accepted me to be part of this exceptional community.  :)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wall-e" src="https://media.giphy.com/media/2uFLqNEmuOW08/giphy.gif"&gt;&lt;/p&gt;
+&lt;h1&gt;Git-log&lt;/h1&gt;
+&lt;p&gt;What we have achieved in the past three months:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pulls?q=is%3Apr+author%3A%40me+is%3Aclosed"&gt;#965 Stationary and Synchronous Orbit Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/969"&gt;# 969 Fix for the flaky Horizon Test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pulls?q=is%3Apr+author%3A%40me+is%3Aclosed"&gt;#970 Earth Satellite Implementation …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Contributing to Poliastro has been an incredible experience for me. Since it was the first time, I've participated in GSOC. And the first time I've ever approached to package dedicated to problems arising in Astrodynamics and Orbital Mechanics. Being part of Poliastro was an exciting challenge that I had to surmount and also an unbelievable opportunity to learn about Space, Math and Physics.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="era" src="https://media.giphy.com/media/Vekuh5ATS6oXPVsij7/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;With the thorough knowledge learned, and the feedback from JuanLu and Jorge, I was able to overcome every challenge in my Poliastro's journey. As I had said when I had the opportunity, I am grateful to both of my mentors who accepted me to be part of this exceptional community.  :)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wall-e" src="https://media.giphy.com/media/2uFLqNEmuOW08/giphy.gif"&gt;&lt;/p&gt;
+&lt;h1&gt;Git-log&lt;/h1&gt;
+&lt;p&gt;What we have achieved in the past three months:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pulls?q=is%3Apr+author%3A%40me+is%3Aclosed"&gt;#965 Stationary and Synchronous Orbit Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/969"&gt;# 969 Fix for the flaky Horizon Test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pulls?q=is%3Apr+author%3A%40me+is%3Aclosed"&gt;#970 Earth Satellite Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/979"&gt;#979 Spacecraft Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/987"&gt;#987 Pericenter maneuver implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/998"&gt;#998 Field of View Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Open PRs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/984"&gt;#984 Repeat Ground Track Orbit Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/pull/1002"&gt;#1002 Daily repeat groundtrack Mars orbit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Ongoing challenge&lt;/h1&gt;
+&lt;p&gt;And we will be continuing working together on the &lt;a href="https://www.researchgate.net/publication/334130047_Coverage_Area_Determination_for_Conical_Fields_of_View_Considering_an_Oblate_Earth"&gt;paper&lt;/a&gt;, named " Coverage Area Determination for Conical Fields of View Considering an Oblate Earth." Sounds great, right? The paper is from Politecnico di Milano, the Italian university where JuanLu studied while coding Poliastro :D . So, there are exciting things ahead!&lt;/p&gt;
+&lt;p&gt;This is all for now. In case I don’t see ya, good afternoon, good evening, and good night! :) 🚀&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ending" src="https://media.giphy.com/media/y8fXirTJjj6E0/giphy.gif"&gt;&lt;/p&gt;</content><category term="articles"></category><category term="GSOC"></category><category term="GSOC20"></category><category term="Google"></category><category term="poliastro"></category></entry><entry><title>Looking for the answers!</title><link href="https://www.poliastro.space/blog/2020/08/20/2020-08-20-Looking-for-the-answers!/" rel="alternate"></link><published>2020-08-20T12:00:00+02:00</published><updated>2020-08-20T12:00:00+02:00</updated><author><name>Meuge</name></author><id>tag:www.poliastro.space,2020-08-20:/blog/2020/08/20/2020-08-20-Looking-for-the-answers!/</id><summary type="html">&lt;p&gt;Hey, folks! The last weeks were really exciting getting done an algorithm for ground-track orbit. After long days trying to find the perfect approach for Poliastro, we decided to give it a go bringing to life this &lt;a href="[https://www.researchgate.net/publication/287869810_Daily_repeat-groundtrack_Mars_orbits"&gt;paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wow" src="https://media.giphy.com/media/gZBYbXHtVcYKs/giphy.gif"&gt;&lt;/p&gt;
+&lt;h1&gt;But everything it's not what it seems&lt;/h1&gt;
+&lt;p&gt;Well, we thought it will be quite straightforward but much too learn still I have , right Master Yoda?  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="do-or-do-not" src="https://media.giphy.com/media/pvDp7Ewpzt0o8/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;So I am not gonna lie to you folks, it wasn't that easy, but as Rocky says, "Every champion was once a contender who refused to give up". So now you are gonna know how we solve it. Game on!  First things first, we needed to apply numerical analysis in order to obtain the roots of the equation, because given the complexity of the function, there was no other way around. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="oh-no" src="https://media.giphy.com/media/xT5LMLMPdRh2VRNVLi/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;So we had to come up …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hey, folks! The last weeks were really exciting getting done an algorithm for ground-track orbit. After long days trying to find the perfect approach for Poliastro, we decided to give it a go bringing to life this &lt;a href="[https://www.researchgate.net/publication/287869810_Daily_repeat-groundtrack_Mars_orbits"&gt;paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="wow" src="https://media.giphy.com/media/gZBYbXHtVcYKs/giphy.gif"&gt;&lt;/p&gt;
+&lt;h1&gt;But everything it's not what it seems&lt;/h1&gt;
+&lt;p&gt;Well, we thought it will be quite straightforward but much too learn still I have , right Master Yoda?  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="do-or-do-not" src="https://media.giphy.com/media/pvDp7Ewpzt0o8/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;So I am not gonna lie to you folks, it wasn't that easy, but as Rocky says, "Every champion was once a contender who refused to give up". So now you are gonna know how we solve it. Game on!  First things first, we needed to apply numerical analysis in order to obtain the roots of the equation, because given the complexity of the function, there was no other way around. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="oh-no" src="https://media.giphy.com/media/xT5LMLMPdRh2VRNVLi/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;So we had to come up with a method which would be computationally efficient and optimal for this kind of problem. That's how LMS, Linear Mean Square, appeared on our door. We used VSSLMS, which is an enhanced LMS version that improves the convergence rate and mean-square error. You might recognize it as one of the main competitors to performance and accuracy of the Kalman Filter, but with the need for less computational power and easier maintenance. What's great about this algorithm is the capability of achieving the solution without the necessity of finding a bracket, since we have no idea which might be the right interval where the answer lies, in this case, we refer to the semi-major axis to acquire a ground-track orbit.
+Another point of difficulty when trying to model the solution, it's each orbit's particularities. Such as $ecc=0$ or having an orbit with a critical angle or even $inc=0$.
+Currently, the &lt;a href="[https://github.com/poliastro/poliastro/pull/1002](https://github.com/poliastro/poliastro/pull/1002)"&gt;PR&lt;/a&gt; is its last stages of review so let's hope to have this feature soon. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="yay" src="https://media1.tenor.com/images/b5c9fa0621cba99bbc1b5ee2f62802c2/tenor.gif?itemid=15917936"&gt;&lt;/p&gt;
+&lt;p&gt;I hope everything is fine at your end. See you soon 🚀&lt;/p&gt;</content><category term="articles"></category><category term="GSOC"></category><category term="GSOC20"></category><category term="Google"></category><category term="poliastro"></category></entry><entry><title>On the move!</title><link href="https://www.poliastro.space/blog/2020/07/24/2020-07-24-On-the-move!/" rel="alternate"></link><published>2020-07-24T09:00:00+02:00</published><updated>2020-07-24T09:00:00+02:00</updated><author><name>Meuge</name></author><id>tag:www.poliastro.space,2020-07-24:/blog/2020/07/24/2020-07-24-On-the-move!/</id><summary type="html">&lt;p&gt;Hey, folks! Here's Meuge, your usual host from the last few months. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Johnny" src="https://media.giphy.com/media/RoajqIorBfSE/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;In the last few weeks, we got a little bit of everything, analyzing, coding, and searching for feasible solutions to reach the best result. Therefore, we came up with a new feature in Poliastro's Earth module. The API may change in the future, so be aware by the time you read this. Hence, I bet you might be wondering, what's all the fuzz?&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Really?" src="https://media.giphy.com/media/US0y4X7FONHaM/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Well, now you can experiment with the new API to compute the visibility of sensors that are on board of the satellites. The FOV, field of view, the question is about meeting mission goals within the limit of a satellite sensor. 
+Given some parameters about the viewing satellite, the fundamental problem related to calculating the field of view is estimating how much of Earth we …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hey, folks! Here's Meuge, your usual host from the last few months. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Johnny" src="https://media.giphy.com/media/RoajqIorBfSE/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;In the last few weeks, we got a little bit of everything, analyzing, coding, and searching for feasible solutions to reach the best result. Therefore, we came up with a new feature in Poliastro's Earth module. The API may change in the future, so be aware by the time you read this. Hence, I bet you might be wondering, what's all the fuzz?&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Really?" src="https://media.giphy.com/media/US0y4X7FONHaM/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Well, now you can experiment with the new API to compute the visibility of sensors that are on board of the satellites. The FOV, field of view, the question is about meeting mission goals within the limit of a satellite sensor. 
+Given some parameters about the viewing satellite, the fundamental problem related to calculating the field of view is estimating how much of Earth we can see.
+So, you are now able to know the angle of the total area that a sensor can observe. That's cool, right? If you want to take a look, see the &lt;a href="https://github.com/poliastro/poliastro/blob/d40700de75b4c4269b6ef738f8970c381de122fe/src/poliastro/earth/sensors.py"&gt;sensors&lt;/a&gt; file 😊
+But first things first,let's see the magic behind the scenes! &lt;/p&gt;
+&lt;h1&gt;Show me the code!&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.bodies&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.earth.sensors&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;max_and_min_ground_range&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# First we need to define the next parameters &lt;/span&gt;
+&lt;span class="c1"&gt;# To calculate the minimum and maximum values of ground-range angles&lt;/span&gt;
+&lt;span class="n"&gt;R&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;km&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Equatorial radius of the attractor&lt;/span&gt;
+&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;800&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;km&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;# Altitude&lt;/span&gt;
+&lt;span class="n"&gt;n_fov&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rad&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# Angle of the total area that a sensor can observe.&lt;/span&gt;
+&lt;span class="n"&gt;n_center&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rad&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Center boresight angle.&lt;/span&gt;
+&lt;span class="n"&gt;Λ_max&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Λ_min&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;max_and_min_ground_range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n_fov&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n_center&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;span class="c1"&gt;# Please note that the total ground range is the difference between the maximum and minimum ranges&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now imagine that we have the other situation that you know the phase angle, used to specify where the sensor is looking, and you want to figure out the difference in ground-range angles, delta_λ, from the η_center angle and the latitude, φ_tgt, and longitude, λ_tgt, of the target. So we do the next!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.bodies&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.earth.sensors&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;max_and_min_ground_range_with_specific_azimuth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# First we need to define the next parameters &lt;/span&gt;
+&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;800&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;km&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;# Altitude&lt;/span&gt;
+&lt;span class="n"&gt;η_fov&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rad&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# Angle of the total area that a sensor can observe.&lt;/span&gt;
+&lt;span class="n"&gt;η_center&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rad&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Center boresight angle.&lt;/span&gt;
+&lt;span class="c1"&gt;# The sensor, β,  can be aimed in many directions&lt;/span&gt;
+&lt;span class="n"&gt;β&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;140&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rad&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;#phase angle&lt;/span&gt;
+&lt;span class="n"&gt;φ_nadir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rad&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Latitude angle of nadir point&lt;/span&gt;
+&lt;span class="n"&gt;λ_nadir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rad&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Longitude angle of nadir point&lt;/span&gt;
+&lt;span class="n"&gt;R&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;km&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# Equatorial radius of the attractor&lt;/span&gt;
+
+&lt;span class="n"&gt;delta_λ&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;φ_tgt&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;λ_tgt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;max_and_min_ground_range_with_specific_azimuth&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+        &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;η_center&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;η_fov&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;β&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;φ_nadir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;λ_nadir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And that's it folks.That would be all for today, and stay safe out there! 🚀  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="bye" src="https://media0.giphy.com/media/fxe8v45NNXFd4jdaNI/giphy.gif"&gt;&lt;/p&gt;</content><category term="articles"></category><category term="GSOC"></category><category term="GSOC20"></category><category term="Google"></category><category term="poliastro"></category></entry><entry><title>What we've been working on these days!</title><link href="https://www.poliastro.space/blog/2020/06/28/2020-06-28-What-we'-ve-been-working-on-these-days!/" rel="alternate"></link><published>2020-06-28T09:00:00+02:00</published><updated>2020-06-28T09:00:00+02:00</updated><author><name>Meuge</name></author><id>tag:www.poliastro.space,2020-06-28:/blog/2020/06/28/2020-06-28-What-we'-ve-been-working-on-these-days!/</id><summary type="html">&lt;p&gt;Hey, folks! I hope everyone is okay out there. Today, I am going to explain a little bit about &lt;strong&gt;Repeat ground track orbits&lt;/strong&gt;, and the value that lies behind. 
+Orbits with repeating ground tracks play a significant role in space engineering. Ground tracks that repeat according to any pattern have meaningful applications in remote sensing missions, reconnaissance missions, and numerous rendezvous and docking opportunities with an orbiting spacecraft. Since they overfly the same points on the planet’s surface every repeat cycle, such as those studying gravity, the atmosphere, or the movement of the polar ice cap.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="mind-blown" src="https://media.giphy.com/media/OK27wINdQS5YQ/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;So as you might imagine, this is amazing. In one way, the data we consume relies on these orbits. As mentioned before, Repeat ground track (RGT) orbits allows a satellite to reobserve the same area after a repeat cycle. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="repeat-ground-track" src="https://www.iceye.com/hs-fs/hubfs/new-pages-website-2019/Img%20(no%20adding)/Sat%20Data%20-%20constellation.gif?width=450&amp;amp;name=Sat%20Data%20-%20constellation.gif"&gt;&lt;/p&gt;
+&lt;h1&gt;So how do we …&lt;/h1&gt;</summary><content type="html">&lt;p&gt;Hey, folks! I hope everyone is okay out there. Today, I am going to explain a little bit about &lt;strong&gt;Repeat ground track orbits&lt;/strong&gt;, and the value that lies behind. 
+Orbits with repeating ground tracks play a significant role in space engineering. Ground tracks that repeat according to any pattern have meaningful applications in remote sensing missions, reconnaissance missions, and numerous rendezvous and docking opportunities with an orbiting spacecraft. Since they overfly the same points on the planet’s surface every repeat cycle, such as those studying gravity, the atmosphere, or the movement of the polar ice cap.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="mind-blown" src="https://media.giphy.com/media/OK27wINdQS5YQ/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;So as you might imagine, this is amazing. In one way, the data we consume relies on these orbits. As mentioned before, Repeat ground track (RGT) orbits allows a satellite to reobserve the same area after a repeat cycle. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="repeat-ground-track" src="https://www.iceye.com/hs-fs/hubfs/new-pages-website-2019/Img%20(no%20adding)/Sat%20Data%20-%20constellation.gif?width=450&amp;amp;name=Sat%20Data%20-%20constellation.gif"&gt;&lt;/p&gt;
+&lt;h1&gt;So how do we do it?&lt;/h1&gt;
+&lt;p&gt;RGT is usually specified by an integer number of days &lt;em&gt;N&lt;/em&gt; and an integer number of orbits &lt;em&gt;K&lt;/em&gt; in the repeat cycle. So after acknowledging how the user wants the repeat ground track orbit. We calculate the mean semimajor axis,&lt;em&gt;a&lt;/em&gt;, required for a repeating ground track orbit using an algorithm devised by Carl Wagner. And we iterate on &lt;em&gt;a&lt;/em&gt; until we find the desired approximation. For further information, refer to &lt;em&gt;Fundamentals of Astrodynamics and Applications, 4th ed&lt;/em&gt; by David A. Vallado. &lt;/p&gt;
+&lt;p&gt;This algorithm starts with the following initial guess for the required mean semimajor axis:&lt;/p&gt;
+&lt;p&gt;$$a_{o}= \mu^\frac{1}{3}[(\frac{R}{D})\omega_{b}]^{-\frac{2}{3}}$$&lt;/p&gt;
+&lt;p&gt;And iteratively improves the semi-major axis with the following update:&lt;/p&gt;
+&lt;p&gt;$$a_{i+1}= \mu^\frac{1}{3}[(\frac{R}{D})\omega_{b}]^{-\frac{2}{3}}[1-\frac{3}{2}J_{2}(\frac{r_{bq}}{a_{i}})^2(1-\frac{3}{2}\sin(i)^2)]^\frac{2}{3}[1+J_{2}(\frac{r_{bq}}{a_{i}})^2(\frac{3}{2}\frac{R}{D}\cos(i)-\frac{3}{4}(5\cos(i)^2-1))]^\frac{2}{3}$$&lt;/p&gt;
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;p&gt;$R$ = Integer number of orbits&lt;/p&gt;
+&lt;p&gt;$D$ = Integer number of days&lt;/p&gt;
+&lt;p&gt;$J_{2}$ = Second gravity coefficient&lt;/p&gt;
+&lt;p&gt;$\omega_{b}$ = Inertial rotation rate of the Body&lt;/p&gt;
+&lt;p&gt;$r_{qb}$ = Equatorial radius of the Body&lt;/p&gt;
+&lt;p&gt;$i$ = Orbital inclination&lt;/p&gt;
+&lt;p&gt;$\mu$ = Gravitational constant of the Body&lt;/p&gt;
+&lt;p&gt;So do you know any satellite mission that has a repeat ground track orbit? There are just a bunch of them!. Just to mention, ICESat (Ice, Cloud, and land Elevation Satellite), was a satellite mission for measuring ice sheet mass balance, cloud and aerosol heights, as well as land topography and vegetation characteristics. If you visit, &lt;a href="https://nsidc.org/data/icesat/data.html"&gt;National Snow &amp;amp; Ice Data center&lt;/a&gt;, you may find some datasets coming from the different versions of ICESat.&lt;/p&gt;
+&lt;h1&gt;Join us on SciPy US sprint!&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Poliastro&lt;/strong&gt; has registered on &lt;strong&gt;SciPy US&lt;/strong&gt;, and we'll have a sprint on 11th and 12th July, in tandem with &lt;strong&gt;SciPy&lt;/strong&gt; sprint. So make a time slot for yourself on the agenda, and get ready! If you have any ideas about what you want to work on, or stuff that you want us to pay attention to, feel free to write to us! These are some of the &lt;a href="https://github.com/poliastro/poliastro/wiki/SciPy-2020-Sprint"&gt;suggestions&lt;/a&gt; we came up with.&lt;/p&gt;
+&lt;p&gt;That would be all for today, folks. ;) &lt;/p&gt;
+&lt;p&gt;&lt;img alt="bye" src="https://media.giphy.com/media/79ZFYdMsStRYI/giphy.gif"&gt;&lt;/p&gt;</content><category term="articles"></category><category term="GSOC"></category><category term="GSOC20"></category><category term="Google"></category><category term="poliastro"></category></entry><entry><title>To Infinity and Beyond!</title><link href="https://www.poliastro.space/blog/2020/06/27/2020-06-27-to-infinity-and-beyond!/" rel="alternate"></link><published>2020-06-27T21:45:00+02:00</published><updated>2020-06-27T21:45:00+02:00</updated><author><name>Meuge</name></author><id>tag:www.poliastro.space,2020-06-27:/blog/2020/06/27/2020-06-27-to-infinity-and-beyond!/</id><summary type="html">&lt;p&gt;Hey folks! It's been a while, but here I am to keep you posted about what we've been up to these last days. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="news" src="https://media.giphy.com/media/3o84sJXOIrnjvlwnF6/giphy.gif"&gt;&lt;/p&gt;
+&lt;h1&gt;What have we been up to?&lt;/h1&gt;
+&lt;p&gt;We began the coding period with a video call with the mentors, as you might already know, &lt;strong&gt;JuanLu&lt;/strong&gt; and &lt;strong&gt;Jorge&lt;/strong&gt;. We got to know each other a little better, and we started to design what was ahead of our path.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="future" src="https://media.giphy.com/media/KZocN3LfuqktW/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;But, before dropping any line of code, we first had to think about what would be the best way to integrate the new features to &lt;strong&gt;Poliastro community&lt;/strong&gt; in order to capture the desired requirements from an end-user perspective. After some deliberation, we came up with the idea of adding two new objects. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Spock" src="https://media.giphy.com/media/sBl8Fowq0ErFC/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;By now, I hope to have your attention as well as Spock's. So we created &lt;em&gt;EarthSatellite&lt;/em&gt; and &lt;em&gt;Spacecraft&lt;/em&gt;. Both …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hey folks! It's been a while, but here I am to keep you posted about what we've been up to these last days. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="news" src="https://media.giphy.com/media/3o84sJXOIrnjvlwnF6/giphy.gif"&gt;&lt;/p&gt;
+&lt;h1&gt;What have we been up to?&lt;/h1&gt;
+&lt;p&gt;We began the coding period with a video call with the mentors, as you might already know, &lt;strong&gt;JuanLu&lt;/strong&gt; and &lt;strong&gt;Jorge&lt;/strong&gt;. We got to know each other a little better, and we started to design what was ahead of our path.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="future" src="https://media.giphy.com/media/KZocN3LfuqktW/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;But, before dropping any line of code, we first had to think about what would be the best way to integrate the new features to &lt;strong&gt;Poliastro community&lt;/strong&gt; in order to capture the desired requirements from an end-user perspective. After some deliberation, we came up with the idea of adding two new objects. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Spock" src="https://media.giphy.com/media/sBl8Fowq0ErFC/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;By now, I hope to have your attention as well as Spock's. So we created &lt;em&gt;EarthSatellite&lt;/em&gt; and &lt;em&gt;Spacecraft&lt;/em&gt;. Both of them would be vital to develop what's coming next for &lt;strong&gt;Poliastro&lt;/strong&gt;. Did someone say &lt;strong&gt;TLE&lt;/strong&gt;?. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Surprise" src="https://media.giphy.com/media/LPNNFDYNTgP3q1jcAK/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Still, you might want to check out EarthSatellite propagation considering J2's perturbation and the atmospheric drag. Sounds superb, right? In order to use it you might want to try:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.earth.atmosphere&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;COESA76&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.bodies&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.earth&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;EarthSatellite&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;units&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.twobody.orbit&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.earth.enums&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;EarthGravity&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.spacecraft&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Spacecraft&lt;/span&gt;
+
+
+&lt;span class="n"&gt;tof&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;1.0&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;min&lt;/span&gt; 
+&lt;span class="n"&gt;ss0&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Orbit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_classical&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;Earth&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;km&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.75&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;one&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;63.4&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;270&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;deg&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;C_D&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;2.2&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;one&lt;/span&gt;  &lt;span class="c1"&gt;# dimentionless drag coefficient&lt;/span&gt;
+&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mf"&gt;4.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;km&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;kg&lt;/span&gt; 
+&lt;span class="n"&gt;spacecraft&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Spacecraft&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;C_D&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;#we create the spacecraft&lt;/span&gt;
+&lt;span class="n"&gt;earth_satellite&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;EarthSatellite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ss0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;spacecraft&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;orbit_with_atmosphere_and_J2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;earth_satellite&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;propagate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tof&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;tof&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;gravity&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;EarthGravity&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;J2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;atmosphere&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;COESA76&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Nevertheless, this API is subject to changes, so before diving in, verify the documentation :)&lt;/p&gt;
+&lt;p&gt;See you in the next post, and stay safe :)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Infinity" src="https://media.giphy.com/media/wPXW2MLFCTNF6/giphy.gif"&gt;&lt;/p&gt;</content><category term="articles"></category><category term="GSOC"></category><category term="GSOC20"></category><category term="Google"></category><category term="poliastro"></category></entry><entry><title>GSoC 2020, I am going to an adventure!</title><link href="https://www.poliastro.space/blog/2020/05/17/2020-05-17-poliastro-google-summer-of-code-2020/" rel="alternate"></link><published>2020-05-17T12:00:00+02:00</published><updated>2020-05-17T12:00:00+02:00</updated><author><name>Meuge</name></author><id>tag:www.poliastro.space,2020-05-17:/blog/2020/05/17/2020-05-17-poliastro-google-summer-of-code-2020/</id><summary type="html">&lt;p&gt;Hi, you all! Let me tell you something, this is going to be the beginning of our journey together, we are going on to a spatial adventure! Sit tight, and wait for the countdown!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="countdown" src="https://techcrunch.com/wp-content/uploads/2017/08/falcon-9-crs-12-compressor.gif"&gt;&lt;/p&gt;
+&lt;p&gt;But first, let me introduce myself, my name is María Eugenia, though everybody knows me as &lt;em&gt;Meuge&lt;/em&gt;. &lt;/p&gt;
+&lt;h1&gt;First things first, SPACE? How did we get here?&lt;/h1&gt;
+&lt;p&gt;All began with the big bang, no wait, that's a story for another time. All began in 2019, when &lt;strong&gt;JuanLu&lt;/strong&gt; reached out to the &lt;em&gt;The Fellowship of&lt;/em&gt;  &lt;del&gt;the ring&lt;/del&gt;  &lt;em&gt;Python Científico&lt;/em&gt; community to informed us that &lt;strong&gt;Poliastro&lt;/strong&gt; would be part of &lt;strong&gt;GSoC 2019&lt;/strong&gt;. 
+To be honest with you, I had just a slight idea of astrodynamics, so I took a big leap of faith and asked JuanLu where I could make myself useful. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Yoda's way" src="https://media1.tenor.com/images/f708e56b6ab99de21228c95203c7af8e/tenor.gif?itemid=13942585"&gt;&lt;/p&gt;
+&lt;p&gt;The truth is that JuanLu wasn't that …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi, you all! Let me tell you something, this is going to be the beginning of our journey together, we are going on to a spatial adventure! Sit tight, and wait for the countdown!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="countdown" src="https://techcrunch.com/wp-content/uploads/2017/08/falcon-9-crs-12-compressor.gif"&gt;&lt;/p&gt;
+&lt;p&gt;But first, let me introduce myself, my name is María Eugenia, though everybody knows me as &lt;em&gt;Meuge&lt;/em&gt;. &lt;/p&gt;
+&lt;h1&gt;First things first, SPACE? How did we get here?&lt;/h1&gt;
+&lt;p&gt;All began with the big bang, no wait, that's a story for another time. All began in 2019, when &lt;strong&gt;JuanLu&lt;/strong&gt; reached out to the &lt;em&gt;The Fellowship of&lt;/em&gt;  &lt;del&gt;the ring&lt;/del&gt;  &lt;em&gt;Python Científico&lt;/em&gt; community to informed us that &lt;strong&gt;Poliastro&lt;/strong&gt; would be part of &lt;strong&gt;GSoC 2019&lt;/strong&gt;. 
+To be honest with you, I had just a slight idea of astrodynamics, so I took a big leap of faith and asked JuanLu where I could make myself useful. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Yoda's way" src="https://media1.tenor.com/images/f708e56b6ab99de21228c95203c7af8e/tenor.gif?itemid=13942585"&gt;&lt;/p&gt;
+&lt;p&gt;The truth is that JuanLu wasn't that green... But he clearly had the wisdom of Master Yoda to lead a young Padawan to the ways of the space. 
+We started with &lt;em&gt;Frozen Orbit PR Mission&lt;/em&gt;, and along with the force, success was on our side.&lt;/p&gt;
+&lt;h1&gt;Do. Or do not. There is no try.&lt;/h1&gt;
+&lt;p&gt;It's been a long journey, but I finally got the opportunity to work with the &lt;strong&gt;Poliastro&lt;/strong&gt; folks. I have nothing but kind words for the community that immediately took me in and made me feel welcome.
+After some deliberation, along with &lt;strong&gt;JuanLu&lt;/strong&gt; and &lt;strong&gt;Jorge&lt;/strong&gt;, we decided to go for the following proposal: &lt;em&gt;"Designing a Specialized Orbit and Implementing Geometries for Surveillance and Reconnaissance Capabilities"&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="It's working" src="https://media.giphy.com/media/9K2nFglCAQClO/200_d.gif"&gt;&lt;/p&gt;
+&lt;p&gt;And luckily this proposal was selected to be carried out this year. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So what can I say, I was over the moon when I received the news!!!&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;Winter is coming or should I say winter is coding?&lt;/h1&gt;
+&lt;p&gt;Although GSoC stands for Summer, here in the South Hemisphere, we don't feel the same. It's really cold and with no Starks around.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="cold" src="https://media.giphy.com/media/tLrqmVoFJV4mQ/giphy.gif"&gt;&lt;/p&gt;
+&lt;p&gt;But feeling really excited to start the GWoC.  To brief you into this matter, this &lt;del&gt;Winter&lt;/del&gt;, I mean this Summer, one of our core tasks is to be launching the  &lt;strong&gt;Space mission analysis and design module at Poliastro&lt;/strong&gt;. 
+At Poliastro, we feel that it's necessary to provide the most efficient way to accomplish the space mission’s objectives while optimizing the time required and minimizing the cost and risk associated.&lt;/p&gt;
+&lt;p&gt;Really looking forward to starting this new journey with Poliastro :) 
+See you in the next time folks time, trying to conquer the world?&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pinky and brain" src="https://media.giphy.com/media/3mKBXLpYeLzUY/giphy.gif"&gt;&lt;/p&gt;</content><category term="articles"></category><category term="GSOC"></category><category term="Google"></category><category term="poliastro"></category><category term="students"></category></entry><entry><title>poliastro in Google Summer of Code 2019!</title><link href="https://www.poliastro.space/blog/2019/03/01/2019-03-01-poliastro-google-summer-of-code-2019/" rel="alternate"></link><published>2019-03-01T12:00:00+01:00</published><updated>2019-03-01T12:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2019-03-01:/blog/2019/03/01/2019-03-01-poliastro-google-summer-of-code-2019/</id><summary type="html">&lt;p&gt;We are glad to announce that &lt;strong&gt;poliastro&lt;/strong&gt; will accept student applications during Google Summer of Code 2019, thanks to the umbrella organization OpenAstronomy! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to easily simulate and visualize interplanetary orbits in an interactive way, &lt;a href="https://docs.poliastro.space/en/v0.12.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;h1&gt;What is Google Summer of Code?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Google Summer of Code&lt;/strong&gt; (from now on, &lt;strong&gt;GSOC&lt;/strong&gt;) is, according to &lt;a href="https://summerofcode.withgoogle.com/"&gt;its own website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Google Summer of Code" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/GSoC.png"&gt;&lt;/p&gt;
+&lt;p&gt;GSOC is the inspiration for the Summer of Code in Space (SOCIS), a similar program organized by the European Space Agency in which &lt;a href="http://blog.poliastro.space/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/"&gt;we also participated&lt;/a&gt;, with great success.&lt;/p&gt;
+&lt;p&gt;The …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are glad to announce that &lt;strong&gt;poliastro&lt;/strong&gt; will accept student applications during Google Summer of Code 2019, thanks to the umbrella organization OpenAstronomy! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to easily simulate and visualize interplanetary orbits in an interactive way, &lt;a href="https://docs.poliastro.space/en/v0.12.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;h1&gt;What is Google Summer of Code?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Google Summer of Code&lt;/strong&gt; (from now on, &lt;strong&gt;GSOC&lt;/strong&gt;) is, according to &lt;a href="https://summerofcode.withgoogle.com/"&gt;its own website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Google Summer of Code" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/GSoC.png"&gt;&lt;/p&gt;
+&lt;p&gt;GSOC is the inspiration for the Summer of Code in Space (SOCIS), a similar program organized by the European Space Agency in which &lt;a href="http://blog.poliastro.space/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/"&gt;we also participated&lt;/a&gt;, with great success.&lt;/p&gt;
+&lt;p&gt;The process of GSOC before the coding starts goes more or less like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mentoring organizations apply ✔️&lt;/li&gt;
+&lt;li&gt;they get accepted (yay!) ✔️&lt;/li&gt;
+&lt;li&gt;students start getting familiar with the project of their choice ⬅&lt;/li&gt;
+&lt;li&gt;they send a proposal (March 25 - April 9, 2019), and&lt;/li&gt;
+&lt;li&gt;they get accepted (hopefully! on May 6, 2019)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;How did we get to this point? Keep on reading!&lt;/p&gt;
+&lt;h2&gt;What is OpenAstronomy?&lt;/h2&gt;
+&lt;p&gt;This year we participate again under the umbrella organization &lt;strong&gt;OpenAstronomy&lt;/strong&gt;, which is, again according to our own website:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a collaboration between open source astronomy and astrophysics projects to share resources, ideas, and to improve code.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="http://openastronomy.org/members/"&gt;poliastro is a project member of OpenAstronomy&lt;/a&gt;, but there are many more: AstroPy, SunPy, JuliaAstro... Many of them are participating in GSOC!&lt;/p&gt;
+&lt;h2&gt;Sounds interesting, how much do I get paid?&lt;/h2&gt;
+&lt;p&gt;On the GSOC website you can find &lt;a href="https://developers.google.com/open-source/gsoc/help/student-stipends"&gt;the stipend amount for each country&lt;/a&gt;. For the country I come from, Spain, it's $4200 in total, which is roughly 1200 € per month. Of course, you first have to &lt;a href="https://developers.google.com/open-source/gsoc/faq#what_are_the_eligibility_requirements_for_participation"&gt;meet the eligibility criteria&lt;/a&gt;, send a successful proposal, and get accepted.&lt;/p&gt;
+&lt;h2&gt;Awesome! How can I participate?&lt;/h2&gt;
+&lt;p&gt;Fantastic! The first thing you should do is to select on which project you would like to participate. We would love to have you all in poliastro, but you might be more interested in Solar physics, or the Julia programming language, or Software Defined Radio... &lt;a href="https://summerofcode.withgoogle.com/organizations/"&gt;There are tons of different projects&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Whichever project you would like to participate in, including poliastro, will have an "ideas list" somewhere. These ideas give you inspiration on what the project administrators expect from students, what is the functionality or new developments that they desire... But you can propose your own ideas as well! Here you can find the &lt;a href="http://openastronomy.org/gsoc/gsoc2019/#/projects"&gt;ideas list for poliastro and the rest of OpenAstronomy projects&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And finally, once you have decided which project is your favourite, you should run and engage with it in some way. For poliastro we encourage you to &lt;a href="https://chat.openastronomy.org/#/room/#poliastro:matrix.org"&gt;join our chat&lt;/a&gt;, and other projects will have their own documentation channels.&lt;/p&gt;
+&lt;h2&gt;Fair enough, but how do I get started?&lt;/h2&gt;
+&lt;p&gt;I know, too much information, right? Here is a list of things you can do if you want to work with poliastro this summer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chat.openastronomy.org/#/room/#poliastro:matrix.org"&gt;Join our chat&lt;/a&gt; (you already did that, rigtht?)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.poliastro.space/"&gt;Read the documentation&lt;/a&gt; (at least a little bit!)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://beta.mybinder.org/v2/gh/poliastro/poliastro/master?filepath=index.ipynb"&gt;Play with the notebooks&lt;/a&gt; (don't need to install anything!)&lt;/li&gt;
+&lt;li&gt;Watch a talk about poliastro, like &lt;a href="https://youtu.be/lpcp849dnLA"&gt;this one&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/"&gt;Clone the git repository&lt;/a&gt;, and make sure that the tests pass&lt;/li&gt;
+&lt;li&gt;Take a look at the &lt;a href="https://github.com/poliastro/poliastro/issues"&gt;issues list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You already have enough homework to get started, but don't get overwhelmed - just &lt;a href="https://chat.openastronomy.org/#/room/#poliastro:matrix.org"&gt;join our chat&lt;/a&gt; (did I forget to mention?) and say hello!&lt;/p&gt;
+&lt;h2&gt;And then what?&lt;/h2&gt;
+&lt;p&gt;And then... you decide! I can help you polish your proposal if you need to, find an idea to work on, give a hand with git, suggest a different project or organization based on your skills and interests... If you happen to send a good proposal to work on poliastro, you will have good chances to get selected and maybe we will have the opportunity to work together and learn a lot. Also perhaps &lt;a href="http://2019.es.pycon.org/"&gt;give a talk in a conference&lt;/a&gt; &lt;a href="https://www.euroscipy.org/"&gt;or two&lt;/a&gt;...&lt;/p&gt;
+&lt;p&gt;I would greatly appreciate if you spread the word about this. I believe GSOC is a great opportunity to get in touch with open source and make a big contribution to science and technology.&lt;/p&gt;
+&lt;p&gt;Before you leave, let me add a very important &lt;strong&gt;impostor syndrome disclaimer&lt;/strong&gt; (from &lt;a href="https://github.com/adriennefriend/imposter-syndrome-disclaimer#how-to-contribute"&gt;here&lt;/a&gt;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I want your help. No really, I do.&lt;/p&gt;
+&lt;p&gt;There might be a little voice inside that tells you you're not ready;
+that you need to do one more tutorial, or learn another framework, or
+write a few more blog posts before you can help me with this project.&lt;/p&gt;
+&lt;p&gt;I assure you, that's not the case.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you have read this far, I hope to have you on board very soon :)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Per Python ad astra!&lt;/em&gt;&lt;/p&gt;</content><category term="articles"></category><category term="GSOC"></category><category term="Google"></category><category term="poliastro"></category><category term="students"></category></entry><entry><title>poliastro at the Python in Astronomy 2018 conference</title><link href="https://www.poliastro.space/blog/2018/06/04/2018-06-04-poliastro-python-astronomy-2018-conference/" rel="alternate"></link><published>2018-06-04T20:30:00+02:00</published><updated>2018-06-04T20:30:00+02:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2018-06-04:/blog/2018/06/04/2018-06-04-poliastro-python-astronomy-2018-conference/</id><summary type="html">&lt;p&gt;A month ago I had the privilege to attend the &lt;strong&gt;Python in Astronomy 2018 conference&lt;/strong&gt;, which gave me an unique perspective of the status of Python in the astronomical sciences and an opportunity to present poliastro to a very technical audience. I was planning to post a writeup somewhere, and as the Zen of Python says...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;import this&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;Now&lt;/span&gt;
+&lt;span class="n"&gt;Now&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;better&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;never&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So, let's do it! 🚀&lt;/p&gt;
+&lt;h1&gt;What was Python in Astronomy?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Python in Astronomy&lt;/strong&gt; (from now on, &lt;strong&gt;PyAstro18&lt;/strong&gt;) is best explained in &lt;a href="http://openastronomy.org/pyastro/2018/"&gt;its website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This conference aims to bring a wide variety of people who use, develop or teach people about Python packages in the context of all forms of Astronomy. The conference will include presentations, tutorials, unconference sessions, and sprints. As well as enhancing the community around astronomical uses of Python, the conference aims …&lt;/p&gt;&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;A month ago I had the privilege to attend the &lt;strong&gt;Python in Astronomy 2018 conference&lt;/strong&gt;, which gave me an unique perspective of the status of Python in the astronomical sciences and an opportunity to present poliastro to a very technical audience. I was planning to post a writeup somewhere, and as the Zen of Python says...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;import this&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;Now&lt;/span&gt;
+&lt;span class="n"&gt;Now&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;better&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;never&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So, let's do it! 🚀&lt;/p&gt;
+&lt;h1&gt;What was Python in Astronomy?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Python in Astronomy&lt;/strong&gt; (from now on, &lt;strong&gt;PyAstro18&lt;/strong&gt;) is best explained in &lt;a href="http://openastronomy.org/pyastro/2018/"&gt;its website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This conference aims to bring a wide variety of people who use, develop or teach people about Python packages in the context of all forms of Astronomy. The conference will include presentations, tutorials, unconference sessions, and sprints. As well as enhancing the community around astronomical uses of Python, the conference aims to improve collaboration and interoperability between Python packages, and share knowledge on Python packages and techniques. It will also provide training and educational materials for users and developers of Python astronomy packages.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="PyAstro 2018 introduction" src="/images/pyastro-intro.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;This year it was celebrated at the &lt;a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/"&gt;Center for Computational Astrophysics&lt;/a&gt;, a research center committed to developing the research tools needed for modern astronomy as part the Flatiron Institute, in New York.&lt;/p&gt;
+&lt;p&gt;I had heard about the conference perhaps last year, but this was the first edition I actually applied to attend, and I was selected! Not only did the organization pay for transportation and accommodation of &lt;em&gt;all&lt;/em&gt; the attendees (including yours truly), but also they did a wonderful job gathering a &lt;strong&gt;diverse audience&lt;/strong&gt;, which made me extremely happy!&lt;/p&gt;
+&lt;p&gt;PyAstro is not an ordinary conference, and many types of sessions happened:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Keynotes&lt;/strong&gt;: Classical talks addressed to all the attendees, about an important topic and given by a relevant member of the community.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unconferences/Tutorials&lt;/strong&gt;: Sessions proposed by the attendees during the event itself. There were moments during the week when we were asked to suggest topics on a whiteboard, do a "pitch" about them (i.e. explain why we wanted to discuss about those topics) and then vote. The ones that were more interactive, or encouraged the attendees to code something, were called tutorials. There were also people taking notes of the discussions and they were all summarized at the end of each day.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lightning talks&lt;/strong&gt;: 5 minutes talks about &lt;em&gt;any&lt;/em&gt; topic that can be a great opportunity for first time speakers or people that want to show something in an humorous way.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hack projects&lt;/strong&gt;: One day was entirely devoted to &lt;em&gt;hacking&lt;/em&gt;! This meant that people could do sprint on a particular software package, explore new libraries, discuss complicated things in person, or just advance with their personal projects. In the same way as unconferences, the conclusions were summarized and presented the following day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The best thing is that &lt;em&gt;you can read&lt;/em&gt; most of the content we generated during the conference &lt;a href="https://docs.google.com/document/d/1DLgH9D-Wm-zgeRdPecE1_VtKnugkYyHAc5imwAptktk/edit?usp=sharing"&gt;in this index and the linked documents!&lt;/a&gt; This includes the summaries of the unconference sessions, the lightning talks list, the participants directory, pictures and more. Great, isn't it?&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Unconference sessions" src="/images/pyastro-unconference.jpg"&gt;&lt;/p&gt;
+&lt;h1&gt;poliastro + PyAstro18 = 🚀&lt;/h1&gt;
+&lt;p&gt;I wanted to make the most of PyAstro18 and participate as much as I could, so before arriving to New York I already had a rough idea of my main goals for the event, which were:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Spread the word about poliastro and reach out to potential users,&lt;/li&gt;
+&lt;li&gt;Make a decision about the API of ecliptic reference frames in Astropy, which affects poliastro (see &lt;a href="https://github.com/astropy/astropy/pull/6508"&gt;this lengthy issue&lt;/a&gt;),&lt;/li&gt;
+&lt;li&gt;Share my concerns about high level, performant code in Python, in particular the performance of &lt;code&gt;astropy.units&lt;/code&gt; (which in some parts of poliastro is a bottleneck, see &lt;a href="https://github.com/poliastro/poliastro/commit/ed931adb"&gt;this commit&lt;/a&gt;), and&lt;/li&gt;
+&lt;li&gt;Get to know the Astropy developers (and the rest of the community) in person and have fun!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With this in mind, apart from my scheduled talk about poliastro (&lt;a href="https://github.com/poliastro/pyastro18-talk/"&gt;repo&lt;/a&gt;), I gave a lightning talk titled "That messy conversation about reference frames" inspired in &lt;a href="https://github.com/astropy/astropy/pull/6508"&gt;this lengthy issue in astropy.coordinates that is not over yet&lt;/a&gt; (&lt;a href="https://github.com/Juanlu001/messy-frames-talk"&gt;repo&lt;/a&gt;) and I co-chaired an unconference session about Parallelization, Cython, Measuring Python Performance and Identifying bottlenecks.&lt;/p&gt;
+&lt;h2&gt;Personal summary&lt;/h2&gt;
+&lt;p&gt;Luckily, &lt;strong&gt;poliastro&lt;/strong&gt; attracted some attention and I got many interesting question from the attendees. The golden moment of the week was when &lt;a href="https://github.com/abigailStev"&gt;Abbie Stevens&lt;/a&gt; wrote "Where are you sitting? Someone has a question about orbital mechanics!" 💗 Also, &lt;a href="https://twitter.com/coachxcpayne"&gt;Charlie Payne&lt;/a&gt; announced that &lt;a href="https://twitter.com/coachxcpayne/status/997322543852814336"&gt;he had used poliastro with high school students to examine the Europa Clipper mission&lt;/a&gt; 💖&lt;/p&gt;
+&lt;p&gt;For my &lt;strong&gt;hack day project&lt;/strong&gt;, I decided to work on the performance of &lt;code&gt;astropy.units&lt;/code&gt;, doing some profiling with common use cases to identify hot spots and hopefully try to address some of them. I must give a special Thank You here to &lt;a href="https://github.com/eteq"&gt;Erik Tollerud&lt;/a&gt;, which was super kind and supportive all the time and always happy to give guidance even though he was doing a dozen things at the same time. I also worked a lot with &lt;a href="https://github.com/manodeep/"&gt;Manodeep Sinha&lt;/a&gt;, our optimization expert and "general pedant about coding", who gave lots of useful and interesting suggestions to optimize the code. The conclusions can be read in &lt;a href="https://github.com/astropy/astropy/issues/7438"&gt;this issue&lt;/a&gt; and can be sumarized to "why the heck is &lt;code&gt;isinstance&lt;/code&gt; so slow?".&lt;/p&gt;
+&lt;p&gt;Regarding the decision on the &lt;strong&gt;ecliptic frames&lt;/strong&gt;, at one point I sat with &lt;a href="https://github.com/adrn"&gt;Adrian Price-Whelan&lt;/a&gt; and Erik and figured out that 12 or 24 ecliptic frames would be too many (unsurprisingly), and that we would have to find a compromise using factory methods and trying to make common frames visibly documented. A straightforward solution that works for us is already in place in poliastro, but I hope I have enough time to work on this &lt;a href="https://github.com/astropy/astropy/wiki/Release-Calendar"&gt;before Astropy 3.1 feature freeze&lt;/a&gt; and reach consensus with the rest of the Astropy core developers (since not all of them were at PyAstro18).&lt;/p&gt;
+&lt;p&gt;And finally, I think I managed to &lt;strong&gt;meet lots of new people&lt;/strong&gt; and had some fun :) I found myself excited to find other Spanish-speaking people (special mention to &lt;a href="https://github.com/carlgogo"&gt;Carlos Alberto Gómez González&lt;/a&gt;, with whom I had a couple of funny anecdotes) and in general I was glad to meet people I usually interact with on GitHub, in person.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="I, Juanlu" src="/images/pyastro-juanlu.jpg"&gt;&lt;/p&gt;
+&lt;h2&gt;Some final thoughts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There was a great atmosphere during the event: everybody was participating, the venue was just awesome, there were people from many different countries... &lt;strong&gt;10/10&lt;/strong&gt; for the organization, they did a great job. &lt;/li&gt;
+&lt;li&gt;I was already aware of the huge &lt;strong&gt;infrastructure&lt;/strong&gt; that the Astropy community has been developing throughout the years, but watching how easy it is to create a Python package using their templates was amazing (&lt;a href="https://github.com/astropy/package-template"&gt;check out their cookiecutter template&lt;/a&gt;, which was finished during the event!). I think it's very important that non-programmers have easy ways to sort out documentation, continuous integration, testing... This applies not only for scientists, but also for engineers whose day to day job involves coding.&lt;/li&gt;
+&lt;li&gt;I discovered thanks to Adrian that the field of &lt;strong&gt;galactic dynamics&lt;/strong&gt; shares some common problem with astrodynamics/orbital mechanics (check out his package &lt;a href="http://gala.adrian.pw/en/latest/"&gt;gala&lt;/a&gt;). Also, &lt;a href="https://github.com/migueldvb"&gt;Miguel de Val-Borro&lt;/a&gt; shared that he is about to start working on a Python package for small bodies research called &lt;a href="https://github.com/mommermi/sbpy"&gt;sbpy&lt;/a&gt; that will need orbital element handling and easy access to HORIZONS data. There are more collaboration opportunities than I expected, and I only wish I had more time to advance on common interfaces. &lt;/li&gt;
+&lt;li&gt;I think &lt;em&gt;I was among the few non-astronomers, and also among the few people working in a private company&lt;/em&gt;. It was a weird feeling at the beginning, and gave me a different perspective about what the incentives for using open source are, what are the common problems in academia... I've been wondered how to bring the open source philosophy closer to the engineering world for years now, and this event was so important for me in that respect.&lt;/li&gt;
+&lt;li&gt;After this event I really want to collaborate more and more with the community. I already have a plan to reduce the number of commitments in other areas and work more closely with the scientific community.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Group picture at PyAstro18" src="/images/pyastro-group.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Looking forward to see you all at PyAstro19!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Per Python ad astra!&lt;/em&gt;&lt;/p&gt;</content><category term="articles"></category><category term="pyastro18"></category><category term="poliastro"></category><category term="conferences"></category></entry><entry><title>Join poliastro thanks to Google Summer of Code!</title><link href="https://www.poliastro.space/blog/2018/02/22/2018-02-22-join-poliastro-google-summer-of-code/" rel="alternate"></link><published>2018-02-22T12:00:00+01:00</published><updated>2018-02-22T12:00:00+01:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2018-02-22:/blog/2018/02/22/2018-02-22-join-poliastro-google-summer-of-code/</id><summary type="html">&lt;p&gt;We are glad to announce that &lt;strong&gt;poliastro&lt;/strong&gt; will accept student applications during Google Summer of Code this year, thanks to the umbrella organization OpenAstronomy! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to easily simulate and visualize interplanetary orbits in an interactive way, &lt;a href="http://docs.poliastro.space/en/v0.8.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;h1&gt;What is Google Summer of Code?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Google Summer of Code&lt;/strong&gt; (from now on, &lt;strong&gt;GSOC&lt;/strong&gt;) is, according to &lt;a href="https://summerofcode.withgoogle.com/"&gt;its own website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Google Summer of Code" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/GSoC.png"&gt;&lt;/p&gt;
+&lt;p&gt;GSOC is the inspiration for the Summer of Code in Space (SOCIS), a similar program organized by the European Space Agency in which &lt;a href="http://blog.poliastro.space/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/"&gt;we also participated last year&lt;/a&gt;, with …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are glad to announce that &lt;strong&gt;poliastro&lt;/strong&gt; will accept student applications during Google Summer of Code this year, thanks to the umbrella organization OpenAstronomy! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to easily simulate and visualize interplanetary orbits in an interactive way, &lt;a href="http://docs.poliastro.space/en/v0.8.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;h1&gt;What is Google Summer of Code?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Google Summer of Code&lt;/strong&gt; (from now on, &lt;strong&gt;GSOC&lt;/strong&gt;) is, according to &lt;a href="https://summerofcode.withgoogle.com/"&gt;its own website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Google Summer of Code" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/GSoC.png"&gt;&lt;/p&gt;
+&lt;p&gt;GSOC is the inspiration for the Summer of Code in Space (SOCIS), a similar program organized by the European Space Agency in which &lt;a href="http://blog.poliastro.space/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/"&gt;we also participated last year&lt;/a&gt;, with great success.&lt;/p&gt;
+&lt;p&gt;The process of GSOC before the coding starts goes more or less like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mentoring organizations apply ✔️&lt;/li&gt;
+&lt;li&gt;they get accepted (yay!) ✔️&lt;/li&gt;
+&lt;li&gt;students start getting familiar with the project of their choice ✔️&lt;/li&gt;
+&lt;li&gt;they send a proposal (March 12 - 27, 2018 ⬅), and&lt;/li&gt;
+&lt;li&gt;they get accepted (hopefully! on April 23, 2018)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;How did we get to this point? Keep on reading!&lt;/p&gt;
+&lt;h2&gt;What is OpenAstronomy?&lt;/h2&gt;
+&lt;p&gt;This year is the first one we are participating, thanks to the umbrella organization &lt;strong&gt;OpenAstronomy&lt;/strong&gt;, which is, again according to our own website:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a collaboration between open source astronomy and astrophysics projects to share resources, ideas, and to improve code.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="http://openastronomy.org/members/"&gt;poliastro is a project member of OpenAstronomy&lt;/a&gt;, but there are many more: AstroPy, SunPy, JuliaAstro... Many of them are participating in GSOC!&lt;/p&gt;
+&lt;h2&gt;Sounds interesting, how much do I get paid?&lt;/h2&gt;
+&lt;p&gt;On the GSOC website you can find &lt;a href="https://developers.google.com/open-source/gsoc/help/student-stipends"&gt;the stipend amount for each country&lt;/a&gt;. For the country I come from, Spain, it's $5400 in total, which is roughly 1500 € per month. Of course, you first have to &lt;a href="https://developers.google.com/open-source/gsoc/faq#what_are_the_eligibility_requirements_for_participation"&gt;meet the eligibility criteria&lt;/a&gt;, send a successful proposal, and get accepted.&lt;/p&gt;
+&lt;h2&gt;Awesome! How can I participate?&lt;/h2&gt;
+&lt;p&gt;Fantastic! The first thing you should do is to select on which project you would like to participate. We would love to have you all in poliastro, but you might be more interested in Solar physics, or the Julia programming language, or Software Defined Radio... &lt;a href="https://summerofcode.withgoogle.com/organizations/"&gt;There are tons of different projects&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Whichever project you would like to participate in, including poliastro, will have an "ideas list" somewhere. These ideas give you inspiration on what the project administrators expect from students, what is the functionality or new developments that they desire... But you can propose your own ideas as well! Here you can find the &lt;a href="http://openastronomy.org/gsoc/gsoc2018/#/projects"&gt;ideas list for poliastro and the rest of OpenAstronomy projects&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And finally, once you have decided which project is your favourite, you should run and engage with it in some way. For poliastro we encourage you to &lt;a href="https://riot.im/app/#/room/#poliastro:matrix.org"&gt;join our chat&lt;/a&gt;, and other projects will have their own documentation channels.&lt;/p&gt;
+&lt;h2&gt;Fair enough, but how do I get started?&lt;/h2&gt;
+&lt;p&gt;I know, too much information, right? Here is a list of things you can do if you want to work with poliastro this summer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://riot.im/app/#/room/#poliastro:matrix.org"&gt;Join our chat&lt;/a&gt; (you already did that, rigtht?)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.poliastro.space/"&gt;Read the documentation&lt;/a&gt; (at least a little bit!)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://beta.mybinder.org/v2/gh/poliastro/poliastro/master?filepath=index.ipynb"&gt;Play with the notebooks&lt;/a&gt; (don't need to install anything!)&lt;/li&gt;
+&lt;li&gt;Watch a talk about poliastro, like &lt;a href="https://youtu.be/lpcp849dnLA"&gt;this one&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/poliastro/poliastro/"&gt;Clone the git repository&lt;/a&gt;, and make sure that the tests pass&lt;/li&gt;
+&lt;li&gt;Take a look at the &lt;a href="https://github.com/poliastro/poliastro/issues"&gt;issues list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You already have enough homework to get started, but don't get overwhelmed - just &lt;a href="https://riot.im/app/#/room/#poliastro:matrix.org"&gt;join our chat&lt;/a&gt; (did I forget to mention?) and say hello!&lt;/p&gt;
+&lt;h2&gt;And then what?&lt;/h2&gt;
+&lt;p&gt;And then... you decide! I can help you polish your proposal if you need to, find an idea to work on, give a hand with git, suggest a different project or organization based on your skills and interests... If you happen to send a good proposal to work on poliastro, you will have good chances to get selected and maybe we will have the opportunity to work together and learn a lot. Also perhaps &lt;a href="http://2018.es.pycon.org/"&gt;give a talk in a conference&lt;/a&gt; &lt;a href="https://www.euroscipy.org/"&gt;or two&lt;/a&gt;...&lt;/p&gt;
+&lt;p&gt;I would greatly appreciate if you spread the word about this. I believe GSOC is a great opportunity to get in touch with open source and make a big contribution to science and technology.&lt;/p&gt;
+&lt;p&gt;Before you leave, let me add a very important &lt;strong&gt;impostor syndrome disclaimer&lt;/strong&gt; (from &lt;a href="https://github.com/adriennefriend/imposter-syndrome-disclaimer#how-to-contribute"&gt;here&lt;/a&gt;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I want your help. No really, I do.&lt;/p&gt;
+&lt;p&gt;There might be a little voice inside that tells you you're not ready;
+that you need to do one more tutorial, or learn another framework, or
+write a few more blog posts before you can help me with this project.&lt;/p&gt;
+&lt;p&gt;I assure you, that's not the case.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you have read this far, I hope to have you on board very soon :)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Per Python ad astra!&lt;/em&gt;&lt;/p&gt;</content><category term="articles"></category><category term="GSOC"></category><category term="Google"></category><category term="poliastro"></category><category term="students"></category></entry><entry><title>poliastro 0.7.0 released and ready for PyConES!</title><link href="https://www.poliastro.space/blog/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/" rel="alternate"></link><published>2017-09-15T11:00:00+02:00</published><updated>2017-09-15T11:00:00+02:00</updated><author><name>Juan Luis Cano Rodríguez</name></author><id>tag:www.poliastro.space,2017-09-15:/blog/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/</id><summary type="html">&lt;p&gt;It fills us with astronomical joy to announce the release of &lt;strong&gt;poliastro 0.7.0&lt;/strong&gt;! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to simulate and analyze interplanetary orbits in a Jupyter notebook in an interactive and easy way, &lt;a href="http://docs.poliastro.space/en/v0.7.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;p&gt;This release is the biggest one since the creation of the project in terms of code changes and new features, and on behalf of the poliastro development team I would like to deeply thank the European Space Agency for the SOCIS grant that made it possible. Besides, I would like to officially welcome Antonio Hidalgo to the team, since in reward for his amazing work during SOCIS he gained write access to the repository. ¡Bienvenido Antonio!&lt;/p&gt;
+&lt;p&gt;As always, the easiest way to get poliastro in …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It fills us with astronomical joy to announce the release of &lt;strong&gt;poliastro 0.7.0&lt;/strong&gt;! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to simulate and analyze interplanetary orbits in a Jupyter notebook in an interactive and easy way, &lt;a href="http://docs.poliastro.space/en/v0.7.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;p&gt;This release is the biggest one since the creation of the project in terms of code changes and new features, and on behalf of the poliastro development team I would like to deeply thank the European Space Agency for the SOCIS grant that made it possible. Besides, I would like to officially welcome Antonio Hidalgo to the team, since in reward for his amazing work during SOCIS he gained write access to the repository. ¡Bienvenido Antonio!&lt;/p&gt;
+&lt;p&gt;As always, the easiest way to get poliastro in any platform is using &lt;code&gt;conda&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;conda install poliastro --channel conda-forge
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Additionally, installation using &lt;code&gt;pip&lt;/code&gt; is now better supported and &lt;code&gt;numba&lt;/code&gt; is no longer optional (see below).&lt;/p&gt;
+&lt;h1&gt;Release highlights&lt;/h1&gt;
+&lt;h2&gt;New NEOS package&lt;/h2&gt;
+&lt;p&gt;As you have been reading in this blog during the summer, Antonio implemented a new &lt;code&gt;poliastro.neos&lt;/code&gt; package which reads public asteroid and comet data from NASA JPL and loads it as poliastro &lt;code&gt;Orbit&lt;/code&gt; objects. Using it is as simple as&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.neos&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;neows&lt;/span&gt;
+&lt;span class="n"&gt;apophis_orbit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;neows&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;orbit_from_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;apophis&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And you can get nice plots like this one:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ganymed, Eros and an Amor asteroid" src="http://docs.poliastro.space/en/v0.7.0/_images/examples_Using_NEOS_package_7_1.png"&gt;&lt;/p&gt;
+&lt;p&gt;To know more about how to handle NEOS in poliastro check out &lt;a href="http://docs.poliastro.space/en/v0.7.0/examples/Using%20NEOS%20package.html"&gt;the corresponding Jupyter notebook&lt;/a&gt;!&lt;/p&gt;
+&lt;h2&gt;Astropy for body ephemerides&lt;/h2&gt;
+&lt;p&gt;We now rely directly on Astropy to manage the Solar System ephemerides for us. It ships an approximate model that does not require downloading files from the JPL, so now getting the osculating orbit of a body is as simple as:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Orbit.from_body_ephem(Earth, epoch=time.Time(&amp;quot;2015-05-09 10:43&amp;quot;))
+1 x 1 AU x 23.4 deg orbit around Sun (☉)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In case we need more precise results, we can tell Astropy to download a better model:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy.coordinates&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;solar_system_ephemeris&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;solar_system_ephemeris&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;jpl&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;Downloading&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;naif&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jpl&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nasa&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gov&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;pub&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;naif&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;generic_kernels&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;spk&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;planets&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;de430&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;bsp&lt;/span&gt;
+&lt;span class="o"&gt;|==========&amp;gt;-------------------------------|&lt;/span&gt;  &lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;119&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;19.54&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;ETA&lt;/span&gt;    &lt;span class="mi"&gt;59&lt;/span&gt;&lt;span class="n"&gt;s22ss23&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Coordinate frame transformations&lt;/h2&gt;
+&lt;p&gt;In this release we took the issue of coordinate frames very seriously, namely because the REST APIs we are using to retrieve the orbits of NEOs use an &lt;em&gt;heliocentric ecliptic frame&lt;/em&gt; that is different from &lt;a href="http://aa.usno.navy.mil/faq/docs/ICRS_doc.php"&gt;ICRS&lt;/a&gt;, the standard frame assumed in poliastro.&lt;/p&gt;
+&lt;p&gt;As a result, we are working hard with the Astropy core devs (see &lt;a href="https://github.com/astropy/astropy/pull/6508"&gt;this lengthy pull request&lt;/a&gt; by Juanlu) to properly define ecliptic coordinates and their transformations to other reference frames. You can have a sneak peek of this work by using the new &lt;code&gt;poliastro.frames&lt;/code&gt; module:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;astropy.coordinates&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;ICRS&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;CartesianRepresentation&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;CartesianDifferential&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.neos&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;neows&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;poliastro.frames&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;HeliocentricEclipticJ2000&lt;/span&gt;
+
+&lt;span class="n"&gt;florence&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;neows&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;orbit_from_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Florence&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;florence_heclip&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;HeliocentricEclipticJ2000&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;florence&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;florence&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;florence&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+    &lt;span class="n"&gt;d_x&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;florence&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;d_y&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;florence&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;d_z&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;florence&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+    &lt;span class="n"&gt;representation&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;CartesianRepresentation&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;differential_cls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;CartesianDifferential&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;obstime&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;EPOCH&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;florence_icrs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;florence_heclip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;transform_to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ICRS&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This way you can mix orbits expressed in different frames as it is done here!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Florence asteroid in the inner Solar System" src="http://docs.poliastro.space/en/v0.7.0/_images/examples_Catch_that_asteroid!_26_1.png"&gt;&lt;/p&gt;
+&lt;p&gt;For details on how this is done, check out the &lt;a href="http://docs.poliastro.space/en/v0.7.0/examples/Catch%20that%20asteroid!.html"&gt;Jupyter notebook that studies the orbit of the Florence asteroid&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;And many more!&lt;/h2&gt;
+&lt;p&gt;There were so many changes in this release that describing them in full would take us a while. We recommend interested readers to check the &lt;a href="http://docs.poliastro.space/en/v0.7.0/changelog.html#poliastro-0-7-0-2017-09-15"&gt;full release notes of poliastro 0.7.0&lt;/a&gt; in the official documentation.&lt;/p&gt;
+&lt;p&gt;This release arrived just in time to PyConES 2017, the Spanish Python Conference. &lt;a href="https://2017.es.pycon.org/es/schedule/atrapa-ese-asteroide-con-poliastro/"&gt;Our talk on poliastro and NEOS&lt;/a&gt; (Spanish) was accepted, so we hope the public will enjoy our little Python library. See you there!&lt;/p&gt;
+&lt;p&gt;If you use poliastro and are happy with it, please send us a little paragraph to contact@poliastro.space and we will publish it under &lt;a href="http://docs.poliastro.space/en/v0.7.0/index.html#success-stories"&gt;our Success Stories section&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;As a last note, we would like to invite you to our &lt;a href="https://riot.im/app/#/room/#poliastro:matrix.org"&gt;community chat&lt;/a&gt; so you can share your impressions on the library, ask questions, or just say "Thank you! 💙"&lt;/p&gt;
+&lt;h1&gt;Getting involved&lt;/h1&gt;
+&lt;p&gt;Our focus now for the 0.8 release will be to improve the plotting capabilities. &lt;a href="https://github.com/poliastro/poliastro/issues/22"&gt;Having proper 3D plotting functions is now the oldest poliastro issue&lt;/a&gt;, and we think the library is now mature enough to accept the challenge. Several tasks will have to be worked on first:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add propagation to a certain date https://github.com/poliastro/poliastro/issues/236&lt;/li&gt;
+&lt;li&gt;Add a method to sample an osculating orbit https://github.com/poliastro/poliastro/issues/237&lt;/li&gt;
+&lt;li&gt;Refactor plotting to store all the orbits&lt;/li&gt;
+&lt;li&gt;Add the ability to change the plotting plane a posteriori&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of these are no easy tasks, so we will need your help!&lt;/p&gt;
+&lt;p&gt;If you are a beginner but still want to lend a hand, thank you again! Here you have &lt;a href="https://github.com/poliastro/poliastro/issues?q=is%3Aissue+is%3Aopen+label%3Aeasy"&gt;a list of issues that we have identified as "easy"&lt;/a&gt; in case you need a place to start.&lt;/p&gt;
+&lt;p&gt;You are more than welcome to contribute to poliastro and even the tiniest help will be highly appreciated. This includes not only code, but also documentation, ideas, testing, blog articles showcasing poliastro... Anything! Please relax and read the &lt;a href="https://github.com/poliastro/poliastro/blob/master/CONTRIBUTING.rst"&gt;Contribution Guidelines&lt;/a&gt; and drop by our chat so we can guide you in using git, GitHub and everything.&lt;/p&gt;
+&lt;p&gt;Before you leave, let me add a very important &lt;strong&gt;impostor syndrome disclaimer&lt;/strong&gt; (from &lt;a href="https://github.com/adriennefriend/imposter-syndrome-disclaimer#how-to-contribute"&gt;here&lt;/a&gt;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I want your help. No really, I do.&lt;/p&gt;
+&lt;p&gt;There might be a little voice inside that tells you you're not ready;
+that you need to do one more tutorial, or learn another framework, or
+write a few more blog posts before you can help me with this project.&lt;/p&gt;
+&lt;p&gt;I assure you, that's not the case.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you have read this far, I hope to have you on board very soon :)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Per Python ad astra!&lt;/em&gt;&lt;/p&gt;</content><category term="articles"></category><category term="SOCIS"></category><category term="poliastro"></category><category term="releases"></category><category term="PyConES"></category></entry></feed>

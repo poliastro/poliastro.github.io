@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>poliastro - Juan Luis Cano Rodríguez</title><link>https://www.poliastro.space/</link><description>poliastro website</description><lastBuildDate>Wed, 21 Dec 2022 19:00:00 +0100</lastBuildDate><item><title>Juan Luis steps down as maintainer of the project</title><link>https://www.poliastro.space/blog/2022/12/21/juan-luis-steps-down/</link><description>&lt;p&gt;Today is &lt;a href="https://www.volunteeramnestyday.net/"&gt;Volunteer Responsibility Amnesty Day&lt;/a&gt;,
+and with a heavy heart I, &lt;a href="https://github.com/astrojuanlu/"&gt;Juan Luis&lt;/a&gt;, would like to announce
+that I am stepping down as maintainer of poliastro, almost a decade after creating the project.&lt;/p&gt;
+&lt;p&gt;Some of you might find this surprising, some others may have seen this coming for some time.
+This is a continuation of my decision to
+&lt;a href="https://github.com/astropy/astropy.github.com/pull/452#issuecomment-961131035"&gt;step down as co-maintainer of &lt;code&gt;astropy.coordinates&lt;/code&gt;&lt;/a&gt;
+a year ago, and a realization of the fact that
+I have been spending less and less time in poliastro in the past months.&lt;/p&gt;
+&lt;p&gt;Before getting into details about why stepping down now,
+I would like to comfort existing users by saying that I spoke to
+&lt;a href="https://github.com/jorgepiloto/"&gt;Jorge Martínez&lt;/a&gt;,
+co-maintainer since he started as a Google Summer of Code Student in 2018-2019,
+and he accepted taking over the maintenance of the project.
+The pace will …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Wed, 21 Dec 2022 19:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2022-12-21:/blog/2022/12/21/juan-luis-steps-down/</guid><category>articles</category><category>poliastro</category></item><item><title>April updates</title><link>https://www.poliastro.space/blog/2022/05/12/april-updates/</link><description>&lt;p&gt;We call them April updates but we've mostly started working in May,
+allow us this small inconsistency 😉&lt;/p&gt;
+&lt;p&gt;Juan Luis will give a talk about poliastro at SciPy US 2022 in Austin, Texas, USA!
+We are thrilled to have this opportunity to present almost a decade of work in such an important event,
+and we have already started
+&lt;a href="https://github.com/poliastro/scipy_proceedings/tree/poliastro/papers/juanluis_cano_poliastro"&gt;working on a full conference paper&lt;/a&gt;
+as well,
+with a draft hopefully ready by the end of the month.&lt;/p&gt;
+&lt;p&gt;Since our last update we have published two bugfix releases of poliastro,
+the last one being &lt;a href="https://docs.poliastro.space/en/v0.16.3/changelog.html#poliastro-0-16-3-2022-05-09"&gt;poliastro 0.16.3&lt;/a&gt;,
+with documentation improvements and several compatibility fixes with the latest versions of Astropy and Python.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Thu, 12 May 2022 12:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2022-05-12:/blog/2022/05/12/april-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>January updates</title><link>https://www.poliastro.space/blog/2022/02/01/january-updates/</link><description>&lt;p&gt;This January, we spent a lot of time discussing Sebastian's proposal
+to &lt;a href="https://github.com/poliastro/poliastro/pull/1445"&gt;add a new &lt;code&gt;OrbitArray&lt;/code&gt; object&lt;/a&gt;
+in line with our Small Development Grant.
+We are now all on the same page and the implementation is progressing nicely!&lt;/p&gt;
+&lt;p&gt;Apart from that, our contributors have been working on a number of things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After the release of numba 0.55, Juan Luis
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1441"&gt;added support for Python 3.10&lt;/a&gt;
+  and dropped 3.7.&lt;/li&gt;
+&lt;li&gt;Jorge has &lt;a href="https://github.com/poliastro/poliastro/pull/1450"&gt;fixed some long-standing problems with the Lambert
+  API&lt;/a&gt;
+  by unifying the two algorithms included in the libary, removing an unnecessary iteration,
+  and documenting everything in depth.&lt;/li&gt;
+&lt;li&gt;Yash &lt;a href="https://github.com/poliastro/poliastro/pull/1443"&gt;addressed a pickling error with bodies&lt;/a&gt;
+  that was discovered after using poliastro in multiprocessing workloads,
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1442"&gt;unified the computation of vector norms&lt;/a&gt;,
+  and &lt;a href="https://github.com/poliastro/poliastro/pull/1444"&gt;fixed a propagation error&lt;/a&gt;
+  that was affecting highly eccentric orbits.&lt;/li&gt;
+&lt;li&gt;Kevin, a new contributor, added
+  &lt;a href="https://github.com/poliastro/poliastro/pull/1439"&gt;the propagation algorithm he …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Tue, 01 Feb 2022 16:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2022-02-01:/blog/2022/02/01/january-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>December updates</title><link>https://www.poliastro.space/blog/2021/12/14/december-updates/</link><description>&lt;p&gt;poliastro wishes everyone a merry new revolution around the Sun! 💫&lt;/p&gt;
+&lt;p&gt;During the December break, Juan Luis wrote &lt;a href="https://docs.poliastro.space/en/latest/examples/Loading%20OMM%20and%20TLE%20satellite%20data.html"&gt;a new example on how to read OMM and TLE
+data&lt;/a&gt;
+that will help with a number of typical satellite observation use cases and
+merged &lt;a href="https://github.com/poliastro/poliastro/pull/1434"&gt;a few refactors&lt;/a&gt;
+&lt;a href="https://github.com/poliastro/poliastro/pull/1430"&gt;and cleanups&lt;/a&gt; of the source code.
+We expect to make a 0.16.1 release soon to ship the documentation improvements,
+and will keep cleaning up the code over the coming weeks and addressing some
+long-standing issues.&lt;/p&gt;
+&lt;p&gt;In addition, Sebastian will kick off &lt;a href="https://github.com/poliastro/documents/blob/master/numfocus-sdg-2021-r3.md"&gt;the project to add array types to
+poliastro&lt;/a&gt;
+very soon. This work will be possible thanks to the generous funding of
+NumFOCUS, and will improve the performance of the library for some use cases.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Tue, 14 Dec 2021 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-12-14:/blog/2021/12/14/december-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>poliastro 0.16.0 released 🚀</title><link>https://www.poliastro.space/blog/2021/12/08/release-0.16.0/</link><description>&lt;p&gt;It fills us with astronomical joy to announce the release of poliastro 0.16.0! 🚀&lt;/p&gt;
+&lt;p&gt;This release shipped numerous new APIs and performance improvements. Yash, our
+Google Summer of Code 2021 student,  added a number of event detectors for
+numerical propagation, and several contributors helped accelerate more parts of
+the code, which should result in significant speedups for most workflows. In
+addition, we have new community-contributed scripts for relative orbits and mean
+elements computations.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.poliastro.space/en/v0.16.0/changelog.html#poliastro-0-16-0-2021-12-08"&gt;You can read 0.16.0 full release notes online&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We will present these changes at the
+&lt;a href="https://events.libre.space/event/5/"&gt;Open Source Cubesat Workshop 2021&lt;/a&gt;, to be
+held online on December 9-10.&lt;/p&gt;
+&lt;p&gt;Per Python ad astra!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Wed, 08 Dec 2021 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-12-08:/blog/2021/12/08/release-0.16.0/</guid><category>articles</category><category>releases</category><category>oscw</category><category>oscw21</category><category>conferences</category><category>events</category></item><item><title>November updates</title><link>https://www.poliastro.space/blog/2021/12/01/november-updates/</link><description>&lt;p&gt;We have released the first beta of poliastro 0.16!
+&lt;a href="https://docs.poliastro.space/en/latest/changelog.html"&gt;Highlights include&lt;/a&gt;
+new events detectors written by Yash as part of GSOC 2021,
+a new &lt;code&gt;.plot_maneuver&lt;/code&gt; method, and many performance improvements.
+We expect to release 0.16.0 in the first days of December,
+and users are encouraged to test their code with the beta.&lt;/p&gt;
+&lt;p&gt;During this month we have made some small improvements to the library
+and the development workflow. In particular, we have added
+a continuous integration check that ensures that &lt;code&gt;poliastro.core&lt;/code&gt;
+depends only on NumPy and numba. For the next release we want to
+keep working on the consistency and quality of the code and do some cleanups.&lt;/p&gt;
+&lt;p&gt;We discussed the possibility of adding new APIs to interface with TLE data,
+which will enable a whole new range of use cases
+related to commercial terrestrial satellites …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Wed, 01 Dec 2021 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-12-01:/blog/2021/12/01/november-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>October updates</title><link>https://www.poliastro.space/blog/2021/11/01/october-updates/</link><description>&lt;p&gt;October was a particularly intense month, with lots of exciting news!&lt;/p&gt;
+&lt;p&gt;We are thrilled to announce that NumFOCUS accepted to fund
+&lt;a href="https://github.com/poliastro/documents/blob/master/numfocus-sdg-2021-r3.md"&gt;our proposal to introduce array orbit types
+to accelerate parallel computing workflows in poliastro&lt;/a&gt;
+as part of their Small Development Grants program.
+The proposal was written by Sebastian M. Ernst
+and we have already started coordinating what will be the next steps.&lt;/p&gt;
+&lt;p&gt;In other news, a team of researchers participating in the
+&lt;a href="https://sophia.estec.esa.int/gtoc_portal/"&gt;Global Trajectory Optimization Competition&lt;/a&gt;
+is using poliastro,
+and they discovered a few bugs and made numerous code contributions.
+Special thanks to &lt;a href="http://lopez-ibanez.eu"&gt;Manuel López Ibáñez&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Among other things, we fixed long standing bugs of
+&lt;a href="https://github.com/poliastro/poliastro/issues/1362"&gt;our Izzo algorithm for the Lambert problem&lt;/a&gt;
+and &lt;a href="https://github.com/poliastro/poliastro/issues/1360"&gt;our accelerated &lt;code&gt;rotation_matrix&lt;/code&gt; function&lt;/a&gt;.
+We plan to release the next version of poliastro
+with these and other fixes
+&lt;a href="https://github.com/poliastro/poliastro/pull/1348"&gt;in the coming weeks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lately we have been …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Mon, 01 Nov 2021 20:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-11-01:/blog/2021/11/01/october-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>October updates (moved)</title><link>https://www.poliastro.space/blog/2021/10/01/october-updates/</link><description>&lt;p&gt;(Post moved &lt;a href="/blog/2021/11/01/october-updates/"&gt;here&lt;/a&gt;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Fri, 01 Oct 2021 20:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-10-01:/blog/2021/10/01/october-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>September updates</title><link>https://www.poliastro.space/blog/2021/09/13/september-updates/</link><description>&lt;p&gt;Hacktoberfest is coming! We are preparing ourselves for this celebration of open source
+by appropriately tagging some open issues and reviewing our contributing documentation.
+We have also discussed possible improvements for the development experience,
+like &lt;a href="https://github.com/poliastro/poliastro/issues/1312"&gt;checking for dead code&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/issues/1319"&gt;dropping some unused CI checks&lt;/a&gt;
+or &lt;a href="https://github.com/poliastro/poliastro/issues/1319"&gt;adding a bot that reformats the code&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Yash has been struggling with some corner cases
+of his &lt;a href="https://github.com/poliastro/poliastro/pull/1298"&gt;attractor surface visibility&lt;/a&gt;
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1299"&gt;satellite visibility&lt;/a&gt;
+pull requests, we hope to get them to a working state soon.&lt;/p&gt;
+&lt;p&gt;Finally, we submitted &lt;a href="https://github.com/poliastro/documents/blob/master/numfocus-sdg-2021-r3.md"&gt;a proposal&lt;/a&gt;
+for the NumFOCUS Small Development Grants, and we hope to see it accepted!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Mon, 13 Sep 2021 20:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-09-13:/blog/2021/09/13/september-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>August updates</title><link>https://www.poliastro.space/blog/2021/08/17/august-updates/</link><description>&lt;p&gt;This month Yash has been wrapping up his Google of Summer of Code work
+by adding &lt;a href="https://github.com/poliastro/poliastro/pull/1246"&gt;eclipse event detection&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/pull/1293"&gt;node crossing event detection&lt;/a&gt;,
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1288"&gt;fixing the propagation logic for non-terminal events&lt;/a&gt;.
+Besides, Yash is also writing &lt;a href="https://github.com/poliastro/poliastro/pull/1304"&gt;a new how-to guide for the event detection&lt;/a&gt;
+that we hope to get merged soon.
+Jorge has been thoroughly reviewing all that work
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1288"&gt;adding validation cases&lt;/a&gt; when appropriate.&lt;/p&gt;
+&lt;p&gt;Libre Space Foundation &lt;a href="https://libre.space/2021/08/12/gsoc-project-expanding-events-detection-poliastro/"&gt;published a summary of Yash work&lt;/a&gt;,
+you can read it on their blog.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Tue, 17 Aug 2021 12:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-08-17:/blog/2021/08/17/august-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>July updates</title><link>https://www.poliastro.space/blog/2021/07/18/july-updates/</link><description>&lt;p&gt;This month &lt;a href="https://github.com/poliastro/poliastro/"&gt;the poliastro repository&lt;/a&gt;
+has crossed ⭐️ 500 GitHub stars ⭐️, thanks everyone for believing in the
+project!&lt;/p&gt;
+&lt;p&gt;Juan Luis &lt;a href="https://docs.poliastro.space/en/v0.15.2/changelog.html"&gt;released version
+0.15.2&lt;/a&gt; with &lt;a href="https://github.com/poliastro/poliastro/pull/1228"&gt;a fix for
+newer astroquery versions&lt;/a&gt;,
+as well as compatibility with Plotly 5.0, which allows users to install all the
+required JupyterLab extensions without Node.js. This will make the installation
+process much easier!&lt;/p&gt;
+&lt;p&gt;Yash and Jorge had a very productive month: after a lot of discussion in our
+weekly community calls and several rounds of code reviews, &lt;a href="https://github.com/poliastro/poliastro/pull/1246"&gt;we finally have
+eclipse event detection
+merged!&lt;/a&gt;
+Yash has passed the first Google Summer of Code evaluation with
+flying colors and will publish an entry in our blog soon. The work Jorge did
+&lt;a href="https://github.com/poliastro/validation/pull/33"&gt;on our validation
+infrastructure&lt;/a&gt; as part of the
+NumFOCUS Small Development Grant has proven to be extremely useful.
+In addition, Yash has also …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Sun, 18 Jul 2021 17:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-07-18:/blog/2021/07/18/july-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>April updates</title><link>https://www.poliastro.space/blog/2021/05/08/april-updates/</link><description>&lt;p&gt;The first (and hopefully) only &lt;strong&gt;beta of poliastro 0.15&lt;/strong&gt; is out! 🎉
+It took us a bit longer to get this release out,
+but we are happy that poliastro 0.15 is now around the corner.
+We will soon write detailed release notes and a proper announcement for it,
+and in the meanwhile you can read &lt;a href="https://docs.poliastro.space/en/latest/changelog.html"&gt;the preliminary poliastro 0.15 changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Juan Luis revamped our website a bit,
+by &lt;a href="https://github.com/poliastro/poliastro.github.io/issues/2"&gt;adjusting our domain names&lt;/a&gt;
+and &lt;a href="https://github.com/poliastro/poliastro.github.io/pull/74"&gt;improving the navigation bar&lt;/a&gt;
+(&lt;a href="https://github.com/poliastro/poliastro.github.io/pull/77"&gt;twice&lt;/a&gt;).
+Besides, he has finished the reorganization of our docs
+following &lt;a href="https://diataxis.fr/"&gt;the Diátaxis Framework by Daniele Procida&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/pull/1188"&gt;prepared for the upcoming Sphinx 4.0 release&lt;/a&gt;,
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1206/"&gt;updated our installation and contribution instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Jorge has finished &lt;a href="https://github.com/poliastro/validation/pull/24"&gt;validating our planetary transformations against GMAT and Orekit&lt;/a&gt;,
+which required reaching out to the Orekit developers
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1193"&gt;adjusting one outdated constant in poliastro&lt;/a&gt;.
+This wraps up …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Sat, 08 May 2021 21:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-05-08:/blog/2021/05/08/april-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>February updates</title><link>https://www.poliastro.space/blog/2021/02/24/2021-02-24-February-updates/</link><description>&lt;p&gt;poliastro &lt;a href="https://github.com/poliastro/poliastro/pull/1027"&gt;finally landed support for Python 3.9&lt;/a&gt;,
+thanks to the fine folks of numba! &lt;a href="https://numba.discourse.group/t/numba-0-53-0-and-llvmlite-0-36-0-release-candidates/504?u=astrojuanlu"&gt;Their release candidate already works with the newest Python
+release&lt;/a&gt;,
+and we've been told that &lt;a href="https://twitter.com/numba_jit/status/1363868866984751107"&gt;the stable release is around the
+corner&lt;/a&gt;. This means that the next stable
+release of poliastro will also support it 🚀&lt;/p&gt;
+&lt;p&gt;On the validation side, Jorge has been working on more enhancements, and we have finally confirmed
+that our 3D impulsive maneuvers give the same result as GMAT and Orekit! You can read the full
+details &lt;a href="https://blog.poliastro.space/blog/2021/02/17/2021-02-17-validation-of-3dmaneuvers/"&gt;in this blog
+post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And finally, we have made some small improvements on the development side, by &lt;a href="https://twitter.com/numba_jit/status/1363868866984751107"&gt;fixing some
+continuous integration small failures&lt;/a&gt;,
+&lt;a href="https://github.com/poliastro/poliastro/pull/1092"&gt;reducing the number of warnings in our tests&lt;/a&gt;,
+and &lt;a href="https://github.com/poliastro/poliastro/pull/1094"&gt;other small fixes&lt;/a&gt;. Thanks Yash, Dhruv, zkl2,
+and Souhit!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Wed, 24 Feb 2021 21:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-02-24:/blog/2021/02/24/2021-02-24-February-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>January updates</title><link>https://www.poliastro.space/blog/2021/01/24/2021-01-24-January-updates/</link><description>&lt;p&gt;We got awarded a Small Development Grant by NumFOCUS to &lt;a href="https://github.com/poliastro/numfocus_proposal/"&gt;validate poliastro against commercial and
+non-commercial similar applications&lt;/a&gt;! 🎉 Jorge
+started by setting GitHub Actions to &lt;a href="https://github.com/poliastro/poliastro/pull/1051/"&gt;trigger the validations
+automatically&lt;/a&gt;, &lt;a href="https://github.com/poliastro/validation/pull/4"&gt;validating our conversion
+between cartesian and Keplerian elements against
+Orekit&lt;/a&gt;, and is now &lt;a href="https://github.com/poliastro/validation/pull/15"&gt;fighting some discrepancies
+with Hohmann transfers&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;On the development front, while we wait for Numba to release Python 3.9-compatible wheels for our
+next release, &lt;a href="https://github.com/poliastro/poliastro/pull/1053"&gt;we refactored our Cowell
+propagator&lt;/a&gt; to make the code simpler and more
+numba-friendly, we tried to merge &lt;a href="https://github.com/poliastro/poliastro/pull/719"&gt;Eleftheria's implementation of the Escobal method for satellite
+visibility&lt;/a&gt; (and &lt;a href="https://space.stackexchange.com/q/49136/10716"&gt;sadly got blocked in the
+process&lt;/a&gt;), and kept working on &lt;a href="https://gist.github.com/astrojuanlu/c44e57a8f4e001d5cbc6d6e53ecb66e0"&gt;our analysis of
+Walker constellations&lt;/a&gt; for
+&lt;a href="https://opensatcom.org/"&gt;the OpenSatCom activity&lt;/a&gt;. We also engaged with the authors of &lt;a href="https://github.com/hgrecco/numbakit-ode/"&gt;the
+awesome numbakit-ode&lt;/a&gt; to &lt;a href="https://github.com/poliastro/poliastro/pull/1049"&gt;rewrite our Cowell method using
+numba&lt;/a&gt;, but found some issues along the way and
+we decided …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Sun, 24 Jan 2021 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2021-01-24:/blog/2021/01/24/2021-01-24-January-updates/</guid><category>articles</category><category>NumFOCUS</category><category>Updates</category></item><item><title>poliastro in Google Summer of Code 2019!</title><link>https://www.poliastro.space/blog/2019/03/01/2019-03-01-poliastro-google-summer-of-code-2019/</link><description>&lt;p&gt;We are glad to announce that &lt;strong&gt;poliastro&lt;/strong&gt; will accept student applications during Google Summer of Code 2019, thanks to the umbrella organization OpenAstronomy! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to easily simulate and visualize interplanetary orbits in an interactive way, &lt;a href="https://docs.poliastro.space/en/v0.12.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;h1&gt;What is Google Summer of Code?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Google Summer of Code&lt;/strong&gt; (from now on, &lt;strong&gt;GSOC&lt;/strong&gt;) is, according to &lt;a href="https://summerofcode.withgoogle.com/"&gt;its own website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Google Summer of Code" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/GSoC.png"&gt;&lt;/p&gt;
+&lt;p&gt;GSOC is the inspiration for the Summer of Code in Space (SOCIS), a similar program organized by the European Space Agency in which &lt;a href="http://blog.poliastro.space/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/"&gt;we also participated&lt;/a&gt;, with great success.&lt;/p&gt;
+&lt;p&gt;The …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Fri, 01 Mar 2019 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2019-03-01:/blog/2019/03/01/2019-03-01-poliastro-google-summer-of-code-2019/</guid><category>articles</category><category>GSOC</category><category>Google</category><category>poliastro</category><category>students</category></item><item><title>poliastro at the Python in Astronomy 2018 conference</title><link>https://www.poliastro.space/blog/2018/06/04/2018-06-04-poliastro-python-astronomy-2018-conference/</link><description>&lt;p&gt;A month ago I had the privilege to attend the &lt;strong&gt;Python in Astronomy 2018 conference&lt;/strong&gt;, which gave me an unique perspective of the status of Python in the astronomical sciences and an opportunity to present poliastro to a very technical audience. I was planning to post a writeup somewhere, and as the Zen of Python says...&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;import this&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;grep&lt;/span&gt; &lt;span class="n"&gt;Now&lt;/span&gt;
+&lt;span class="n"&gt;Now&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;better&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;never&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So, let's do it! 🚀&lt;/p&gt;
+&lt;h1&gt;What was Python in Astronomy?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Python in Astronomy&lt;/strong&gt; (from now on, &lt;strong&gt;PyAstro18&lt;/strong&gt;) is best explained in &lt;a href="http://openastronomy.org/pyastro/2018/"&gt;its website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This conference aims to bring a wide variety of people who use, develop or teach people about Python packages in the context of all forms of Astronomy. The conference will include presentations, tutorials, unconference sessions, and sprints. As well as enhancing the community around astronomical uses of Python, the conference aims …&lt;/p&gt;&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Mon, 04 Jun 2018 20:30:00 +0200</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2018-06-04:/blog/2018/06/04/2018-06-04-poliastro-python-astronomy-2018-conference/</guid><category>articles</category><category>pyastro18</category><category>poliastro</category><category>conferences</category></item><item><title>Join poliastro thanks to Google Summer of Code!</title><link>https://www.poliastro.space/blog/2018/02/22/2018-02-22-join-poliastro-google-summer-of-code/</link><description>&lt;p&gt;We are glad to announce that &lt;strong&gt;poliastro&lt;/strong&gt; will accept student applications during Google Summer of Code this year, thanks to the umbrella organization OpenAstronomy! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to easily simulate and visualize interplanetary orbits in an interactive way, &lt;a href="http://docs.poliastro.space/en/v0.8.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;h1&gt;What is Google Summer of Code?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Google Summer of Code&lt;/strong&gt; (from now on, &lt;strong&gt;GSOC&lt;/strong&gt;) is, according to &lt;a href="https://summerofcode.withgoogle.com/"&gt;its own website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Google Summer of Code" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/GSoC.png"&gt;&lt;/p&gt;
+&lt;p&gt;GSOC is the inspiration for the Summer of Code in Space (SOCIS), a similar program organized by the European Space Agency in which &lt;a href="http://blog.poliastro.space/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/"&gt;we also participated last year&lt;/a&gt;, with …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Thu, 22 Feb 2018 12:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2018-02-22:/blog/2018/02/22/2018-02-22-join-poliastro-google-summer-of-code/</guid><category>articles</category><category>GSOC</category><category>Google</category><category>poliastro</category><category>students</category></item><item><title>poliastro 0.7.0 released and ready for PyConES!</title><link>https://www.poliastro.space/blog/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/</link><description>&lt;p&gt;It fills us with astronomical joy to announce the release of &lt;strong&gt;poliastro 0.7.0&lt;/strong&gt;! 🚀&lt;/p&gt;
+&lt;p&gt;For the newcomers, poliastro is a pure Python library that allows you to simulate and analyze interplanetary orbits in a Jupyter notebook in an interactive and easy way, &lt;a href="http://docs.poliastro.space/en/v0.7.0/index.html#success-stories"&gt;used by people from all around the world&lt;/a&gt;. Sounds interesting? Read on!&lt;/p&gt;
+&lt;p&gt;This release is the biggest one since the creation of the project in terms of code changes and new features, and on behalf of the poliastro development team I would like to deeply thank the European Space Agency for the SOCIS grant that made it possible. Besides, I would like to officially welcome Antonio Hidalgo to the team, since in reward for his amazing work during SOCIS he gained write access to the repository. ¡Bienvenido Antonio!&lt;/p&gt;
+&lt;p&gt;As always, the easiest way to get poliastro in …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Juan Luis Cano Rodríguez</dc:creator><pubDate>Fri, 15 Sep 2017 11:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.poliastro.space,2017-09-15:/blog/2017/09/15/2017-09-15-poliastro-070-released-ready-pycones/</guid><category>articles</category><category>SOCIS</category><category>poliastro</category><category>releases</category><category>PyConES</category></item></channel></rss>
