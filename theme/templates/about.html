@@ -19,8 +19,8 @@
 	      {% if AUTHOR_CV %}
 	      <li><a href="{{ AUTHOR_CV }}" rel="me">CV</a></li>
 	      {% endif %}
-	      {% if TWITTER_USERNAME %}
-	      <li><a class="nodec icon-twitter" href="http://twitter.com/{{ TWITTER_USERNAME }}" rel="me"></a></li>
+	      {% if MASTODON_URL %}
+	      <li><a class="nodec icon-mastodon" href="{{ MASTODON_URL }}" rel="me"></a></li>
               {% endif %}
               {% if GITHUB_USERNAME %}
 	      <li><a class="nodec icon-github" href="http://github.com/{{ GITHUB_USERNAME }}" rel="me"></a></li>
